@@ -130,6 +130,11 @@ var respecConfig = {
         "title":"European Plate Observing System - EPOS"
         //"publisher":"TBD"
       },
+      "EPOS-DCAT-AP": {
+        "href":"https://www.epos-eu.org/epos-dcat-ap#",
+        "title":"EPOS-DCAT-AP: an extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain."
+        //"publisher":"TBD"
+      },
       "EPOS-DCAT-AP-v2.0": {
         "href":"https://www.epos-eu.org/epos-dcat-ap#",
         "title":"EPOS-DCAT-AP: an extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain."
