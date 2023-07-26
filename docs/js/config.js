@@ -582,6 +582,13 @@ var respecConfig = {
         "href":"http://schema.org/",
         "title":"Schema.org"
       },
+      "FOAF":{
+        "href":"http://xmlns.com/foaf/0.1/",
+        "title":"FOAF Vocabulary Specification 0.99 (Paddington Edition).",
+        "authors":["Dan Brickley, Libby Miller"],
+        "publisher":"FOAF project.", 
+        "date":"14 January 2014."
+      },
       "SCoRO": {
         "href":"http://purl.org/spar/scoro#",
         "title":"Scholarly Contributions and Roles Ontology (SCoRO)",
