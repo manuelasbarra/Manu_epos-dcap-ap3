@@ -21,7 +21,7 @@ var respecConfig = {
     copyrightStart: "ddd",
     //publishDate: "2022-05-12",
 
-    //specStatus: "ED",
+    specStatus: "ED",
 
   //  specStatus: "unofficial",
 
@@ -33,7 +33,7 @@ var respecConfig = {
 //  specStatus: "REC",
 //    crEnd:"2020-10-12",
 //    prEnd:"2020-12-23",
-    shortName: "epos-dcat-ap2",
+    shortName: "epos-dcat-ap3",
     canonicalURI: "TBD",
 
     thisVersionURI:       "TBD",
