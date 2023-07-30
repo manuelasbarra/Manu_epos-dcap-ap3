@@ -403,7 +403,7 @@ epos:CatalogRecordShape
     ] ;
   ####
   # CatalogRecord recommended properties
-  ####  
+  ####
   sh:property [
       sh:path dct:conformsTo ;
       sh:datatype xsd:anyURI;
@@ -537,7 +537,7 @@ epos:DataServiceShape
       sh:minCount 1 ;
       sh:message "endpointDescription is recommended. Please fill in a value"@en  ;
       sh:severity sh:Warning ;
-    ] ;  
+    ] ;
   sh:property [
       sh:path dct:issued;
       sh:node epos:DateOrDateTimeDataType ;
@@ -595,7 +595,7 @@ epos:DataServiceShape
     ] ;
   ####
   # DataService optional properties
-  #### 
+  ####
   sh:property [
       sh:path dct:accessRight ;
       sh:description " This property MAY include information regarding access or restrictions based on privacy, security, or other policies.";
@@ -760,7 +760,7 @@ epos:DatasetShape
       sh:class oa:Annotation ;
     ] ;
   sh:property [
-      sh:path dct:hasVersion ;
+      sh:path dcat:hasVersion ;
       sh:description "This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.";
       sh:class dcat:Dataset ;
     ] ;
@@ -775,7 +775,7 @@ epos:DatasetShape
       sh:class dcat:Dataset ;
     ] ;
   sh:property [
-      sh:path dct:isVersionOf ;
+      sh:path dcat:isVersionOf ;
       sh:description "This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.";
       sh:class dcat:Dataset ;
     ] ;
@@ -858,9 +858,9 @@ epos:DatasetShape
       sh:path dct:type ;
       sh:description "This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.";
       sh:datatype xsd:anyURI ;
-    ] ; 
+    ] ;
   sh:property [
-      sh:path owl:versionInfo ;
+      sh:path dcat:version ;
       sh:description "This property contains a version number or other version designation of the Dataset.";
       sh:maxCount 1 ;
       sh:datatype xsd:string;
@@ -1601,7 +1601,7 @@ epos:FacilityShape
       sh:description "This property refers to the geographical coordinates of the Facility.";
       sh:class dct:Location ;
       sh:maxCount 1 ;
-    ] ;  
+    ] ;
 .
 epos:IriTemplateShape
   a sh:NodeShape ;
@@ -1630,7 +1630,7 @@ epos:IriTemplateMappingShape
   sh:targetClass hydra:IriTemplateMapping ;
   ####
   # IriTemplateMapping mandatory properties
-  #### 
+  ####
   sh:property [
       sh:path rdfs:label ;
       sh:description "This property contains a short string used to describe the meaning of the parameter.";
@@ -2114,7 +2114,7 @@ epos:PublicationShape
   ####
   # Publication optional properties
   ####
-  
+
   sh:property [
       sh:path schema:issn ;
       sh:description "This property contains the International Standard Serial Number (ISSN) that identifies the Publication.";
