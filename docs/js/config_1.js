@@ -33,7 +33,7 @@ var respecConfig = {
 //  specStatus: "REC",
 //    crEnd:"2020-10-12",
 //    prEnd:"2020-12-23",
-    shortName: "epos-dcat-ap2",
+    shortName: "epos-dcat-ap3",
     canonicalURI: "TBD",
 
     thisVersionURI:       "TBD",
@@ -135,6 +135,11 @@ var respecConfig = {
         "title":"EPOS-DCAT-AP: an extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain."
         //"publisher":"TBD"
       },
+      //"EPOS-DCAT-AP-v2.0": {
+        //"href":"https://www.epos-eu.org/epos-dcat-ap#",
+        //"title":"EPOS-DCAT-AP: an extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain."
+        //"publisher":"TBD"
+      //},
       "HTTP":{
         "href":"http://www.w3.org/2006/http#",
         "title":"HTTP"
@@ -577,6 +582,13 @@ var respecConfig = {
         "href":"http://schema.org/",
         "title":"Schema.org"
       },
+      "FOAF":{
+        "href":"http://xmlns.com/foaf/0.1/",
+        "title":"FOAF vocabulary Specification 0.99 (Paddington Edition).",
+        "authors":["Dan Brickley, Libby Miller"],
+        "publisher":"FOAF project.",
+        "date":"14 January 2014."
+      },
       "SCoRO": {
         "href":"http://purl.org/spar/scoro#",
         "title":"Scholarly Contributions and Roles Ontology (SCoRO)",
@@ -829,6 +841,13 @@ var respecConfig = {
         "date":"4 June 2018",
         "authors":["Hajo Rijgersberg", "Mark van Assem", "Don Willems", "Xin-Ying Ren", "Mari Wigham", "Jeen Broekstra", "Jan Top"]
       },
+    //  "vocab-dcat-3": {
+    //    "href":"https://www.w3.org/TR/vocab-dcat-3/",
+    //    "title":"Data Catalog Vocabulary (DCAT) - Version 3.",
+    //    "publisher":"W3C",
+    //    "date":"7 March 2023",
+    //    "authors":["Simon Cox", "Andrea Perego", "Alejandra Gonzalez Beltran", "Peter Winstanley", "Riccardo Albertoni","David Browning"]
+    //  },
       "GeoSPARQL11": {
 //        "href": "https://github.com/opengeospatial/ogc-geosparql/1.1",
         "href": "https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html",
@@ -840,3 +859,4 @@ var respecConfig = {
       },
     }
   };
+vocab-
