@@ -584,9 +584,9 @@ var respecConfig = {
       },
       "FOAF":{
         "href":"http://xmlns.com/foaf/0.1/",
-        "title":"FOAF Vocabulary Specification 0.99 (Paddington Edition).",
+        "title":"FOAF vocabulary Specification 0.99 (Paddington Edition).",
         "authors":["Dan Brickley, Libby Miller"],
-        "publisher":"FOAF project.", 
+        "publisher":"FOAF project.",
         "date":"14 January 2014."
       },
       "SCoRO": {
@@ -841,6 +841,13 @@ var respecConfig = {
         "date":"4 June 2018",
         "authors":["Hajo Rijgersberg", "Mark van Assem", "Don Willems", "Xin-Ying Ren", "Mari Wigham", "Jeen Broekstra", "Jan Top"]
       },
+    //  "vocab-dcat-3": {
+    //    "href":"https://www.w3.org/TR/vocab-dcat-3/",
+    //    "title":"Data Catalog Vocabulary (DCAT) - Version 3.",
+    //    "publisher":"W3C",
+    //    "date":"7 March 2023",
+    //    "authors":["Simon Cox", "Andrea Perego", "Alejandra Gonzalez Beltran", "Peter Winstanley", "Riccardo Albertoni","David Browning"]
+    //  },
       "GeoSPARQL11": {
 //        "href": "https://github.com/opengeospatial/ogc-geosparql/1.1",
         "href": "https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html",
@@ -852,3 +859,4 @@ var respecConfig = {
       },
     }
   };
+vocab-
