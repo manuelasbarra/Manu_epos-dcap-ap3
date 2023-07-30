@@ -135,11 +135,11 @@ var respecConfig = {
         "title":"EPOS-DCAT-AP: an extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain."
         //"publisher":"TBD"
       },
-      "EPOS-DCAT-AP-v2.0": {
-        "href":"https://www.epos-eu.org/epos-dcat-ap#",
-        "title":"EPOS-DCAT-AP: an extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain."
+      //"EPOS-DCAT-AP-v2.0": {
+        //"href":"https://www.epos-eu.org/epos-dcat-ap#",
+        //"title":"EPOS-DCAT-AP: an extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain."
         //"publisher":"TBD"
-      },
+      //},
       "HTTP":{
         "href":"http://www.w3.org/2006/http#",
         "title":"HTTP"
