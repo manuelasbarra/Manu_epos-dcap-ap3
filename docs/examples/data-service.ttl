@@ -31,6 +31,7 @@
   dct:accessRight "";
   dct:conformsTo "https://www.orfeus-eu.org/data/eida/webservices/dataselect/"^^xsd:anyURI ;
   dct:license "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+  #dct:format "http://publications.europa.eu/resource/authority/file-type/BIN"^^xsd:anyURI ;
   dct:spatial [ a dct:Location ;
   		dcat:bbox "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
   	];
