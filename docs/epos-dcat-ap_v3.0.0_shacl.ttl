@@ -213,7 +213,7 @@ epos:DateOrDateTimeDataType
   sh:message "The values must be data typed as either xsd:date, xsd:dateTime, xsd:gYear or xsd:gYearMonth"@en  ;
   sh:or ( [ sh:datatype xsd:date ; ]
           [ sh:datatype xsd:dateTime ; ]
-	  [ sh:datatype xsd:gYear ; ]
+	        [ sh:datatype xsd:gYear ; ]
           [ sh:datatype xsd:gYearMonth ; ]
  ) ;
 .
@@ -357,6 +357,7 @@ epos:CatalogShape
       sh:path dct:creator;
       sh:description "This property refers to a catalog whose contents are of interest in the context of this catalog ";
       sh:class foaf:Agent;
+      sh:maxCount 1 ;
     ] ;
   sh:property [
       sh:path dct:hasPart ;
@@ -379,6 +380,11 @@ epos:CatalogShape
       sh:description "This property refers to a statement that specifies rights associated with the Catalog.";
       sh:class dct:RightsStatement ;
       sh:maxCount 1 ;
+    ] ;
+  sh:property [
+      sh:path dct:temporal ;
+      sh:description "This property refers to a temporal period that the Catalog covers.";
+      sh:class dct:PeriodOfTime ;
     ] ;
 .
 epos:CatalogRecordShape
@@ -747,6 +753,7 @@ epos:DatasetShape
       sh:description " This property refers to the entity responsible for producing the dataset.";
       sh:or ( [ sh:class foaf:Agent ; ]
               [ sh:class schema:Organization ; ] ) ;
+      sh:maxCount 1 ;
     ] ;
   ## Support for collections of datasets
   sh:property [
@@ -760,7 +767,7 @@ epos:DatasetShape
       sh:class oa:Annotation ;
     ] ;
   sh:property [
-      sh:path dcat:hasVersion ;
+      sh:path dcat:hasVersion ; # ->modified
       sh:description "This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.";
       sh:class dcat:Dataset ;
     ] ;
@@ -775,7 +782,7 @@ epos:DatasetShape
       sh:class dcat:Dataset ;
     ] ;
   sh:property [
-      sh:path dcat:isVersionOf ;
+      sh:path dcat:isVersionOf ; # ->modified
       sh:description "This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.";
       sh:class dcat:Dataset ;
     ] ;
@@ -858,9 +865,10 @@ epos:DatasetShape
       sh:path dct:type ;
       sh:description "This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.";
       sh:datatype xsd:anyURI ;
+      sh:maxCount 1 ;
     ] ;
   sh:property [
-      sh:path dcat:version ;
+      sh:path dcat:version ; # ->modified
       sh:description "This property contains a version number or other version designation of the Dataset.";
       sh:maxCount 1 ;
       sh:datatype xsd:string;
@@ -876,6 +884,72 @@ epos:DatasetShape
       sh:class prov:Activity ;
     ];
 .
+epos:DatasetInSeriesShape
+  a sh:NodeShape ;
+  #sh:targetClass dcat:Dataset ;
+  ####
+  # DatasetInSeries mandatory properties
+  ####
+  sh:property [
+      sh:path dct:description;
+      sh:description "This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description .";
+      sh:datatype xsd:string ;
+      sh:minCount 1 ;
+    ] ;
+  sh:property [
+      sh:path dct:title;
+      sh:description "This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name .";"
+      sh:datatype xsd:string ;
+      sh:minCount 1 ;
+    ] ;
+  ####
+  # DatasetInSeries recommended properties
+  ####
+  sh:property [
+   	  sh:path dcat:inSeries;
+  	  sh:class dcat:DatasetSeries;
+      sh:description "This property contains dataset series of which the dataset is part.";
+      sh:minCount 1 ;
+      sh:message "inSeries is recommended. Please fill in a value"@en  ;
+      sh:severity sh:Warning ;
+    ];
+  sh:property [
+   	  sh:path dcat:previous;
+  	  sh:class dcat:DatasetInSeries;
+      sh:description "This property links the previous resource (before the current one) in an ordered collection or series of resources. Unless the dataset is the last in the chain a dataset in a collection must have a previous one.";
+      sh:minCount 1 ;
+      sh:message "previous is recommended. Please fill in a value"@en  ;
+      sh:severity sh:Warning ;
+    ];
+  ####
+  # DatasetInSeries optional properties
+  ####
+  sh:property [
+      sh:path dct:accrualPeriodicity;
+	    sh:description "This property refers to the frequency at which the Dataset is updated. ";
+      #sh:class dct:Frequency ;
+      sh:datatype xsd:anyURI ;
+    ];
+  sh:property [
+      sh:path dct:next;
+      sh:class dcat:DatasetInSeries ;
+	    sh:description "This property refers to the frequency at which the Dataset is updated. ";
+    ];
+.
+epos:DatasetSeriesShape
+  a sh:NodeShape ;
+  sh:targetClass dcat:DatasetSeries ;
+  ####
+  # DatasetSeries mandatory properties
+  ####
+  sh:property [
+      sh:path dcat:accessURL ;
+      sh:description "This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset.";
+      sh:or ( [ sh:class rdfs:Resource ; ]
+              [ sh:datatype xsd:anyURI ; ] ) ;
+      sh:minCount 1 ;
+    ] ;
+    
 epos:DistributionShape
   a sh:NodeShape ;
   sh:targetClass dcat:Distribution;
@@ -962,7 +1036,7 @@ epos:DistributionShape
   sh:property [
       sh:path dcat:byteSize ;
       sh:description "This property contains the size of a Distribution in bytes.";
-      sh:datatype xsd:decimal ;
+      sh:datatype xsd:nonNegativeInteger ; # ->modified
       sh:maxCount 1 ;
     ] ;
   sh:property [
@@ -1146,6 +1220,25 @@ epos:ConceptShape
       sh:minCount 1 ;
     ] ;
 .
+
+## --> not in previous shacl
+epos:ChecksumShape
+  a sh:NodeShape ;
+  sh:targetClass spdx:Checksum ;
+  sh:property [
+      sh:path spdx:algorithm ;
+      sh:class spdx:checksumAlgorithm_sha1 ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+
+    ];
+  sh:property [
+      sh:path spdx:checksumValue ;
+      sh:datatype xsd:hexBinary ;
+      sh:maxCount 1 ;
+      sh:minCount 1 ;
+    ] ;
+.
 epos:IdentifierShape
   a sh:NodeShape ;
   sh:targetClass adms:Identifier;
@@ -1221,7 +1314,7 @@ epos:LocationShape
   sh:property [
      sh:path locn:geometry ;
      sh:description "This property associates any resource with the corresponding geometry.";
-     sh:datatype gsp:wktLiteral;
+     sh:datatype locn:Geometry; #->modified
      sh:maxCount 1 ;
     ] ;
 .
