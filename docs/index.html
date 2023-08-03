@@ -61,9 +61,15 @@
     <section id="history">
       <h3>Revision history</h3>
       <p>In 2023, the adoption of W3C DCAT 3 [VOCAB-DCAT-3] triggered a new alignment for DCAT-AP. W3C DCAT 3 extends the profile with the Dataset Series notion, deprecates the use of some URIs and introducing new URIs in the DCAT namespace for the use case of Dataset versioning. </p>
-      <aside class="note">
-        <p>Additional classes introduced by EPOS-DCAT-AP are shown in the diagram highlighted in orange</p>
-
+      <aside class="note">: alignment with DCAT 3
+        <ul>
+          <li>Dataset Series is added new class</li>
+          <li>Dataset member of a Dataset Series is added new class</li>
+          <li>dct:hasVersion in Dataset is replaced by dcat:hasVersion.</li>
+          <li>owl:versionInfo in Dataset is replaced by dcat:version  in Dataset is replaced by dcat:isVersionOf</li>
+          <li>dcat:bytesize in Distribution, the range is fixed by xsd:nonNegativeInteger </li>
+          <li>locn:geometry in Location, the range is changed with locn:Geometry<li>
+        </ul>
       </aside>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/revision_history.html"></div>
 
