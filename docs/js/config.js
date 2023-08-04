@@ -125,6 +125,13 @@ var respecConfig = {
         "publisher":"European Commission",
         "date":"2021"
       },
+      "DCAT-AP-3": {
+        "href":"https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe",
+        "title":"DCAT Application Profile for data portals in Europe. Version 3.0",
+        //"publisher":"TBD"
+        "publisher":"European Commission",
+        "date":"2023"
+      },
       "EPOS": {
         "href":"https://www.epos-eu.org/",
         "title":"European Plate Observing System - EPOS"
