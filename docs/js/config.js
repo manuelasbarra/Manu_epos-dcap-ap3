@@ -127,7 +127,7 @@ var respecConfig = {
       },
       "DCAT-AP-3": {
         "href":"https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe",
-        "title":"DCAT Application Profile for data portals in Europe. Version 3.0",
+        "title":"DCAT Application Profile for data portals in Europe. Verson 3.0",
         //"publisher":"TBD"
         "publisher":"European Commission",
         "date":"2023"
