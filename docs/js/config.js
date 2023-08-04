@@ -126,9 +126,9 @@ var respecConfig = {
         "date":"2021"
       },
       "DCAT-AP-3": {
-        "href":"https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe",
+        //"href":"https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe",
         "title":"DCAT Application Profile for data portals in Europe. Verson 3.0",
-        "URL":"https://semiceu.github.io/DCAT-AP/releases/3.0.0/"
+        "href":"https://semiceu.github.io/DCAT-AP/releases/3.0.0/"
         "publisher":"European Commission",
         "date":"2023"
       },
