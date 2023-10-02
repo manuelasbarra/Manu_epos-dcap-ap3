@@ -238,7 +238,7 @@ epos:CatalogShape
     ] ;
   sh:property [
       sh:path dct:publisher ;
-      sh:description "This property refers to an entity (organisation) responsible for making the Catalog available.";
+      sh:description "This property refers to an entity (Organisation) responsible for making the Catalog available.";
       sh:minCount 1 ;
       sh:maxCount 1 ;
       sh:or (
@@ -305,7 +305,7 @@ epos:CatalogShape
     ] ;
   sh:property [
       sh:path dct:license ;
-      sh:description "This property refers to the licence under which the Catalog can be used or reused.";
+      sh:description "This property refers to the license under which the Catalog can be used or reused.";
       sh:class dct:LicenseDocument ;
       sh:maxCount 1 ;
     ] ;
@@ -323,13 +323,6 @@ epos:CatalogShape
       sh:maxCount 1 ;
     ] ;
   sh:property [
-      sh:path dct:spatial ;
-      sh:class dct:Location ;
-      sh:description "This property refers to a geographical area covered by the Catalog.";
-      sh:minCount 1 ;
-      sh:severity sh:Warning ;
-    ] ;
-  sh:property [
     sh:path dcat:service ;
     sh:description "This property refers to a site or end-point (Data Service) that is listed in the Catalog. As empty Catalog are usually indications of problems, this property should be combined with the previous property dataset to implement an empty Catalog check.";
     sh:class dcat:DataService ;
@@ -337,6 +330,13 @@ epos:CatalogShape
     sh:message "Service is recommended. Please fill in a value"@en  ;
     sh:severity sh:Warning ;
   ] ;
+  sh:property [
+      sh:path dct:spatial ;
+      sh:class dct:Location ;
+      sh:description "This property refers to a geographical area covered by the Catalog.";
+      sh:minCount 1 ;
+      sh:severity sh:Warning ;
+    ] ;
   sh:property [
       sh:path dcat:themeTaxonomy ;
       sh:description "This property refers to a knowledge organization system used to classify the resources documented in the Catalog (Data Services, Datasets, and other Catalogs).";
@@ -350,12 +350,12 @@ epos:CatalogShape
   ####
   sh:property [
       sh:path dcat:catalog;
-      sh:description "This property refers to a catalog whose contents are of interest in the context of this catalog ";
+      sh:description "This property refers to a Catalog whose contents are of interest in the context of this catalog ";
       sh:class dcat:Catalog ;
     ] ;
   sh:property [
       sh:path dct:creator;
-      sh:description "This property refers to a catalog whose contents are of interest in the context of this catalog ";
+      sh:description "This property refers to the Agent primarily responsible for producing the catalog.";
       sh:class foaf:Agent;
       sh:maxCount 1 ;
     ] ;
@@ -949,7 +949,7 @@ epos:DatasetSeriesShape
               [ sh:datatype xsd:anyURI ; ] ) ;
       sh:minCount 1 ;
     ] ;
-    
+
 epos:DistributionShape
   a sh:NodeShape ;
   sh:targetClass dcat:Distribution;
