@@ -43,7 +43,7 @@ function myIndexOf(list, val) {
  * Fills in the direct input area with some samples
  * @param {string} file - file containing the sample
  */
- function loadFile(editorinstance, file) { alert(editorinstance+" "+file);
+ function loadFile(editorinstance, file) {
     var xmlhttp;
     if (window.XMLHttpRequest) {
         xmlhttp = new XMLHttpRequest();
@@ -80,13 +80,13 @@ function createJSONLDEditorFrom(selector) {
 $(document).ready(function () {
   var examples = [];
   var editors = [];
-  var examples_id = ".examples";
+  var examples_id = ".esempio";
   var examples_class = ".h3";
   var folder = "./examples/";
   var $examples = $(examples_id);
 
 //	$examples.children(examples_class).each(function(index){
-	$examples.each(function(index){
+	$examples.each(function(index){ alert(index);
 		exampleid = this.id;
 		examples.push(exampleid);
 		var text = example_structure(exampleid);
