@@ -43,7 +43,7 @@ function myIndexOf(list, val) {
  * Fills in the direct input area with some samples
  * @param {string} file - file containing the sample
  */
- function loadFile(editorinstance, file) {
+ function loadFile(editorinstance, file) { alert(editorinstance+" "+file);
     var xmlhttp;
     if (window.XMLHttpRequest) {
         xmlhttp = new XMLHttpRequest();
@@ -82,7 +82,7 @@ $(document).ready(function () {
   var editors = [];
   var examples_id = ".examples";
   var examples_class = ".h3";
-  var folder = "./docs/examples/";
+  var folder = "./examples/";
   var $examples = $(examples_id);
 
 //	$examples.children(examples_class).each(function(index){
