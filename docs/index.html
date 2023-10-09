@@ -6,8 +6,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!--<script class="remove" src="./js/respect.js"></script>-->
   <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+<!--  <script class="remove" src="./js/respect.js"></script>-->
   <script class="remove" src="./js/config.js"></script>
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -59,7 +59,7 @@
       <p>The DCAT-AP Application Profile on which this document is based is the DCAT-AP specification v3 [[DCAT-AP-3]].  </p>
     </section>
 
-<!--    <section id="history">
+    <section id="history">
       <h3>Revision history</h3>
       <p>In 2023, the adoption of W3C DCAT 3  triggered a new alignment for DCAT-AP. W3C DCAT 3 extends the profile with the Dataset Series notion, deprecates the use of some URIs and introducing new URIs in the DCAT namespace for the use case of Dataset versioning. </p>
 
@@ -70,9 +70,10 @@
       <section id="history_alignment2"><h4>Properties characterizing EPOS-DCAT-AP 3.0 with respect to DCAT-AP
 3.0</h4>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/revision_history_2.html"></div>
+
       </section>
     </section>
--->
+
   </section>
 
   <section id="terminology">
@@ -132,7 +133,7 @@
   <!-- Classes -->
   <section id="classes">
 
-  <!--<h2>Application Profile Classes</h2>
+    <h2>Application Profile Classes</h2>
     <section id="mandatory-classes">
       <h3>Mandatory Classes</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-classes.html"></div>
@@ -162,11 +163,11 @@
         <p>Class equality means that the classes have the same intensional meaning, i.e., denote the same concept.<p>
       </aside>
     </section>
--->
+
   </section>
 
   <!-- Properties -->
-  <section id="properties">
+<!--  <section id="properties">
 
     <h2>Application Profile Properties per Class</h2>
     <p>A quick reference table of properties per class is included in <a href="#quick-reference-of-classes-and-properties">4.37 Quick Reference of Classes and Properties</a>. The list of included properties contains all the properties in [[DCAT-AP]],
@@ -223,7 +224,7 @@
     </section>
 
     <!-- Catalog -->
-    <!--<section id="properties-for-catalog">
+    <section id="properties-for-catalog">
       <h3>Class: Catalog</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/class-catalog.html"></div>
 
@@ -251,9 +252,9 @@
       </section>
 
     </section>
--->
+
     <!-- Catalog Record -->
-  <!--  <section id="properties-for-catalog-record">
+    <section id="properties-for-catalog-record">
       <h3>Class: CatalogRecord</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/class-catalog-record.html"></div>
       <section id="mandatory-properties-for-catalog-record">
@@ -277,9 +278,9 @@
         <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-catalog-record.html"></div>
       </section>
     </section>
--->
+
     <!-- Category -->
-  <!--  <section id="properties-for-category">
+    <section id="properties-for-category">
       <h3>Class: Category</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/class-category.html"></div>
       <section id="mandatory-properties-for-category">
@@ -305,9 +306,9 @@
         </aside>
       </section>
     </section>
--->
+
     <!-- Category Scheme -->
-  <!--  <section id="properties-for-category-scheme">
+    <section id="properties-for-category-scheme">
       <h3>Class: CategoryScheme</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/class-category-scheme.html"></div>
       <section id="recommended-properties-for-category-scheme">
@@ -328,7 +329,7 @@
         </aside>
       </section>
     </section>
--->
+
     <!-- Checksum -->
     <section id="properties-for-checksum">
       <h3>Class: Checksum</h3>
@@ -366,7 +367,7 @@
     </section>
 
     <!-- Data Service -->
-  <!--  <section id="properties-for-data-service">
+    <section id="properties-for-data-service">
       <h3>Class: DataService</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/class-data-service.html"></div>
       <section id="mandatory-properties-for-data-service">
@@ -425,9 +426,9 @@
         </aside>
       </section>
     </section>
--->
+
     <!-- Dataset   -->
-  <!--  <section id="properties-for-dataset">
+    <section id="properties-for-dataset">
 
       <h3>Class: Dataset</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/class-dataset.html"></div>
@@ -483,14 +484,20 @@
       </section>
 
     </section>
--->
+
     <!-- DatasetInSeries -->
-  <!--  <section id="properties-for-dataset-in-series">
+    <section id="properties-for-dataset-in-series">
       <h3>Class: Dataset In Series</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/class-dataset-in-series.html"></div>
       <section id="mandatory-properties-for-dataset-in-series">
         <h4>Mandatory properties</h4>
-
+        <!--<aside class="note">
+          <p>The following property is inherited from superclass <a data-cite="VOCAB-DCAT-2#Class:Resource">dcat:Resource</a> [[VOCAB-DCAT-2]]</p>
+          <ul>
+              <li><a href="#datasetservice-identifier">identifier</a></li>
+          </ul>
+          </p>
+        </aside>-->
         <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-dataset-in-series.html"></div>
       </section>
 
@@ -506,18 +513,25 @@
       <section id="examples-for-dataset-in-series">
         <h4>Example</h4>
         <aside class="example" id="ex-dataset-in-series" title="DatasetInSeries">
-        </aside>
+        <!--  <pre data-include-format="text" data-include="./examples/dataset-series.ttl"></pre>
+      </aside>-->
       </section>
 
     </section>
--->
+
     <!-- DatasetSeries -->
-<!--    <section id="properties-for-dataset-series">
+    <section id="properties-for-dataset-series">
       <h3>Class: Dataset Series</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/class-dataset-series.html"></div>
       <section id="mandatory-properties-for-dataset-series">
         <h4>Mandatory properties</h4>
-
+        <!--<aside class="note">
+          <p>The following property is inherited from superclass <a data-cite="VOCAB-DCAT-2#Class:Resource">dcat:Resource</a> [[VOCAB-DCAT-2]]</p>
+          <ul>
+              <li><a href="#datasetservice-identifier">identifier</a></li>
+          </ul>
+          </p>
+        </aside>-->
         <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-dataset-series.html"></div>
       </section>
 
@@ -538,8 +552,8 @@
       </section>
 
     </section>
-  -->  <!-- Distribution -->
-    <!--<section id="properties-for-distribution">
+    <!-- Distribution -->
+    <section id="properties-for-distribution">
 
       <h3>Class: Distribution</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/class-distribution.html"></div>
@@ -574,7 +588,7 @@
       </section>
 
     </section>
--->
+
     <!-- Document -->
     <section id="properties-for-document">
       <h3>Class: Document</h3>
@@ -785,7 +799,7 @@
     </section>
 
     <!-- Operation -->
-    <!--<section id="properties-for-operation">
+    <section id="properties-for-operation">
       <h3>Class: Operation</h3>
       <aside class="note">
         <p>This class is included in [[EPOS-DCAT-AP]].</p>
@@ -806,7 +820,7 @@
         </aside>
       </section>
     </section>
--->
+
     <!-- Organization -->
     <section id="properties-for-organization">
       <h3>Class: Organization</h3>
@@ -989,14 +1003,14 @@
     </section>
 
     <!-- Relationship -->
-    <!--<section id="properties-for-relationship">
+    <section id="properties-for-relationship">
       <h3>Class: Relationship</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/class-relationship.html"></div>
       <section id="mandatory-properties-for-relationship">
         <h4>Mandatory properties</h4>
         <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-relationship.html"></div>
       </section>
-    </section>-->
+    </section>
 
     <!-- Rights Statement -->
     <section id="properties-for-rights-statement">
@@ -1114,12 +1128,12 @@
       <!-- Quick Reference of Classes and Properties  -->
       <h2>Quick Reference of Classes and Properties</h2>
       <p>This version of EPOS-DCAT-AP extends [[DCAT-AP]] with additional classes and properties (some of which re-used across classes). They are listed in the following table marked with a prepended “plus” sign (+).</p>
-      <!--<div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>
-    --></section>
+      <div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>
+    </section>
   </section>
 
   <!--SHACL-->
-  <!--<section id="shacl">
+  <section id="shacl">
     <h2>SHACL Contraints</h2>
     <p>The SHACL constraints for EPOS-DCAT-AP are available at: </p>
     <p><a href="https://github.com/epos-eu/EPOS-DCAT-AP/blob/EPOS-DCAT-AP-v3.0/docs/epos-dcat-ap_v3.0.0_shacl.ttl">
@@ -1135,7 +1149,7 @@
       </ul>
   </section>
 
--->
+
 </body>
 
 </html>
