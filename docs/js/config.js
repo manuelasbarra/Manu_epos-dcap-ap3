@@ -139,12 +139,12 @@
       "title":"EPOS-DCAT-AP: an extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain."
       //"publisher":"TBD"
       },
-      "FOAF":{
+      /*"FOAF":{
         "href":"http://xmlns.com/foaf/0.1/",
         "title":"FOAF Vocabulary Specification 0.1 (Paddington Edition). ",
         "publisher":"Dan Brickley; Libby Miller. FOAF project.",
         "date":"14 January 2014"
-      },
+      },*/
       "HTTP":{
         "href":"http://www.w3.org/2006/http#",
         "title":"HTTP"
@@ -152,7 +152,7 @@
       "HYDRA":{
         "href":"http://www.w3.org/ns/hydra/core#",
         "title":"HYDRA"
-      }, 
+      },
       "HYDRA1":{
         "href":"http://api.verint.com/w3c/hydra#",
         "title":"HYDRA"
