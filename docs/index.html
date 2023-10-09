@@ -54,15 +54,10 @@
       <!--    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js" ></script> -->
 
   <script src="./js/example.js" ></script>
-  
+
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
 	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-  <script>
-  $(document).ready(function () {
-  $('#table-epos-dcat-ap-classes-and-properties').DataTable();
 
-});
-  </script>
 
     <script class="remove" src="./js/respect.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -137,7 +132,7 @@
 
   <section id="terminology">
 
-    <h2>----Terminology used in the Application Profile</h2>
+    <h2>Terminology used in the Application Profile</h2>
 
     <p>A <strong>Vocabulary</strong> s a specification that determines the semantics of terms (classes and properties) in a broad context of information exchange. The defined terms are highlyhigly reusable.</p>
     <p>An <strong>Application Profile</strong> is a specification that re-uses terms from one or more base standards (vocabularies), adding more specificity by identifying mandatory, recommended and optional elements to be used for a particular
@@ -233,7 +228,7 @@
       plus a selection of properties from other vocabularies on which EPOS-DCAT-AP expresses additional constraints or on which EPOS-DCAT-AP wants to emphasise their usage.
     </p>
     <p>Examples on the use of these properties, encoded in [[Turtle]], are included in the relevant sections and available from a <a href="./examples/">separate folder</a>.</p>
-
+-->
     <!-- Address -->
     <section id="properties-for-address">
       <h3>Class: Address</h3>
@@ -1211,7 +1206,12 @@
         </li>
       </ul>
   </section>
+  <script>
+  $(document).ready(function () { alert("load");
+  $('#table-epos-dcat-ap-classes-and-properties').DataTable();
 
+  });
+  </script>
 
 </body>
 
