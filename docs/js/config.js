@@ -153,11 +153,7 @@
         "href":"http://www.w3.org/ns/hydra/core#",
         "title":"HYDRA"
       },
-      "HYDRA1":{
-        "href":"http://api.verint.com/w3c/hydra#",
-        "title":"HYDRA"
-      },
-
+    
       "CiteDCAT-AP": {
         "href": "https://ec-jrc.github.io/datacite-to-dcat-ap/",
         "title": "DataCite to DCAT-AP Mapping",
