@@ -82,7 +82,7 @@ $(document).ready(function () {
   var editors = [];
   var examples_id = ".examples";
   var examples_class = ".h3";
-  var folder = "./js/";
+  var folder = "./examples/";
   var $examples = $(examples_id);
 
 //	$examples.children(examples_class).each(function(index){
