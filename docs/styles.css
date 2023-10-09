@@ -78,3 +78,7 @@ table.definition td {width:80%;}
   background: #E9FBE9;
   overflow: auto;
 }
+.esempio{
+  font-family: inherit!important;
+  font-size: inherit!important;
+}
