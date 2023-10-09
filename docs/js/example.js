@@ -86,7 +86,7 @@ $(document).ready(function () {
   var $examples = $(examples_id);
 
 //	$examples.children(examples_class).each(function(index){
-	$examples.each(function(index){ alert(index);
+	$examples.each(function(index){
 		exampleid = this.id;
 		examples.push(exampleid);
 		var text = example_structure(exampleid);
@@ -94,13 +94,7 @@ $(document).ready(function () {
 
 		var obj = {CM0: createTurtleEditorFrom(document.getElementById(exampleid + "-tab1validationquery")), CM1: createJSONLDEditorFrom(document.getElementById(exampleid + "-tab2validationquery"))};
 		editors[index] = obj;
-		//editors[index].push({CM: createTurtleEditorFrom(document.getElementById(exampleid + "-tab1validationquery")}, CM2: createJSONLDEditorFrom(document.getElementById(exampleid + "-tab2validationquery")});
-		//editors[index].push({CM: createJSONLDEditorFrom(document.getElementById(exampleid + "-tab2validationquery")});
-		//editors[index][0] = createTurtleEditorFrom(document.getElementById(exampleid + "-tab1validationquery"));
-		//editors[index][1] = createJSONLDEditorFrom(document.getElementById(exampleid + "-tab2validationquery"));
-
 		$("#" + exampleid + "-tabs").tabs();
-
 		$("#" + exampleid + "-tabs a").on('click', function(e) {
 			$('.CodeMirror').each(function(i, el){
 				el.CodeMirror.refresh();
