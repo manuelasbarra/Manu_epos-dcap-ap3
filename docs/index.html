@@ -9,9 +9,8 @@
 
   <script class="remove" src="./js/config.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
-  <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
-  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script> -->
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
   <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
@@ -187,14 +186,13 @@
   </section>
 
   <!-- Properties -->
-<!--  <section id="properties">
+  <section id="properties">
 
     <h2>Application Profile Properties per Class</h2>
     <p>A quick reference table of properties per class is included in <a href="#quick-reference-of-classes-and-properties">4.37 Quick Reference of Classes and Properties</a>. The list of included properties contains all the properties in [[DCAT-AP]],
       plus a selection of properties from other vocabularies on which EPOS-DCAT-AP expresses additional constraints or on which EPOS-DCAT-AP wants to emphasise their usage.
     </p>
     <p>Examples on the use of these properties, encoded in [[Turtle]], are included in the relevant sections and available from a <a href="./examples/">separate folder</a>.</p>
--->
     <!-- Address -->
     <section id="properties-for-address">
       <h3>Class: Address</h3>
@@ -1456,16 +1454,19 @@
           <td>Recommended</td>
           <td>1..n</td>
         </tr>
-</table>
-        <!--<tr>
+        <tr>
           <td><a href="#checksum">Checksum</a></td>
           <td><code>spdx:Checksum</code></td>
-          <td class="property mandatory">
-              <p><a title="algorithm" href="#checksum-algorithm"><code>spdx:algorithm</code></a></p>
-              <p><a title="checksum-value" href="#checksum-checksum-value"><code>spdx:checksumValue</code></a></p>
-          </td>
-          <td class="property recommended"></td>
-          <td class="property optional"></td>
+          <td class="property mandatory"><p><a title="algorithm" href="#checksum-algorithm"><code>spdx:algorithm</code></a></p></td>
+          <td>Recommended</td>
+          <td>1..n</td>
+        </tr>
+        <tr>
+          <td><a href="#checksum">Checksum</a></td>
+          <td><code>spdx:Checksum</code></td>
+          <td class="property mandatory"><p><a title="checksum-value" href="#checksum-checksum-value"><code>spdx:checksumValue</code></a></p></td>
+          <td>Recommended</td>
+          <td>1..n</td>
         </tr>
         <tr>
           <td>+ <a href="#contactpoint">ContactPoint</a></td>
