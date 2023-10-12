@@ -1162,7 +1162,88 @@
         		<tr><th>Class</th><th>Class IRI</th><th>Property Type</type><th>Property</th><th>Property IRI</th></tr>
         	</thead>
         	<tbody>
+            <tr>
+              <td><a href="#Activity">Activity</a></td>
+              <td><div class="shorten">http://www.w3.org/ns/prov#Activity</div></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
 
+
+                <tr>
+                  <td><a href="#Agent">Agent</a></td>
+                  <td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
+                  <td>Mandatory</td>
+                  <td><a href="#Agent.name">name </a></td>
+                  <td><div class="shorten">http://xmlns.com/foaf/0.1/name</div></td>
+                </tr>
+
+                <tr>
+                  <td><a href="#Agent">Agent</a></td>
+                  <td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
+                  <td>Recommended</td>
+                  <td><a href="#Agent.type">type </a></td>
+                  <td><div class="shorten">http://purl.org/dc/terms/type</div></td>
+                </tr>
+
+
+            <tr>
+              <td><a href="#Attribution">Attribution</a></td>
+              <td><div class="shorten">http://www.w3.org/ns/prov#Attribution</div></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+                <tr>
+                  <td><a href="#Catalogue">Catalogue</a></td>
+                  <td><div class="shorten">http://www.w3.org/ns/dcat#Catalog</div></td>
+                  <td>Mandatory</td>
+                  <td><a href="#Catalogue.description">description </a></td>
+                  <td><div class="shorten">http://purl.org/dc/terms/description</div></td>
+                </tr>
+                <tr>
+                  <td><a href="#Activity">Activity</a></td>
+                  <td><div class="shorten">http://www.w3.org/ns/prov#Activity</div></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+
+                    <tr>
+                      <td><a href="#Agent">Agent</a></td>
+                      <td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
+                      <td>Mandatory</td>
+                      <td><a href="#Agent.name">name </a></td>
+                      <td><div class="shorten">http://xmlns.com/foaf/0.1/name</div></td>
+                    </tr>
+
+                    <tr>
+                      <td><a href="#Agent">Agent</a></td>
+                      <td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
+                      <td>Recommended</td>
+                      <td><a href="#Agent.type">type </a></td>
+                      <td><div class="shorten">http://purl.org/dc/terms/type</div></td>
+                    </tr>
+
+
+                <tr>
+                  <td><a href="#Attribution">Attribution</a></td>
+                  <td><div class="shorten">http://www.w3.org/ns/prov#Attribution</div></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                    <tr>
+                      <td><a href="#Catalogue">Catalogue</a></td>
+                      <td><div class="shorten">http://www.w3.org/ns/dcat#Catalog</div></td>
+                      <td>Mandatory</td>
+                      <td><a href="#Catalogue.description">description </a></td>
+                      <td><div class="shorten">http://purl.org/dc/terms/description</div></td>
+                    </tr>
 
         					<tr>
         						<td><a href="#Activity">Activity</a></td>
@@ -2077,13 +2158,35 @@
           <td>Mandatory</td>
           <td>1..1</td>
         </tr>-->
-    <!--
-          <td class="property recommended">
-            <p><a title="availability" href="#distribution-availability"><code>dcatap:availability</code></a></p>
-            <p><a title="description" href="#distribution-description"><code>dct:description</code></a></p>
-            <p><a title="format" href="#distribution-format"><code>dct:format</code></a></p>
-            <p><a title="license" href="#distribution-license"><code>dct:license</code></a></p>
-          </td>
+    <!--<tr>
+          <td><a href="#distribution">Distribution</a></td>
+          <td><code>dcat:Distribution</code></td>
+          <td class="property recommended"><p><a title="availability" href="#distribution-availability"><code>dcatap:availability</code></a></p></td>
+          <td>Recommended</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property recommended"><p><a title="description" href="#distribution-description"><code>dct:description</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property recommended">    <p><a title="format" href="#distribution-format"><code>dct:format</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property recommended">    <p><a title="license" href="#distribution-license"><code>dct:license</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+
           <td class="property optional">
             <p><a title="access-service" href="#distribution-access-service"><code>dcat:accessService</code></a></p>
             <p><a title="byte-size" href="#distribution-bytesize"><code>dcat:byteSize</code></a></p>
