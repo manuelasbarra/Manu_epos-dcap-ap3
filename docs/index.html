@@ -162,8 +162,8 @@
 
 
    </script>
-  <script class="remove" src="./js/config.js"></script>
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
+  <!--  <script class="remove" src="./js/config.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
   -->
   <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
@@ -2330,39 +2330,144 @@
         <tr>
             <td><a href="#distribution">Distribution</a></td>
             <td><code>dcat:Distribution</code></td>
-            <td class="property recommended">    <p><a title="format" href="#distribution-format"><code>dct:format</code></a></p></td>
+            <td class="property recommended"><p><a title="format" href="#distribution-format"><code>dct:format</code></a></p></td>
             <td>Recommended</td>
             <td>0..n</td>
         </tr>
         <tr>
             <td><a href="#distribution">Distribution</a></td>
             <td><code>dcat:Distribution</code></td>
-            <td class="property recommended">    <p><a title="license" href="#distribution-license"><code>dct:license</code></a></p></td>
+            <td class="property recommended"><p><a title="license" href="#distribution-license"><code>dct:license</code></a></p></td>
             <td>Recommended</td>
             <td>0..n</td>
         </tr>
-
-          <td class="property optional">
-            <p><a title="access-service" href="#distribution-access-service"><code>dcat:accessService</code></a></p>
-            <p><a title="byte-size" href="#distribution-bytesize"><code>dcat:byteSize</code></a></p>
-            <p><a title="checksum" href="#distribution-checksum"><code>spdx:checksum</code></a></p>
-            <p><a title="compression-format" href="#distribution-compression-format"><code>dcat:compressFormat</code></a></p>
-            <p><a title="conforms-to" href="#distribution-conforms-to"><code>dct:conformsTo</code></a></p>
-            <p><a title="download-url" href="#distribution-download-url"><code>dcat:downloadURL</code></a></p>
-            <p><a title="has-policy" href="#distribution-has-policy"><code>odrl:hasPolicy</code></a></p>
-            <p><a title="issued" href="#distribution-issued"><code>dct:issued</code></a></p>
-            <p><a title="language" href="#distribution-language"><code>dct:language</code></a></p>
-            <p><a title="media-type" href="#distribution-media-type"><code>dcat:mediaType</code></a></p>
-            <p><a title="modified" href="#distribution-modified"><code>dct:modified</code></a></p>
-            <p><a title="package-format" href="#distribution-package-format"><code>dcat:packageFormat</code></a></p>
-            <p><a title="page" href="#distribution-page"><code>foaf:page</code></a></p>
-            <p><a title="rights" href="#distribution-rights"><code>dct:rights</code></a></p>
-            <p><a title="spatial-resolution-in-meters" href="#distribution-spatial-resolution-in-meters"><code>dcat:spatialResolutionInMeters</code></a></p>
-            <p><a title="status" href="#distribution-status"><code>adms:status</code></a></p>
-            <p><a title="temporal-resolution" href="#distribution-temporal-resolution"><code>dcat:temporalResolution</code></a></p>
-            <p><a title="title" href="#distribution-title"><code>dct:title</code></a></p>
-          </td>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="access-service" href="#distribution-access-service"><code>dcat:accessService</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
         </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="byte-size" href="#distribution-bytesize"><code>dcat:byteSize</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="checksum" href="#distribution-checksum"><code>spdx:checksum</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="compression-format" href="#distribution-compression-format"><code>dcat:compressFormat</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="conforms-to" href="#distribution-conforms-to"><code>dct:conformsTo</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="download-url" href="#distribution-download-url"><code>dcat:downloadURL</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="has-policy" href="#distribution-has-policy"><code>odrl:hasPolicy</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="issued" href="#distribution-issued"><code>dct:issued</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="language" href="#distribution-language"><code>dct:language</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="media-type" href="#distribution-media-type"><code>dcat:mediaType</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="modified" href="#distribution-modified"><code>dct:modified</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="package-format" href="#distribution-package-format"><code>dcat:packageFormat</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="page" href="#distribution-page"><code>foaf:page</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="rights" href="#distribution-rights"><code>dct:rights</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="spatial-resolution-in-meters" href="#distribution-spatial-resolution-in-meters"><code>dcat:spatialResolutionInMeters</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="status" href="#distribution-status"><code>adms:status</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+            <td><a href="#distribution">Distribution</a></td>
+            <td><code>dcat:Distribution</code></td>
+            <td class="property optional"><p><a title="temporal-resolution" href="#distribution-temporal-resolution"><code>dcat:temporalResolution</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+          <td><a href="#distribution">Distribution</a></td>
+          <td><code>dcat:Distribution</code></td>
+          <td class="property optional"><p><a title="title" href="#distribution-title"><code>dct:title</code></a></p></td>
+          <td>Optional</td>
+          <td>0..n</td>
+        </tr>
+--
         <tr>
           <td>+ <a href="#equipment">Equipment</a></td>
           <td><code>epos:Equipment</code></td>
