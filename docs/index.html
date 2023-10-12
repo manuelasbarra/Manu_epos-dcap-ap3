@@ -19,7 +19,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
   <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
   <!--    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js" ></script> -->
-
+<script class="remove" src="./js/respect.js"></script>
   <script src="./js/example.js" ></script>
   <!--<script class="remove" src="./js/respect.js"></script>
 
@@ -1161,15 +1161,15 @@
       });
       </script>  -->
       <table class="simple" id="table-epos-dcat-ap-classes-and-properties">
-        <thead>
-        <tr>
-          <th>Class</th>
-          <th>Class IRI</th>
-          <th>Property</th>
-          <th>Property Type</th>
-          <th>Cardinality</th>
-        </tr>
-        </thead>
+      <thead>
+          <tr>
+              <th>Class</th>
+              <th>Class IRI</th>
+              <th>Property</th>
+              <th>Property Type</th>
+              <th>Cardinality</th>
+          </tr>
+      </thead>
       <tbody>
           <tr>
               <td>+ <a href="#address">Address</a></td>
@@ -1531,8 +1531,7 @@
           <tr>
               <td><a href="#data-service">DataService</a></td>
               <td><code>dcat:DataService</code></td>
-              <td class="property recommended"><p><a title="endpoint-description" href="#data-service-endpoint-description"><code>dcat:endpointDescription</code></a></p>
-              </td>
+              <td class="property recommended"><p><a title="endpoint-description" href="#data-service-endpoint-description"><code>dcat:endpointDescription</code></a></p></td>
               <td>Recommended</td>
               <td>0..n</td>
           </tr>
@@ -1571,16 +1570,52 @@
               <td>Recommended</td>
               <td>0..n</td>
           </tr>
-<!--
-           <td class="property optional">
-              <p> <a title="access-rights" href="#data-service-access-rights"><code>dct:accessRights</code></a></p>
-              <p>+ <a title="conforms-to" href="#data-service-conforms-to"><code>dct:conformsTo</code></a></p>
-              <p>+ <a title="keyword" href="#data-service-keyword"><code>dcat:keyword</code></a></p>
-              <p><a title="license" href="#data-service-license"><code>dct:license</code></a></p>
-              <p>+ <a title="spatial" href="#data-service-spatial"><code>dct:spatial</code></a></p>
-              <p>+ <a title="temporal" href="#data-service-temporal"><code>dct:temporal</code></a></p>
-          </td>
-        </tr>
+
+          <tr>
+              <td><a href="#data-service">DataService</a></td>
+              <td><code>dcat:DataService</code></td>
+              <td class="property optional"><p> <a title="access-rights" href="#data-service-access-rights"><code>dct:accessRights</code></a></p></td>
+              <td>Optional</td>
+              <td>0..n</td>
+          </tr>
+
+          <tr>
+              <td><a href="#data-service">DataService</a></td>
+              <td><code>dcat:DataService</code></td>
+              <td class="property optional"><p>+ <a title="conforms-to" href="#data-service-conforms-to"><code>dct:conformsTo</code></a></p></td>
+              <td>Optional</td>
+              <td>0..n</td>
+          </tr>
+          <tr>
+              <td><a href="#data-service">DataService</a></td>
+              <td><code>dcat:DataService</code></td>
+              <td class="property optional"><p>+ <a title="keyword" href="#data-service-keyword"><code>dcat:keyword</code></a></p></td>
+              <td>Optional</td>
+              <td>0..n</td>
+          </tr>
+          <tr>
+              <td><a href="#data-service">DataService</a></td>
+              <td><code>dcat:DataService</code></td>
+              <td class="property optional"><p><a title="license" href="#data-service-license"><code>dct:license</code></a></p></td>
+              <td>Optional</td>
+              <td>0..n</td>
+          </tr>
+          <tr>
+              <td><a href="#data-service">DataService</a></td>
+              <td><code>dcat:DataService</code></td>
+              <td class="property optional"><p>+ <a title="spatial" href="#data-service-spatial"><code>dct:spatial</code></a></p></td>
+              <td>Optional</td>
+              <td>0..n</td>
+          </tr>
+          <tr>
+              <td><a href="#data-service">DataService</a></td>
+              <td><code>dcat:DataService</code></td>
+              <td class="property optional"><p>+ <a title="temporal" href="#data-service-temporal"><code>dct:temporal</code></a></p></td>
+              <td>Optional</td>
+              <td>0..n</td>
+          </tr>
+
+        <!--
         <tr>
           <td><a href="#dataset">Dataset</a></td>
           <td><code>dcat:Dataset</code></td>
