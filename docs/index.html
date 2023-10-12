@@ -1157,8 +1157,58 @@
 
       <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
       	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+        table id="table-quickoverview" class="simple" style="width:100%; table-layout: fixed; word-wrap:break-word;">
+        	<thead>
+        		<tr><th>Class</th><th>Class IRI</th><th>Property Type</type><th>Property</th><th>Property IRI</th></tr>
+        	</thead>
+        	<tbody>
 
-      <table class="simple" id="table-epos-dcat-ap-classes-and-properties">
+
+        					<tr>
+        						<td><a href="#Activity">Activity</a></td>
+        						<td><div class="shorten">http://www.w3.org/ns/prov#Activity</div></td>
+        						<td></td>
+        						<td></td>
+        						<td></td>
+        					</tr>
+
+
+        							<tr>
+        								<td><a href="#Agent">Agent</a></td>
+        								<td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
+        								<td>Mandatory</td>
+        								<td><a href="#Agent.name">name </a></td>
+        								<td><div class="shorten">http://xmlns.com/foaf/0.1/name</div></td>
+        							</tr>
+
+        							<tr>
+        								<td><a href="#Agent">Agent</a></td>
+        								<td><div class="shorten">http://xmlns.com/foaf/0.1/Agent</div></td>
+        								<td>Recommended</td>
+        								<td><a href="#Agent.type">type </a></td>
+        								<td><div class="shorten">http://purl.org/dc/terms/type</div></td>
+        							</tr>
+
+
+        					<tr>
+        						<td><a href="#Attribution">Attribution</a></td>
+        						<td><div class="shorten">http://www.w3.org/ns/prov#Attribution</div></td>
+        						<td></td>
+        						<td></td>
+        						<td></td>
+        					</tr>
+
+        							<tr>
+        								<td><a href="#Catalogue">Catalogue</a></td>
+        								<td><div class="shorten">http://www.w3.org/ns/dcat#Catalog</div></td>
+        								<td>Mandatory</td>
+        								<td><a href="#Catalogue.description">description </a></td>
+        								<td><div class="shorten">http://purl.org/dc/terms/description</div></td>
+        							</tr>
+                      <tbody>
+      </table>
+
+      <!--<table class="simple" id="table-epos-dcat-ap-classes-and-properties">
       <thead>
           <tr>
               <th>Class</th>
@@ -2026,7 +2076,7 @@
           <td class="property mandatory"><p>+ <a title="identifier" href="#distribution-identifier"><code>dct:identifier</code></a></p></td>
           <td>Mandatory</td>
           <td>1..1</td>
-        </tr>
+        </tr>-->
     <!--
           <td class="property recommended">
             <p><a title="availability" href="#distribution-availability"><code>dcatap:availability</code></a></p>
@@ -2371,9 +2421,9 @@
             <p>+ <a title="theme" href="#softwaresourcecode-theme"><code>dcat:theme</code></a></p>
           </td>
         </tr>
-  -->    </tbody>
+     </tbody>
     </table>
-  <!--    <div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>
+   <div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>
   -->
     </section>
   </section>
@@ -2398,10 +2448,10 @@
 
 </body>
 <!-- This must be at the end of the template, to ensure that the iterator properly works -->
-    <script defer>
+<script defer>
 
 
-	    var prefixes = [
+  var prefixes = [
 {'pref':'adms:', 'ns': 'http://www.w3.org/ns/adms#'},
 {'pref':'dcat:', 'ns': 'http://www.w3.org/ns/dcat#'},
 {'pref':'dcatap:', 'ns': 'http://data.europa.eu/r5r/'},
@@ -2420,99 +2470,95 @@
 {'pref':'vcard:', 'ns': 'http://www.w3.org/2006/vcard/ns#'},
 {'pref':'eli:', 'ns' : 'http://data.europa.eu/eli/ontology#'},
 {'pref':'xsd:', 'ns': 'http://www.w3.org/2001/XMLSchema#'}
-				];
+    ];
 
-	    function shorturl (url) {
-				var short = url;
-				for (e in prefixes) {
-				   var elem = prefixes[e];
-				   if (short.startsWith(elem.ns)) {
-  					short = elem.pref + short.slice(elem.ns.length);
-					}
-				};
-				return short;
-			};
+  function shorturl (url) {
+    var short = url;
+    for (e in prefixes) {
+       var elem = prefixes[e];
+       if (short.startsWith(elem.ns)) {
+        short = elem.pref + short.slice(elem.ns.length);
+      }
+    };
+    return short;
+  };
 
-	    var shorten = document.getElementsByClassName("shorten");
-	    for (k=0;k < shorten.length ; k++){
-			var selem = shorten[k];
-	                selem.innerHTML = shorturl(selem.innerHTML.trim());
-			}
-    </script>
+  var shorten = document.getElementsByClassName("shorten");
+  for (k=0;k < shorten.length ; k++){
+  var selem = shorten[k];
+              selem.innerHTML = shorturl(selem.innerHTML.trim());
+  }
+</script>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
-	<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"> -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
-	<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
-    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
-    <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
-    <!--    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js" ></script> -->
-    <script src="./html/example.js" ></script>
-	<script type="text/javascript">
-		function elementInView(elem){
-				goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
-				goesOut = ($(window).scrollTop()) > ($(elem).offset().top + $(elem).height());
-				if (goesIn && !goesOut)
-					return 1;
-				else
-					return 0;
-			};
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
+<script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
+<!--    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js" ></script> -->
+<script src="./html/example.js" ></script>
+<script type="text/javascript">
+function elementInView(elem){
+    goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
+    goesOut = ($(window).scrollTop()) > ($(elem).offset().top + $(elem).height());
+    if (goesIn && !goesOut)
+      return 1;
+    else
+      return 0;
+  };
 
-		$(window).scroll(function(){
-			$('.CodeMirror').each(function(){
-				if (elementInView($(this))){
-					$(this).each(function(i, el){
-						el.CodeMirror.refresh();
-					});
-				}
-			});
-
-		});
-	</script>
-	<style>
-		.CodeMirror {
-		  border: 1px solid #eee;
-		  height: auto;
-		}
-		.buttonsample {
-		cursor: pointer;
-		margin-top: 10px;
-		margin-left: 10px;
-		font-weight: 700;
-		border:0 outset buttonface;
-		background: #F5F6F8;
-		background-image: linear-gradient(to bottom,#F5F6F8,#DBDCDE);
-		border-radius:4px;
-		box-shadow:0 1px 3px #666;
-		font-family: Arial;
-		color: grey;
-		font-size: 14px;
-		padding: 10px 5px;
-		text-decoration: none;
-		float: right
-	}
-	.buttonsample:hover {color:#2a70d3}
-	.tabsstyle {
-		padding: 10px;
-		overflow: hidden;
-	}
-	li.ui-tabs-tab > a:hover {
-		background-color:dodgerblue;
-		color:white;
-	}
-  </style>
-
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-<script>
-  $(document).ready(function () { alert("load12");
-  $('#table-epos-dcat-ap-classes-and-properties').DataTable();
-
+$(window).scroll(function(){
+  $('.CodeMirror').each(function(){
+    if (elementInView($(this))){
+      $(this).each(function(i, el){
+        el.CodeMirror.refresh();
+      });
+    }
   });
+
+});
+</script>
+<style>
+.CodeMirror {
+  border: 1px solid #eee;
+  height: auto;
+}
+.buttonsample {
+cursor: pointer;
+margin-top: 10px;
+margin-left: 10px;
+font-weight: 700;
+border:0 outset buttonface;
+background: #F5F6F8;
+background-image: linear-gradient(to bottom,#F5F6F8,#DBDCDE);
+border-radius:4px;
+box-shadow:0 1px 3px #666;
+font-family: Arial;
+color: grey;
+font-size: 14px;
+padding: 10px 5px;
+text-decoration: none;
+float: right
+}
+.buttonsample:hover {color:#2a70d3}
+.tabsstyle {
+padding: 10px;
+overflow: hidden;
+}
+li.ui-tabs-tab > a:hover {
+background-color:dodgerblue;
+color:white;
+}
+</style>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+</html>
   </script></html>
