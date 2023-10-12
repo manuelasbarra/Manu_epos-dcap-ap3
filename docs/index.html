@@ -12,23 +12,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
   -->
   <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
-     <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-  <script>
-  $(document).ready(function () { alert("load");
-  $('#table-epos-dcat-ap-classes-and-properties').DataTable();
-
-  });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
   <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
+  <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>-->
   <!--    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js" ></script>
 <script class="remove" src="./js/respect.js"></script>-->
   <script src="./js/example.js" ></script>
@@ -1904,16 +1899,35 @@
             <td>Mandatory</td>
             <td>1..1</td>
         </tr>
-
-    <!--      <td class="property recommended">
-            <p><a title="inseries" href="#dataset-in-series-inseries"><code>dcat:inSeries</code></a></p>
-            <p><a title="previous" href="#dataset-in-series-previous"><code>dcat:previous</code></a></p>
-          </td>
-          <td class="property optional">
-            <p><a title="accrualPeriodicity" href="#dataset-in-series-frequency"><code>dct:accrualPeriodicity</code></a></p>
-            <p><a title="next" href="#dataset-in-series-next"><code>dct:next</code></a></p>
-          </td>
+        <tr>
+            <td><a href="#dataset-in-series">Dataset Int Series</a></td>
+            <td><code>dcat:Dataset</code></td>
+            <td class="property recommended"><p><a title="inseries" href="#dataset-in-series-inseries"><code>dcat:inSeries</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+          </tr>
+        <tr>
+            <td><a href="#dataset-in-series">Dataset Int Series</a></td>
+            <td><code>dcat:Dataset</code></td>
+            <td class="property recommended"><p><a title="previous" href="#dataset-in-series-previous"><code>dcat:previous</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+          </tr>
+        <tr>
+            <td><a href="#dataset-in-series">Dataset Int Series</a></td>
+            <td><code>dcat:Dataset</code></td>
+            <td class="property optional"><p><a title="accrualPeriodicity" href="#dataset-in-series-frequency"><code>dct:accrualPeriodicity</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+          </tr>
+        <tr>
+            <td><a href="#dataset-in-series">Dataset Int Series</a></td>
+            <td><code>dcat:Dataset</code></td>
+            <td class="property optional"><p><a title="next" href="#dataset-in-series-next"><code>dct:next</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
         </tr>
+      <!--
         <tr>
           <td><a href="#dataset-series">Dataset Series</a></td>
           <td><code>dcat:DatasetSeries</code></td>
@@ -2312,5 +2326,20 @@
 
 
 </body>
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
+    <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script>
+  $(document).ready(function () { alert("load11");
+  $('#table-epos-dcat-ap-classes-and-properties').DataTable();
 
-</html>
+  });
+  </script></html>
