@@ -1149,17 +1149,16 @@
       <!-- Quick Reference of Classes and Properties  -->
       <h2>Quick Reference of Classes and Properties</h2>
       <p>This version of EPOS-DCAT-AP extends [[DCAT-AP]] with additional classes and properties (some of which re-used across classes). They are listed in the following table marked with a prepended “plus” sign (+).</p>
-      <!--<div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>
+      <!--<div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>-->
      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
       <script>
       $(document).ready(function () { alert("load");
       $('#table-epos-dcat-ap-classes-and-properties').DataTable();
 
       });
-      </script>  -->
+      </script>
       <table class="simple" id="table-epos-dcat-ap-classes-and-properties">
       <thead>
           <tr>
@@ -1614,16 +1613,28 @@
               <td>Optional</td>
               <td>0..n</td>
           </tr>
-
-        <!--
-        <tr>
-          <td><a href="#dataset">Dataset</a></td>
-          <td><code>dcat:Dataset</code></td>
-          <td class="property mandatory">
-            <p><a title="description" href="#dataset-description"><code>dct:description</code></a></p>
-            <p><a title="identifier" href="#dataset-identifier"><code>dct:identifier</code></a></p>
-            <p><a title="title" href="#dataset-title"><code>dct:title</code></a></p>
-          </td>
+          <tr>
+            <td><a href="#dataset">Dataset</a></td>
+            <td><code>dcat:Dataset</code></td>
+            <td class="property mandatory"><p><a title="description" href="#dataset-description"><code>dct:description</code></a></p></td>
+            <td>Mandatory</td>
+            <td>1..n</td>
+          </tr>
+          <tr>
+            <td><a href="#dataset">Dataset</a></td>
+            <td><code>dcat:Dataset</code></td>
+            <td class="property mandatory"><p><a title="identifier" href="#dataset-identifier"><code>dct:identifier</code></a></p></td>
+            <td>Mandatory</td>
+            <td>1..n</td>
+          </tr>
+          <tr>
+            <td><a href="#dataset">Dataset</a></td>
+            <td><code>dcat:Dataset</code></td>
+            <td class="property mandatory"><p><a title="title" href="#dataset-title"><code>dct:title</code></a></p></td>
+            <td>Mandatory</td>
+            <td>1..n</td>
+          </tr>
+<!--
           <td class="property recommended">
             <p><a title="contact-point" href="#dataset-contact-point"><code>dcat:contactPoint</code></a></p>
             <p><a title="distribution" href="#dataset-distribution"><code>dcat:distribution</code></a></p>
