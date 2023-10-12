@@ -1155,7 +1155,8 @@
       <p>This version of EPOS-DCAT-AP extends [[DCAT-AP]] with additional classes and properties (some of which re-used across classes). They are listed in the following table marked with a prepended “plus” sign (+).</p>
       <!--<div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>-->
 
-
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+      	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 
       <table class="simple" id="table-epos-dcat-ap-classes-and-properties">
       <thead>
@@ -1919,7 +1920,7 @@
             <td class="property optional"><p><a title="accrualPeriodicity" href="#dataset-in-series-frequency"><code>dct:accrualPeriodicity</code></a></p></td>
             <td>Recommended</td>
             <td>0..n</td>
-          </tr>
+        </tr>
         <tr>
             <td><a href="#dataset-in-series">Dataset Int Series</a></td>
             <td><code>dcat:Dataset</code></td>
@@ -1927,36 +1928,106 @@
             <td>Optional</td>
             <td>0..n</td>
         </tr>
-      <!--
+
         <tr>
           <td><a href="#dataset-series">Dataset Series</a></td>
           <td><code>dcat:DatasetSeries</code></td>
-          <td class="property mandatory">
-            <p><a title="title" href="#dataset-series-title"><code>dct:title</code></a></p>
-          </td>
-          <td class="property recommended">
-            <p><a title="contactPoint" href="#dataset-series-contact-point"><code>dcat:contactPoint</code></a></p>
-            <p><a title="publisher" href="#dataset-series-publisher"><code>dct:publisher</code></a></p>
-            <p><a title="spatial" href="#dataset-series-spatial"><code>dct:spatial</code></a></p>
-            <p><a title="temporal" href="#dataset-series-temporal"><code>dct:temporal</code></a></p>
-          </td>
-          <td class="property optional">
-            <p><a title="description" href="#dataset-series-description"><code>dct:description</code></a></p>
-            <p><a title="first" href="#dataset-series-first"><code>dct:first</code></a></p>
-            <p><a title="frequency" href="#dataset-series-frequency"><code>dct:accrualPeriodicity</code></a></p>
-            <p><a title="issued" href="#dataset-series-issued"><code>dct:issued</code></a></p>
-            <p><a title="last" href="#dataset-series-last"><code>dct:last</code></a></p>
-            <p><a title="modified" href="#dataset-series-modified"><code>dct:modified</code></a></p>
-            <p><a title="seriesmember" href="#dataset-series-seriesmember"><code>dct:seriesMember</code></a></p>
-          </td>
+          <td class="property mandatory"><p><a title="title" href="#dataset-series-title"><code>dct:title</code></a></p></td>
+          <td>Mandatory</td>
+          <td>1..1</td>
+        </tr>
+        <tr>
+          <td><a href="#dataset-series">Dataset Series</a></td>
+          <td><code>dcat:DatasetSeries</code></td>
+          <td class="property recommended"><p><a title="contactPoint" href="#dataset-series-contact-point"><code>dcat:contactPoint</code></a></p>
+          <td>Recommended</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+          <td><a href="#dataset-series">Dataset Series</a></td>
+          <td><code>dcat:DatasetSeries</code></td>
+          <td class="property recommended"><p><a title="publisher" href="#dataset-series-publisher"><code>dct:publisher</code></a></p>
+          <td>Recommended</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+          <td><a href="#dataset-series">Dataset Series</a></td>
+          <td><code>dcat:DatasetSeries</code></td>
+          <td class="property recommended"><p><a title="spatial" href="#dataset-series-spatial"><code>dct:spatial</code></a></p>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+          <td><a href="#dataset-series">Dataset Series</a></td>
+          <td><code>dcat:DatasetSeries</code></td>
+          <td class="property recommended"><p><a title="temporal" href="#dataset-series-temporal"><code>dct:temporal</code></a></p></td>
+          <td>Recommended</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+          <td><a href="#dataset-series">Dataset Series</a></td>
+          <td><code>dcat:DatasetSeries</code></td>
+          <td class="property optional"><p><a title="description" href="#dataset-series-description"><code>dct:description</code></a></p></td>
+          <td>Optional</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+          <td><a href="#dataset-series">Dataset Series</a></td>
+          <td><code>dcat:DatasetSeries</code></td>
+          <td class="property optional"><p><a title="first" href="#dataset-series-first"><code>dct:first</code></a></p></td>
+          <td>Optional</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+          <td><a href="#dataset-series">Dataset Series</a></td>
+          <td><code>dcat:DatasetSeries</code></td>
+          <td class="property optional"><p><a title="frequency" href="#dataset-series-frequency"><code>dct:accrualPeriodicity</code></a></p></td>
+          <td>Optional</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+          <td><a href="#dataset-series">Dataset Series</a></td>
+          <td><code>dcat:DatasetSeries</code></td>
+          <td class="property optional"><p><a title="issued" href="#dataset-series-issued"><code>dct:issued</code></a></p></td>
+          <td>Optional</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+          <td><a href="#dataset-series">Dataset Series</a></td>
+          <td><code>dcat:DatasetSeries</code></td>
+          <td class="property optional"><p><a title="last" href="#dataset-series-last"><code>dct:last</code></a></p></td>
+          <td>Optional</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+          <td><a href="#dataset-series">Dataset Series</a></td>
+          <td><code>dcat:DatasetSeries</code></td>
+          <td class="property optional"><p><a title="modified" href="#dataset-series-modified"><code>dct:modified</code></a></p></td>
+          <td>Optional</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+          <td><a href="#dataset-series">Dataset Series</a></td>
+          <td><code>dcat:DatasetSeries</code></td>
+          <td class="property optional"><p><a title="seriesmember" href="#dataset-series-seriesmember"><code>dct:seriesMember</code></a></p></td>
+          <td>Optional</td>
+          <td>0..n</td>
         </tr>
         <tr>
           <td><a href="#distribution">Distribution</a></td>
           <td><code>dcat:Distribution</code></td>
-          <td class="property mandatory">
-            <p><a title="access-url" href="#distribution-access-url"><code>dcat:accessURL</code></a></p>
-            <p>+ <a title="identifier" href="#distribution-identifier"><code>dct:identifier</code></a></p>
-          </td>
+          <td class="property mandatory"><p><a title="access-url" href="#distribution-access-url"><code>dcat:accessURL</code></a></p></td>
+          <td>Mandatory</td>
+          <td>1..1</td>
+        </tr>
+        <tr>
+          <td><a href="#distribution">Distribution</a></td>
+          <td><code>dcat:Distribution</code></td>
+          <td class="property mandatory"><p>+ <a title="identifier" href="#distribution-identifier"><code>dct:identifier</code></a></p></td>
+          <td>Mandatory</td>
+          <td>1..1</td>
+        </tr>
+    <!--
           <td class="property recommended">
             <p><a title="availability" href="#distribution-availability"><code>dcatap:availability</code></a></p>
             <p><a title="description" href="#distribution-description"><code>dct:description</code></a></p>
@@ -2437,7 +2508,7 @@
 	}
   </style>
 
-    	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
 	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 <script>
   $(document).ready(function () { alert("load12");
