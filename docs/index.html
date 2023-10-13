@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
-  <script class="remove">
+  <script>
 
   function quickreference() { alert('aaa');
     $('#table-quickoverview').DataTable();
@@ -2291,7 +2291,7 @@
           <td>Mandatory</td>
           <td>1..1</td>
         </tr>
-    <!--<tr>
+        <tr>
           <td><a href="#distribution">Distribution</a></td>
           <td><code>dcat:Distribution</code></td>
           <td class="property recommended"><p><a title="availability" href="#distribution-availability"><code>dcatap:availability</code></a></p></td>
@@ -2445,15 +2445,30 @@
           <td>Optional</td>
           <td>0..n</td>
         </tr>
---
+<!--
         <tr>
           <td>+ <a href="#equipment">Equipment</a></td>
           <td><code>epos:Equipment</code></td>
-          <td class="property mandatory">
-            <p>+ <a title="description" href="#equipment-description"><code>dct:description</code></a></p>
-            <p>+ <a title="identifier" href="#equipment-identifier"><code>dct:identifier</code></a></p>
-            <p>+ <a title="title" href="#equipment-title"><code>dct:title</code></a></p>
-          </td>
+          <td class="property mandatory"><p>+ <a title="description" href="#equipment-description"><code>dct:description</code></a></p></td>
+          <td>Mandatory</td>
+          <td>1..1</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#equipment">Equipment</a></td>
+          <td><code>epos:Equipment</code></td>
+          <td class="property mandatory"><p>+ <a title="identifier" href="#equipment-identifier"><code>dct:identifier</code></a></p></td>
+          <td>Mandatory</td>
+          <td>1..1</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#equipment">Equipment</a></td>
+          <td><code>epos:Equipment</code></td>
+          <td class="property mandatory"><p>+ <a title="title" href="#equipment-title"><code>dct:title</code></a></p></td>
+          <td>Mandatory</td>
+          <td>1..1</td>
+        </tr>
+
+
           <td class="property recommended">
             <p>+ <a title="creator" href="#equipment-creator"><code>dct:creator</code></a></p>
             <p>+ <a title="type" href="#equipment-type"><code>dct:type</code></a></p>
