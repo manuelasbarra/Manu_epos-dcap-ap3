@@ -1,5 +1,6 @@
 function quickreference() { alert('aaa');
   $('#table-quickoverview').DataTable();
+  $('#table-epos-dcat-ap-classes-and-properties').DataTable();
 };
 var respecConfig = {
     //	preProcess: [dfn_index],
