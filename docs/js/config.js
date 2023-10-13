@@ -1,4 +1,4 @@
-function quickreference() {
+function quickreference() { alert('aaa');
   $('#table-quickoverview').DataTable();
 };
 var respecConfig = {
