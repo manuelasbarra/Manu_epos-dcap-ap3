@@ -172,9 +172,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
 
-  -->
-  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
-   <script  src="./js/config.js"></script>
+
+   <script  src="./js/config.js"></script>  -->
 <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
@@ -2516,20 +2515,59 @@
           <tr>
             <td>+ <a href="#equipment">Equipment</a></td>
             <td><code>epos:Equipment</code></td>
-          <td class="property optional">
-            <p>+ <a title="contact-point" href="#equipment-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p>
-            <p>+ <a title="dynamic-range" href="#equipment-dynamic-range"><code>epos:dynamicRange</code></a></p>
-            <p>+ <a title="filter" href="#equipment-filter"><code>epos:filter</code></a></p>
-            <p>+ <a title="is-part-of" href="#equipment-is-part-of"><code>dct:isPartOf</code></a></p>
-            <p>+ <a title="keyword" href="#equipment-keyword"><code>dcat:keyword</code></a></p>
-            <p>+ <a title="landingpage" href="#equipment-landingpage"><code>dcat:landingPage</code></a></p>
-            <p>+ <a title="orientation" href="#equipment-orientation"><code>epos:orientation</code></a></p>
-            <p>+ <a title="relation" href="#equipment-relation"><code>dct:relation</code></a></p>
-            <p>+ <a title="resolution" href="#equipment-resolution"><code>epos:resolution</code></a></p>
-            <p>+ <a title="sample-period" href="#equipment-sample-period"><code>epos:samplePeriod</code></a></p>
-            <p>+ <a title="spatial" href="#equipment-spatial"><code>dct:spatial</code></a></p>
-            <p>+ <a title="temporal" href="#equipment-temporal"><code>dct:temporal</code></a></p>
-            <p>+ <a title="theme" href="#equipment-theme"><code>dcat:theme</code></a></p>
+            <td class="property optional">
+            <p>+ <a title="contact-point" href="#equipment-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="dynamic-range" href="#equipment-dynamic-range"><code>epos:dynamicRange</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="filter" href="#equipment-filter"><code>epos:filter</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="is-part-of" href="#equipment-is-part-of"><code>dct:isPartOf</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="keyword" href="#equipment-keyword"><code>dcat:keyword</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="landingpage" href="#equipment-landingpage"><code>dcat:landingPage</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="orientation" href="#equipment-orientation"><code>epos:orientation</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="relation" href="#equipment-relation"><code>dct:relation</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="resolution" href="#equipment-resolution"><code>epos:resolution</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="sample-period" href="#equipment-sample-period"><code>epos:samplePeriod</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="spatial" href="#equipment-spatial"><code>dct:spatial</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="temporal" href="#equipment-temporal"><code>dct:temporal</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="theme" href="#equipment-theme"><code>dcat:theme</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
           </td>
         </tr>
         <tr>
@@ -2551,13 +2589,34 @@
         </tr>
           </td>
           <td class="property optional">
-            <p>+ <a title="contact-point" href="#facility-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p>
-            <p>+ <a title="is-part-of" href="#facility-is-part-of"><code>dct:isPartOf</code></a></p>
-            <p>+ <a title="keyword" href="#facility-keyword"><code>vcard:hasAddress</code></a></p>
-            <p>+ <a title="has-address" href="#facility-keyword"><code>dcat:keyword</code></a></p>
-            <p>+ <a title="landingpage" href="#facility-landingpage"><code>dcat:landingPage</code></a></p>
-            <p>+ <a title="relation" href="#facility-relation"><code>dct:relation</code></a></p>
-            <p>+ <a title="spatial" href="#facility-spatial"><code>dct:spatial</code></a></p>
+            <p>+ <a title="contact-point" href="#facility-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="is-part-of" href="#facility-is-part-of"><code>dct:isPartOf</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="keyword" href="#facility-keyword"><code>vcard:hasAddress</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="has-address" href="#facility-keyword"><code>dcat:keyword</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="landingpage" href="#facility-landingpage"><code>dcat:landingPage</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="relation" href="#facility-relation"><code>dct:relation</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="spatial" href="#facility-spatial"><code>dct:spatial</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
           </td>
         </tr>
         <tr>
@@ -2571,8 +2630,8 @@
           <td>Recommended</td>
           <td>0..n</td>
       </tr>
-          <td class="property optional"></td>
-        </tr>
+
+
         <tr>
           <td>+ <a href="#iritemplate">IriTemplate</a></td>
           <td><code>hydra:IriTemplate</code></td>
@@ -2626,18 +2685,15 @@
              <td>Recommended</td>
              <td>0..n</td>
          </tr>
-          </td>
-          <td class="property optional"></td>
-        </tr>
+
         <tr>
           <td><a href="#license-document">LicenseDocument</a></td>
           <td><code>dct:LicenseDocument</code></td>
-          <td class="property mandatory"></td>
+
           <td class="property recommended">
              <p><a title="type" href="#license-document-type"><code>dct:type</code></a></p>
           </td>
-          <td class="property optional"></td>
-        </tr>
+
         <tr>
           <td><a href="#location">Location</a></td>
           <td><code>dct:Location</code></td>
@@ -2646,8 +2702,10 @@
             <p><a title="bbox" href="#location-bbox"><code>dcat:bbox</code></a></p>
             <p><a title="centroid" href="#location-centroid"><code>dcat:centroid</code></a></p>
           </td>
-          <td class="property optional">
-            <p><a title="geometry" href="#location-geometry"><code>locn:geometry</code></a></p>
+          <td class="property optional"><p><a title="geometry" href="#location-geometry"><code>locn:geometry</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
           </td>
         </tr>
         <tr>
@@ -2665,7 +2723,10 @@
         </tr>
           </td>
           <td class="property optional">
-            <p>+ <a title="method" href="#operation-method"><code>hydra:method</code></a></p>
+            <p>+ <a title="method" href="#operation-method"><code>hydra:method</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
           </td>
         </tr>
         <tr>
@@ -2685,15 +2746,42 @@
         </tr>
           </td>
           <td class="property optional">
-            <p>+ <a title="address" href="#organization-address"><code>schema:address</code></a></p>
-            <p>+ <a title="associatedproject" href="#organization-associatedproject"><code>epos:associatedProject</code></a></p>
-            <p>+ <a title="contact-point" href="#organization-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p>
-            <p>+ <a title="email" href="#organization-email"><code>schema:email</code></a></p>
-            <p>+ <a title="logo" href="#organization-logo"><code>schema:logo</code></a></p>
-            <p>+ <a title="memberof" href="#organization-memberof"><code>schema:memberOf</code></a></p>
-            <p>+ <a title="owns" href="#organization-owns"><code>schema:owns</code></a></p>
-            <p>+ <a title="telephone" href="#organization-telephone"><code>schema:telephone</code></a></p>
-            <p>+ <a title="url" href="#organization-url"><code>schema:url</code></a></p>
+            <p>+ <a title="address" href="#organization-address"><code>schema:address</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="associatedproject" href="#organization-associatedproject"><code>epos:associatedProject</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="contact-point" href="#organization-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="email" href="#organization-email"><code>schema:email</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="logo" href="#organization-logo"><code>schema:logo</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="memberof" href="#organization-memberof"><code>schema:memberOf</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="owns" href="#organization-owns"><code>schema:owns</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="telephone" href="#organization-telephone"><code>schema:telephone</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="url" href="#organization-url"><code>schema:url</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
           </td>
         </tr>
         <tr>
@@ -2711,8 +2799,14 @@
         </tr>
           </td>
           <td class="property optional">
-            <p><a title="beginning" href="#period-of-time-beginning"><code>time:hasBeginning</code></a></p>
-            <p><a title="end" href="#period-of-time-end"><code>time:hasEnd</code></a></p>
+            <p><a title="beginning" href="#period-of-time-beginning"><code>time:hasBeginning</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p><a title="end" href="#period-of-time-end"><code>time:hasEnd</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
           </td>
         </tr>
         <tr>
@@ -2721,45 +2815,46 @@
           <td class="property mandatory">
             <p>+ <a title="identifier" href="#person-identifier"><code>schema:identifier</code></a></p>
           </td>
-          <td class="property recommended"></td>
+
           <td class="property optional">
-            <p>+ <a title="address" href="#person-address"><code>schema:address</code></a></p></td>
-            <td>Recommended</td>
+            <p>+ <a title="address" href="#person-address"><code>schema:address</code></a></p></td></td>
+            <td>Optional</td>
             <td>0..n</td>
         </tr>
-            <p>+ <a title="affiliation" href="#person-affiliation"><code>schema:affiliation</code></a></p></td>
-            <td>Recommended</td>
+
+            <p>+ <a title="affiliation" href="#person-affiliation"><code>schema:affiliation</code></a></p><</td>
+            <td>Optional</td>
             <td>0..n</td>
         </tr>
-            <p>+ <a title="contact-point" href="#person-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
-            <td>Recommended</td>
+        </tr>
+            <p>+ <a title="contact-point" href="#person-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td></td>
+            <td>Optional</td>
             <td>0..n</td>
         </tr>
+
             <p>+ <a title="email" href="#person-email"><code>schema:email</code></a></p></td>
-            <td>Recommended</td>
+            <td>Optional</td>
             <td>0..n</td>
         </tr>
-            <p>+ <a title="logo" href="#person-familyname"><code>schema:familyName</code></a></p></td>
-            <td>Recommended</td>
+            <p>+ <a title="familyname" href="#person-familyname"><code>schema:familyName</code></a></p></td>
+            <td>Optional</td>
             <td>0..n</td>
         </tr>
-            <p>+ <a title="memberof" href="#person-givenname"><code>schema:givenName</code></a></p></td>
-            <td>Recommended</td>
+            <p>+ <a title="givenname" href="#person-givenname"><code>schema:givenName</code></a></p></td>
+            <td>Optional</td>
             <td>0..n</td>
         </tr>
-            <p>+ <a title="owns" href="#person-qualifications"><code>schema:qualifications</code></a></p></td>
-            <td>Recommended</td>
+            <p>+ <a title="qualifications" href="#person-qualifications"><code>schema:qualifications</code></a></p></td>
+            <td>Optional</td>
             <td>0..n</td>
         </tr>
             <p>+ <a title="telephone" href="#person-telephone"><code>schema:telephone</code></a></p></td>
-            <td>Recommended</td>
+            <td>Optional</td>
             <td>0..n</td>
         </tr>
             <p>+ <a title="url" href="#person-url"><code>schema:url</code></a></p></td>
-            <td>Recommended</td>
+            <td>Optional</td>
             <td>0..n</td>
-        </tr>
-          </td>
         </tr>
         <tr>
           <td>+ <a href="#postaladdress">PostalAddress</a></td>
@@ -2790,7 +2885,10 @@
         </tr>
           </td>
           <td class="property optional">
-            <p>+ <a title="homepage" href="#project-homepage"><code>foaf:homepage</code></a></p>
+            <p>+ <a title="homepage" href="#project-homepage"><code>foaf:homepage</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
           </td>
         </tr>
         <tr>
@@ -2832,12 +2930,30 @@
         </tr>
           </td>
           <td class="property optional">
-            <p>+ <a title="issn" href="#publication-issn"><code>schema:issn</code></a></p>
-            <p>+ <a title="keywords" href="#publication-keywords"><code>schema:keywords</code></a></p>
-            <p>+ <a title="license" href="#publication-license"><code>schema:license</code></a></p>
-            <p>+ <a title="number-of-pages" href="#publication-number-of-pages"><code>schema:numberOfPages</code></a></p>
-            <p>+ <a title="theme" href="#publication-theme"><code>dcat:theme</code></a></p>
-            <p>+ <a title="volumeNumber" href="#publication-volumeNumber"><code>schema:volumeNumber</code></a></p>
+            <p>+ <a title="issn" href="#publication-issn"><code>schema:issn</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="keywords" href="#publication-keywords"><code>schema:keywords</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="license" href="#publication-license"><code>schema:license</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="number-of-pages" href="#publication-number-of-pages"><code>schema:numberOfPages</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="theme" href="#publication-theme"><code>dcat:theme</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="volumeNumber" href="#publication-volumeNumber"><code>schema:volumeNumber</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
           </td>
         </tr>
         <tr>
@@ -2874,12 +2990,30 @@
           </tr>
           </td>
           <td class="property optional">
-            <p>+ <a title="keywords" href="#service-keywords"><code>schema:keywords</code></a></p>
-            <p>+ <a title="servicetype" href="#service-servicetype"><code>schema:serviceType</code></a></p>
-            <p>+ <a title="spatial" href="#service-spatial"><code>dct:spatial</code></a></p>
-            <p>+ <a title="temporal" href="#service-temporal"><code>dct:temporal</code></a></p>
-            <p>+ <a title="theme" href="#service-theme"><code>dcat:theme</code></a></p>
-            <p>+ <a title="url" href="#service-url"><code>schema:url</code></a></p>
+            <p>+ <a title="keywords" href="#service-keywords"><code>schema:keywords</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="servicetype" href="#service-servicetype"><code>schema:serviceType</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="spatial" href="#service-spatial"><code>dct:spatial</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="temporal" href="#service-temporal"><code>dct:temporal</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="theme" href="#service-theme"><code>dcat:theme</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="url" href="#service-url"><code>schema:url</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
           </td>
         </tr>
         <tr>
@@ -2888,58 +3022,183 @@
           <td class="property mandatory">
               <p>+ <a title="identifier" href="#softwareapplication-identifier"><code>schema:identifier</code></a></p>
           </td>
-          <td class="property recommended">
-              <p>+ <a title="contact-point" href="#softwareapplication-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
-              <td>Recommended</td>
-              <td>0..n</td>
-          </tr>
-              <p>+ <a title="name" href="#softwareapplication-name"><code>schema:name</code></a></p></td>
-              <td>Recommended</td>
-              <td>0..n</td>
-          </tr>
-          </td>
-          <td class="property optional">
-            <p>+ <a title="description" href="#softwareapplication-description"><code>schema:description</code></a></p>
-            <p>+ <a title="downloadurl" href="#softwareapplication-downloadurl"><code>schema:downloadUrl</code></a></p>
-            <p>+ <a title="installurl" href="#softwareapplication-installurl"><code>schema:installurl</code></a></p>
-            <p>+ <a title="keywords" href="#softwareapplication-keywords"><code>schema:keywords</code></a></p>
-            <p>+ <a title="main-entity-of-page" href="#softwareapplication-main-entity-of-page"><code>schema:mainEntityOfPage</code></a></p>
-            <p>+ <a title="potentialaction" href="#softwareapplication-potentialaction"><code>schema:potentialAction</code></a></p>
-            <p>+ <a title="relation" href="#softwareapplication-relation"><code>dct:relation</code></a></p>
-            <p>+ <a title="software-requirements" href="#softwareapplication-software-requirements"><code>schema:softwareRequirements</code></a></p>
-            <p>+ <a title="software-version" href="#softwareapplication-software-version"><code>schema:softwareVersion</code></a></p>
-            <p>+ <a title="theme" href="#softwareapplication-theme"><code>dcat:theme</code></a></p>
-          </td>
         </tr>
         <tr>
-          <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
-          <td><code>schema:SoftwareSourceCode</code></td>
-          <td class="property mandatory">
-              <p>+ <a title="identifier" href="#softwaresourcecode-identifier"><code>schema:identifier</code></a></p>
-          </td>
-          <td class="property recommended">
-              <p>+ <a title="contact-point" href="#softwaresourcecode-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+            <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+            <td><code>schema:SoftwareApplication</code></td>
+            <td class="property recommended"><p>+ <a title="contact-point" href="#softwareapplication-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+          </tr>
+          <tr>
+            <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+            <td><code>schema:SoftwareApplication</code></td>
+            <td class="property recommended"><p>+ <a title="name" href="#softwareapplication-name"><code>schema:name</code></a></p></td>
               <td>Recommended</td>
               <td>0..n</td>
           </tr>
-              <p>+ <a title="name" href="#softwaresourcecode-name"><code>schema:name</code></a></p></td>
-              <td>Recommended</td>
-              <td>0..n</td>
-          </tr>
-          </td>
-          <td class="property optional">
-            <p>+ <a title="code-repository" href="#softwaresourcecode-code-repository"><code>schema:codeRepository</code></a></p>
-            <p>+ <a title="description" href="#softwaresourcecode-description"><code>schema:description</code></a></p>
-            <p>+ <a title="keywords" href="#softwaresourcecode-keywords"><code>schema:keywords</code></a></p>
-            <p>+ <a title="main-entity-of-page" href="#softwaresourcecode-main-entity-of-page"><code>schema:mainEntityOfPage</code></a></p>
-            <p>+ <a title="programmingLanguage" href="#softwaresourcecode-programmingLanguage"><code>schema:programmingLanguage</code></a></p>
-            <p>+ <a title="runtime-platform" href="#softwaresourcecode-runtime-platform"><code>schema:runtimePlatform</code></a></p>
-            <p>+ <a title="software-version" href="#softwaresourcecode-software-version"><code>schema:softwareVersion</code></a></p>
-            <p>+ <a title="target-product" href="#softwaresourcecode-target-product"><code>schema:targetProduct</code></a></p>
-            <p>+ <a title="software-requirements" href="#softwareapplication-software-requirements"><code>schema:softwareRequirements</code></a></p>
-            <p>+ <a title="theme" href="#softwaresourcecode-theme"><code>dcat:theme</code></a></p>
-          </td>
+          <tr>
+            <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+            <td><code>schema:SoftwareApplication</code></td>
+            <td class="property optional"><p>+ <a title="description" href="#softwareapplication-description"><code>schema:description</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
         </tr>
+        <tr>
+          <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+          <td><code>schema:SoftwareApplication</code></td>  <p>+ <a title="downloadurl" href="#softwareapplication-downloadurl"><code>schema:downloadUrl</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+          <td><code>schema:SoftwareApplication</code></td>
+          <td class="property optional"><p>+ <a title="installurl" href="#softwareapplication-installurl"><code>schema:installurl</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+          <td><code>schema:SoftwareApplication</code></td>
+          <td class="property optional"><p>+ <a title="keywords" href="#softwareapplication-keywords"><code>schema:keywords</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+          <td><code>schema:SoftwareApplication</code></td>
+          <td class="property optional"><p>+ <a title="main-entity-of-page" href="#softwareapplication-main-entity-of-page"><code>schema:mainEntityOfPage</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+          <td><code>schema:SoftwareApplication</code></td>
+          <td class="property optional"><p>+ <a title="potentialaction" href="#softwareapplication-potentialaction"><code>schema:potentialAction</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+          <td><code>schema:SoftwareApplication</code></td>
+          <td class="property optional"><p>+ <a title="relation" href="#softwareapplication-relation"><code>dct:relation</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+          <td><code>schema:SoftwareApplication</code></td>
+          <td class="property optional"><p>+ <a title="software-requirements" href="#softwareapplication-software-requirements"><code>schema:softwareRequirements</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+          <td><code>schema:SoftwareApplication</code></td>
+          <td class="property optional"><p>+ <a title="software-version" href="#softwareapplication-software-version"><code>schema:softwareVersion</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
+          <td><code>schema:SoftwareApplication</code></td>
+          <td class="property optional"><p>+ <a title="theme" href="#softwareapplication-theme"><code>dcat:theme</code></a></p></td>
+            <td>Optional</td>
+            <td>0..n</td>
+        </tr>
+
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property mandatory"><p>+ <a title="identifier" href="#softwaresourcecode-identifier"><code>schema:identifier</code></a></p></td>
+        <td>Mandatory</td>
+        <td>1..1</td>
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property recommended"><p>+ <a title="contact-point" href="#softwaresourcecode-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+        <td>Recommended</td>
+        <td>0..n</td>
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property recommended"><p>+ <a title="name" href="#softwaresourcecode-name"><code>schema:name</code></a></p></td>
+        <td>Recommended</td>
+        <td>0..n</td>
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property optional"><p>+ <a title="code-repository" href="#softwaresourcecode-code-repository"><code>schema:codeRepository</code></a></p></td>
+        <td>Optional</td>
+        <td>0..n</td>
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property optional"><p>+ <a title="description" href="#softwaresourcecode-description"><code>schema:description</code></a></p></td>
+        <td>Optional</td>
+        <td>0..n</td>
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property optional"><p>+ <a title="keywords" href="#softwaresourcecode-keywords"><code>schema:keywords</code></a></p></td>
+        <td>Optional</td>
+        <td>0..n</td>
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property optional"><p>+ <a title="main-entity-of-page" href="#softwaresourcecode-main-entity-of-page"><code>schema:mainEntityOfPage</code></a></p></td>
+        <td>Optional</td>
+        <td>0..n</td>
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property optional"><p>+ <a title="programmingLanguage" href="#softwaresourcecode-programmingLanguage"><code>schema:programmingLanguage</code></a></p></td>
+        <td>Optional</td>
+        <td>0..n</td>
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property optional"><p>+ <a title="runtime-platform" href="#softwaresourcecode-runtime-platform"><code>schema:runtimePlatform</code></a></p></td>
+        <td>Optional</td>
+        <td>0..n</td>
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property optional"><p>+ <a title="software-version" href="#softwaresourcecode-software-version"><code>schema:softwareVersion</code></a></p></td>
+        <td>Optional</td>
+        <td>0..n</td>
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property optional"><p>+ <a title="target-product" href="#softwaresourcecode-target-product"><code>schema:targetProduct</code></a></p></td>
+        <td>Optional</td>
+        <td>0..n</td>
+      </tr>
+      <tr>
+      <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+      <td><code>schema:SoftwareSourceCode</code></td>
+      <td class="property optional"><p>+ <a title="software-requirements" href="#softwareapplication-software-requirements"><code>schema:softwareRequirements</code></a></p></td>
+      <td>Optional</td>
+      <td>0..n</td>
+      </tr>
+      <tr>
+      <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+      <td><code>schema:SoftwareSourceCode</code></td>
+      <td class="property optional"><p>+ <a title="theme" href="#softwaresourcecode-theme"><code>dcat:theme</code></a></p></td>
+      <td>Optional</td>
+      <td>0..n</td>
+      </tr>
+
 
 
   --></tbody>
