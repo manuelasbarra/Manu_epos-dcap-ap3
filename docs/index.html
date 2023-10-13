@@ -11,86 +11,11 @@
     <script class="remove">
     // All config options at https://respec.org/docs/
 
-	var myeditors = [
 
-
-
-
-
-
-
-		   {
-		    name: "Makx Dekkers",
-
-
-
-		    }
-		,
-
-		   {
-		    name: "Pavlina Fragkou",
-
-
-		    company: "SEMIC EU",
-
-
-		    }
-		,
-
-		   {
-		    name: "Natasa Sofou",
-
-
-
-		    }
-		,
-
-		   {
-		    name: "Bert Van Nuffelen",
-
-
-		    company: "TenForce",
-
-
-		    mailto: "bert.van.nuffelen@tenforce.com"
-
-		    }
-
-
-
-
-
-
-
-		]
-
-	var myauthors = [
-
-
-
-
-
-		   {
-		    name: "Pavlina Fragkou",
-
-
-		    company: "SEMIC EU",
-
-
-		    }
-
-
-
-
-
-
-
-
-
-		]
 
 	function quickreference() {alert('aa');
 		$('#table-quickoverview').DataTable();
+    $('#table-epos-dcat-ap-classes-and-properties').DataTable();
 	};
 
 
@@ -3106,13 +3031,14 @@
             <td>Optional</td>
             <td>0..n</td>
         </tr>
-
+-->
       <tr>
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property mandatory"><p>+ <a title="identifier" href="#softwaresourcecode-identifier"><code>schema:identifier</code></a></p></td>
         <td>Mandatory</td>
-        <td>1..1</td>
+        <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
+        <!--<td>1..n</td>-->
       </tr>
       <tr>
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
@@ -3126,21 +3052,21 @@
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property recommended"><p>+ <a title="name" href="#softwaresourcecode-name"><code>schema:name</code></a></p></td>
         <td>Recommended</td>
-        <td>0..n</td>
+        <td>0..1</td>
       </tr>
       <tr>
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="code-repository" href="#softwaresourcecode-code-repository"><code>schema:codeRepository</code></a></p></td>
         <td>Optional</td>
-        <td>0..n</td>
+        <td>0..1</td>
       </tr>
       <tr>
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="description" href="#softwaresourcecode-description"><code>schema:description</code></a></p></td>
         <td>Optional</td>
-        <td>0..n</td>
+        <td>0..1</td>
       </tr>
       <tr>
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
@@ -3152,9 +3078,16 @@
       <tr>
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property optional"><p>+ <a title="software-license" href="#softwaresourcecode-license"><code>schema:license</code></a></p></td>
+        <td>Optional</td>
+        <td>0..1</td>
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="main-entity-of-page" href="#softwaresourcecode-main-entity-of-page"><code>schema:mainEntityOfPage</code></a></p></td>
         <td>Optional</td>
-        <td>0..n</td>
+        <td>0..1</td>
       </tr>
       <tr>
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
@@ -3168,14 +3101,14 @@
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="runtime-platform" href="#softwaresourcecode-runtime-platform"><code>schema:runtimePlatform</code></a></p></td>
         <td>Optional</td>
-        <td>0..n</td>
+        <td>0..1</td>
       </tr>
       <tr>
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="software-version" href="#softwaresourcecode-software-version"><code>schema:softwareVersion</code></a></p></td>
         <td>Optional</td>
-        <td>0..n</td>
+        <td>0..1</td>
       </tr>
       <tr>
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
@@ -3185,23 +3118,16 @@
         <td>0..n</td>
       </tr>
       <tr>
-      <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
-      <td><code>schema:SoftwareSourceCode</code></td>
-      <td class="property optional"><p>+ <a title="software-requirements" href="#softwareapplication-software-requirements"><code>schema:softwareRequirements</code></a></p></td>
-      <td>Optional</td>
-      <td>0..n</td>
-      </tr>
-      <tr>
-      <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
-      <td><code>schema:SoftwareSourceCode</code></td>
-      <td class="property optional"><p>+ <a title="theme" href="#softwaresourcecode-theme"><code>dcat:theme</code></a></p></td>
-      <td>Optional</td>
-      <td>0..n</td>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property optional"><p>+ <a title="theme" href="#softwaresourcecode-theme"><code>dcat:theme</code></a></p></td>
+        <td>Optional</td>
+        <td>0..n</td>
       </tr>
 
 
 
-  --></tbody>
+    </tbody>
  </table>
 
     <div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>
