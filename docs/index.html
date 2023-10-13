@@ -7,38 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
-  <script>
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+    <script class="remove">
+    // All config options at https://respec.org/docs/
 
-  function quickreference() { alert('aaa');
-    $('#table-quickoverview').DataTable();
-    $('#table-epos-dcat-ap-classes-and-properties').DataTable();
-  };
-   // All config options at https://respec.org/docs/
-
- /*var myeditors = [
-
-      {
-       name: "Makx Dekkers",
-
-       }
-   ,
-      {
-       name: "Pavlina Fragkou",
-     company: "SEMIC EU",
-       }
-   ,
-      {
-       name: "Natasa Sofou",
-
-       }
-   ,
-      {
-       name: "Bert Van Nuffelen",
-
-       company: "TenForce",
-       mailto: "bert.van.nuffelen@tenforce.com"
-
-       }
+	var myeditors = [
 
 
 
@@ -46,94 +19,151 @@
 
 
 
-   ]
-
- var myauthors = [
-
+		   {
+		    name: "Makx Dekkers",
 
 
 
+		    }
+		,
 
-      {
-       name: "Pavlina Fragkou",
+		   {
+		    name: "Pavlina Fragkou",
 
 
-       company: "SEMIC EU",
+		    company: "SEMIC EU",
 
 
-       }
+		    }
+		,
 
-   ]
+		   {
+		    name: "Natasa Sofou",
 
-   var respecConfig = {
-     postProcess: [quickreference],
-     edDraftURI: "https://semiceu.github.io//DCAT-AP/releases/3.0.0",
-     latestVersion: "https://github.com/SEMICeu/DCAT-AP/tree/master/releases/2.1.1",
-     specStatus: "LD",
-     publishDate: "2023-07-17",
-     editors: myeditors,
-     authors: myauthors,
-     github: "SEMICeu/DCAT-AP",
-     shortName: "DCAT-AP 3.0",
-     xref: "web-platform",
-     doJsonLd: true,
-     logos: [{
-       src: "https://semiceu.github.io/CPOV/releases/2.1.0/html/semic-icon.png",
-       url: "https://semic.eu",
-       alt: "SEMIC",
-       width: 154,
-       height: 140,
-       id: "semic-logo",
-     },],
-     generatedSubtitle: "",
-     additionalCopyrightHolders: "",
-     localBiblio: {
-       "DXWG": {
-         "href" : "https://www.w3.org/2017/dxwg/wiki/Main_Page",
-         "title" : "Dataset Exchange Working Group",
-         "publisher" : "W3C"
-         },
-       "ISA":{
-          "href":"https://ec.europa.eu/isa/",
-          "title":"Interoperability Solutions for European Public Administrations (ISA)",
+
+
+		    }
+		,
+
+		   {
+		    name: "Bert Van Nuffelen",
+
+
+		    company: "TenForce",
+
+
+		    mailto: "bert.van.nuffelen@tenforce.com"
+
+		    }
+
+
+
+
+
+
+
+		]
+
+	var myauthors = [
+
+
+
+
+
+		   {
+		    name: "Pavlina Fragkou",
+
+
+		    company: "SEMIC EU",
+
+
+		    }
+
+
+
+
+
+
+
+
+
+		]
+
+	function quickreference() {alert('aa');
+		$('#table-quickoverview').DataTable();
+	};
+
+
+
+    var respecConfig = {
+      postProcess: [quickreference],
+      edDraftURI: "https://semiceu.github.io//DCAT-AP/releases/3.0.0",
+      latestVersion: "https://github.com/SEMICeu/DCAT-AP/tree/master/releases/2.1.1",
+      specStatus: "LD",
+      publishDate: "2023-07-17",
+      editors: myeditors,
+      authors: myauthors,
+      github: "SEMICeu/DCAT-AP",
+      shortName: "DCAT-AP 3.0",
+      xref: "web-platform",
+      doJsonLd: true,
+      logos: [{
+        src: "https://semiceu.github.io/CPOV/releases/2.1.0/html/semic-icon.png",
+        url: "https://semic.eu",
+        alt: "SEMIC",
+        width: 154,
+        height: 140,
+        id: "semic-logo",
+      },],
+      generatedSubtitle: "",
+      additionalCopyrightHolders: "",
+      localBiblio: {
+        "DXWG": {
+          "href" : "https://www.w3.org/2017/dxwg/wiki/Main_Page",
+          "title" : "Dataset Exchange Working Group",
+          "publisher" : "W3C"
+          },
+        "ISA":{
+           "href":"https://ec.europa.eu/isa/",
+           "title":"Interoperability Solutions for European Public Administrations (ISA)",
+           "publisher":"European Commission"
+          },
+        "ISA2":{
+          "href":"https://ec.europa.eu/isa2/",
+          "title":"Interoperability solutions for public administrations, businesses and citizens (ISA²)",
+          "publisher":"European Commission"
+        },
+        "SEMIC":{
+          "href":"https://joinup.ec.europa.eu/",
+          "title":"JoinUp welcomes Interoperable Europe",
           "publisher":"European Commission"
          },
-       "ISA2":{
-         "href":"https://ec.europa.eu/isa2/",
-         "title":"Interoperability solutions for public administrations, businesses and citizens (ISA²)",
-         "publisher":"European Commission"
-       },
-       "SEMIC":{
-         "href":"https://joinup.ec.europa.eu/",
-         "title":"JoinUp welcomes Interoperable Europe",
-         "publisher":"European Commission"
+        "DEU" : {
+          "href":"https://data.europa.eu",
+          "title":"The official portal for European data",
+          "publisher":"European Commission"
         },
-       "DEU" : {
-         "href":"https://data.europa.eu",
-         "title":"The official portal for European data",
-         "publisher":"European Commission"
-       },
-   "HVD" : {
-     "href":"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0138",
-     "title":"Implementing Regulation for High Value Datasets",
-     "publisher":"European Union"
-   },
-   "DCAT-AP-HVD" : {
-     "href":"https://semiceu.github.io/uri.semic.eu-generated/DCAT-AP/releases/2.2.0-hvd/",
-     "title":"Usage Guidelines of DCAT-AP for High-Value Datasets",
-     "publisher":"European Commission"
-   },
-               "PSI" : {
-                 "href": "https://eur-lex.europa.eu/eli/dir/2019/1024/oj",
-                 "title" :  "Directive on open data and the re-use of public sector information (recast)",
-                 "publisher" : "European Union"
-               }
-     }
-   };
+		"HVD" : {
+		  "href":"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0138",
+		  "title":"Implementing Regulation for High Value Datasets",
+		  "publisher":"European Union"
+		},
+		"DCAT-AP-HVD" : {
+		  "href":"https://semiceu.github.io/uri.semic.eu-generated/DCAT-AP/releases/2.2.0-hvd/",
+		  "title":"Usage Guidelines of DCAT-AP for High-Value Datasets",
+		  "publisher":"European Commission"
+		},
+                "PSI" : {
+                  "href": "https://eur-lex.europa.eu/eli/dir/2019/1024/oj",
+                  "title" :  "Directive on open data and the re-use of public sector information (recast)",
+                  "publisher" : "European Union"
+                }
+      }
+    };
 
-*/
 
-   </script>
+
+    </script>
    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 
@@ -2468,11 +2498,24 @@
           <td>1..1</td>
         </tr>
 
+        <tr>
+          <td>+ <a href="#equipment">Equipment</a></td>
+          <td><code>epos:Equipment</code></td>
+          <td class="property recommended"><p>+ <a title="creator" href="#equipment-creator"><code>dct:creator</code></a></p></td>
+          <td>Recommended</td>
+          <td>0..n</td>
+      </tr>
+          <tr>
+            <td>+ <a href="#equipment">Equipment</a></td>
+            <td><code>epos:Equipment</code></td>
+            <td class="property recommended"><p>+ <a title="type" href="#equipment-type"><code>dct:type</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
 
-          <td class="property recommended">
-            <p>+ <a title="creator" href="#equipment-creator"><code>dct:creator</code></a></p>
-            <p>+ <a title="type" href="#equipment-type"><code>dct:type</code></a></p>
-          </td>
+          <tr>
+            <td>+ <a href="#equipment">Equipment</a></td>
+            <td><code>epos:Equipment</code></td>
           <td class="property optional">
             <p>+ <a title="contact-point" href="#equipment-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p>
             <p>+ <a title="dynamic-range" href="#equipment-dynamic-range"><code>epos:dynamicRange</code></a></p>
@@ -2498,8 +2541,14 @@
             <p>+ <a title="title" href="#facility-title"><code>dct:title</code></a></p>
           </td>
           <td class="property recommended">
-            <p>+ <a title="theme" href="#facility-theme"><code>dcat:theme</code></a></p>
-            <p>+ <a title="type" href="#facility-type"><code>dct:type</code></a></p>
+            <p>+ <a title="theme" href="#facility-theme"><code>dcat:theme</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="type" href="#facility-type"><code>dct:type</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
           </td>
           <td class="property optional">
             <p>+ <a title="contact-point" href="#facility-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p>
@@ -2518,7 +2567,10 @@
               <p><a title="notation" href="#identifier-notation"><code>skos:notation</code></a></p>
               <p>+ <a title="schemeagency" href="#identifier-schemeagency"><code>adms:schemeAgency</code></a></p>
           </td>
-          <td class="property recommended"></td>
+          <td class="property recommended"></td></td>
+          <td>Recommended</td>
+          <td>0..n</td>
+      </tr>
           <td class="property optional"></td>
         </tr>
         <tr>
@@ -2542,14 +2594,38 @@
               <p>+ <a title="variable" href="#iritemplatemapping-variable"><code>hydra:variable</code></a></p>
           </td>
           <td class="property recommended">
-             <p>+ <a title="defaultvalue" href="#iritemplatemapping-defaultValue"><code>schema:defaultValue</code></a></p>
-             <p>+ <a title="maxvalue" href="#iritemplatemapping-maxvalue"><code>schema:maxValue</code></a></p>
-             <p>+ <a title="minvalue" href="#iritemplatemapping-minvalue"><code>schema:minValue</code></a></p>
-             <p>+ <a title="multiValues" href="#iritemplatemapping-multiValues"><code>schema:multiValues</code></a></p>
-             <p>+ <a title="readonlyvalue" href="#iritemplatemapping-readonlyvalue"><code>schema:readonlyValue</code></a></p>
-             <p>+ <a title="paramValue" href="#iritemplatemapping-paramValue"><code>http:paramValue</code></a></p>
-             <p>+ <a title="property" href="#iritemplatemapping-property"><code>hydra:property</code></a></p>
-             <p>+ <a title="valuepattern" href="#iritemplatemapping-valuePattern"><code>schema:valuePattern</code></a></p>
+             <p>+ <a title="defaultvalue" href="#iritemplatemapping-defaultValue"><code>schema:defaultValue</code></a></p></td>
+             <td>Recommended</td>
+             <td>0..n</td>
+         </tr>
+             <p>+ <a title="maxvalue" href="#iritemplatemapping-maxvalue"><code>schema:maxValue</code></a></p></td>
+             <td>Recommended</td>
+             <td>0..n</td>
+         </tr>
+             <p>+ <a title="minvalue" href="#iritemplatemapping-minvalue"><code>schema:minValue</code></a></p></td>
+             <td>Recommended</td>
+             <td>0..n</td>
+         </tr>
+             <p>+ <a title="multiValues" href="#iritemplatemapping-multiValues"><code>schema:multiValues</code></a></p></td>
+             <td>Recommended</td>
+             <td>0..n</td>
+         </tr>
+             <p>+ <a title="readonlyvalue" href="#iritemplatemapping-readonlyvalue"><code>schema:readonlyValue</code></a></p></td>
+             <td>Recommended</td>
+             <td>0..n</td>
+         </tr>
+             <p>+ <a title="paramValue" href="#iritemplatemapping-paramValue"><code>http:paramValue</code></a></p></td>
+             <td>Recommended</td>
+             <td>0..n</td>
+         </tr>
+             <p>+ <a title="property" href="#iritemplatemapping-property"><code>hydra:property</code></a></p></td>
+             <td>Recommended</td>
+             <td>0..n</td>
+         </tr>
+             <p>+ <a title="valuepattern" href="#iritemplatemapping-valuePattern"><code>schema:valuePattern</code></a></p></td>
+             <td>Recommended</td>
+             <td>0..n</td>
+         </tr>
           </td>
           <td class="property optional"></td>
         </tr>
@@ -2579,8 +2655,14 @@
           <td><code>hydra:Operation</code></td>
           <td class="property mandatory"></td>
           <td class="property recommended">
-            <p>+ <a title="property" href="#operation-property"><code>hydra:property</code></a></p>
-            <p>+ <a title="returns" href="#operation-returns"><code>hydra:returns</code></a></p>
+            <p>+ <a title="property" href="#operation-property"><code>hydra:property</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="returns" href="#operation-returns"><code>hydra:returns</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
           </td>
           <td class="property optional">
             <p>+ <a title="method" href="#operation-method"><code>hydra:method</code></a></p>
@@ -2593,8 +2675,14 @@
             <p>+ <a title="identifier" href="#organization-identifier"><code>schema:identifier</code></a></p>
           </td>
           <td class="property recommended">
-            <p>+ <a title="leicode" href="#organization-leicode"><code>schema:leiCode</code></a></p>
-            <p>+ <a title="legalname" href="#organization-legalname"><code>schema:legalname</code></a></p>
+            <p>+ <a title="leicode" href="#organization-leicode"><code>schema:leiCode</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="legalname" href="#organization-legalname"><code>schema:legalname</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
           </td>
           <td class="property optional">
             <p>+ <a title="address" href="#organization-address"><code>schema:address</code></a></p>
@@ -2613,8 +2701,14 @@
           <td><code>dct:PeriodOfTime</code></td>
           <td class="property mandatory"></td>
           <td class="property recommended">
-            <p><a title="end-date" href="#period-of-time-end-date"><code>dcat:endDate</code></a></p>
-            <p><a title="start-date" href="#period-of-time-start-date"><code>dcat:startDate</code></a></p>
+            <p><a title="end-date" href="#period-of-time-end-date"><code>dcat:endDate</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p><a title="start-date" href="#period-of-time-start-date"><code>dcat:startDate</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
           </td>
           <td class="property optional">
             <p><a title="beginning" href="#period-of-time-beginning"><code>time:hasBeginning</code></a></p>
@@ -2629,15 +2723,42 @@
           </td>
           <td class="property recommended"></td>
           <td class="property optional">
-            <p>+ <a title="address" href="#person-address"><code>schema:address</code></a></p>
-            <p>+ <a title="affiliation" href="#person-affiliation"><code>schema:affiliation</code></a></p>
-            <p>+ <a title="contact-point" href="#person-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p>
-            <p>+ <a title="email" href="#person-email"><code>schema:email</code></a></p>
-            <p>+ <a title="logo" href="#person-familyname"><code>schema:familyName</code></a></p>
-            <p>+ <a title="memberof" href="#person-givenname"><code>schema:givenName</code></a></p>
-            <p>+ <a title="owns" href="#person-qualifications"><code>schema:qualifications</code></a></p>
-            <p>+ <a title="telephone" href="#person-telephone"><code>schema:telephone</code></a></p>
-            <p>+ <a title="url" href="#person-url"><code>schema:url</code></a></p>
+            <p>+ <a title="address" href="#person-address"><code>schema:address</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="affiliation" href="#person-affiliation"><code>schema:affiliation</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="contact-point" href="#person-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="email" href="#person-email"><code>schema:email</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="logo" href="#person-familyname"><code>schema:familyName</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="memberof" href="#person-givenname"><code>schema:givenName</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="owns" href="#person-qualifications"><code>schema:qualifications</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="telephone" href="#person-telephone"><code>schema:telephone</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="url" href="#person-url"><code>schema:url</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
           </td>
         </tr>
         <tr>
@@ -2649,8 +2770,7 @@
               <p>+ <a title="postalcode" href="#postaladdress-postalcode"><code>schema:postalCode</code></a></p>
               <p>+ <a title="streetaddress" href="#postaladdress-streetaddress"><code>schema:streetAddress</code></a></p>
           </td>
-          <td class="property recommended"></td>
-          <td class="property optional"></td>
+
         </tr>
         <tr>
           <td>+ <a href="#project">Project</a></td>
@@ -2660,8 +2780,14 @@
               <p>+ <a title="title" href="#project-title"><code>dct:title</code></a></p>
           </td>
           <td class="property recommended">
-            <p>+ <a title="contact-point" href="#project-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p>
-            <p>+ <a title="description" href="#project-description"><code>dct:description</code></a></p>
+            <p>+ <a title="contact-point" href="#project-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="description" href="#project-description"><code>dct:description</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
           </td>
           <td class="property optional">
             <p>+ <a title="homepage" href="#project-homepage"><code>foaf:homepage</code></a></p>
@@ -2674,8 +2800,7 @@
               <p>+ <a title="identifier" href="#propertyvalue-propertyID"><code>schema:propertyID</code></a></p>
               <p>+ <a title="title" href="#propertyvalue-value"><code>schema:value</code></a></p>
           </td>
-          <td class="property recommended"></td>
-          <td class="property optional"></td>
+
         </tr>
         <tr>
           <td>+ <a href="#publication">Publication</a></td>
@@ -2685,11 +2810,26 @@
               <p>+ <a title="name" href="#publication-name"><code>schema:name</code></a></p>
           </td>
           <td class="property recommended">
-            <p>+ <a title="abstract" href="#publication-abstract"><code>dct:abstract</code></a></p>
-            <p>+ <a title="author" href="#publication-author"><code>schema:author</code></a></p>
-            <p>+ <a title="contributor" href="#publication-contributor"><code>schema:contributor</code></a></p>
-            <p>+ <a title="datepublished" href="#publication-datepublished"><code>schema:datePublished</code></a></p>
-            <p>+ <a title="publisher" href="#publication-publisher"><code>schema:publisher</code></a></p>
+            <p>+ <a title="abstract" href="#publication-abstract"><code>dct:abstract</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="author" href="#publication-author"><code>schema:author</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="contributor" href="#publication-contributor"><code>schema:contributor</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="datepublished" href="#publication-datepublished"><code>schema:datePublished</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
+            <p>+ <a title="publisher" href="#publication-publisher"><code>schema:publisher</code></a></p></td>
+            <td>Recommended</td>
+            <td>0..n</td>
+        </tr>
           </td>
           <td class="property optional">
             <p>+ <a title="issn" href="#publication-issn"><code>schema:issn</code></a></p>
@@ -2707,8 +2847,7 @@
               <p><a title="had-role" href="#relationship-had-role"><code>dcat:hadRole</code></a></p>
               <p><a title="relation" href="#relationship-relation"><code>dct:relation</code></a></p>
           </td>
-          <td class="property recommended"></td>
-          <td class="property optional"></td>
+
         </tr>
         <tr>
           <td>+ <a href="#service">Service</a></td>
@@ -2717,10 +2856,22 @@
               <p>+ <a title="identifier" href="#service-identifier"><code>schema:identifier</code></a></p>
           </td>
           <td class="property recommended">
-              <p>+ <a title="contact-point" href="#service-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p>
-              <p>+ <a title="description" href="#service-description"><code>schema:description</code></a></p>
-              <p>+ <a title="name" href="#service-name"><code>schema:name</code></a></p>
-              <p>+ <a title="provider" href="#service-provider"><code>schema:provider</code></a></p>
+              <p>+ <a title="contact-point" href="#service-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+              <td>Recommended</td>
+              <td>0..n</td>
+          </tr>
+              <p>+ <a title="description" href="#service-description"><code>schema:description</code></a></p></td>
+              <td>Recommended</td>
+              <td>0..n</td>
+          </tr>
+              <p>+ <a title="name" href="#service-name"><code>schema:name</code></a></p></td>
+              <td>Recommended</td>
+              <td>0..n</td>
+          </tr>
+              <p>+ <a title="provider" href="#service-provider"><code>schema:provider</code></a></p></td>
+              <td>Recommended</td>
+              <td>0..n</td>
+          </tr>
           </td>
           <td class="property optional">
             <p>+ <a title="keywords" href="#service-keywords"><code>schema:keywords</code></a></p>
@@ -2738,8 +2889,14 @@
               <p>+ <a title="identifier" href="#softwareapplication-identifier"><code>schema:identifier</code></a></p>
           </td>
           <td class="property recommended">
-              <p>+ <a title="contact-point" href="#softwareapplication-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p>
-              <p>+ <a title="name" href="#softwareapplication-name"><code>schema:name</code></a></p>
+              <p>+ <a title="contact-point" href="#softwareapplication-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+              <td>Recommended</td>
+              <td>0..n</td>
+          </tr>
+              <p>+ <a title="name" href="#softwareapplication-name"><code>schema:name</code></a></p></td>
+              <td>Recommended</td>
+              <td>0..n</td>
+          </tr>
           </td>
           <td class="property optional">
             <p>+ <a title="description" href="#softwareapplication-description"><code>schema:description</code></a></p>
@@ -2761,8 +2918,14 @@
               <p>+ <a title="identifier" href="#softwaresourcecode-identifier"><code>schema:identifier</code></a></p>
           </td>
           <td class="property recommended">
-              <p>+ <a title="contact-point" href="#softwaresourcecode-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p>
-              <p>+ <a title="name" href="#softwaresourcecode-name"><code>schema:name</code></a></p>
+              <p>+ <a title="contact-point" href="#softwaresourcecode-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+              <td>Recommended</td>
+              <td>0..n</td>
+          </tr>
+              <p>+ <a title="name" href="#softwaresourcecode-name"><code>schema:name</code></a></p></td>
+              <td>Recommended</td>
+              <td>0..n</td>
+          </tr>
           </td>
           <td class="property optional">
             <p>+ <a title="code-repository" href="#softwaresourcecode-code-repository"><code>schema:codeRepository</code></a></p>
