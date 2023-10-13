@@ -1433,7 +1433,7 @@
               <td>1..1</td>
           </tr>
           <tr>
-              <td><a href="##properties-for-agent">Agent</a></td>
+              <td><a href="#properties-for-agent">Agent</a></td>
               <td><code>foaf:Agent</code></td>
               <td><p><a title="name" href="#agent-name"><code>foaf:name</code></a></p></td>
               <td><code>rdfs:Literal</code></td>
@@ -1441,7 +1441,7 @@
               <td>1..1</td>
           </tr>
           <tr>
-              <td><a href="##properties-for-agent">Agent</a></td>
+              <td><a href="#properties-for-agent">Agent</a></td>
               <td><code>foaf:Agent</code></td>
               <td><p><a title="type" href="#agent-type"><code>dct:type</code></a></p></td>
               <td><code>skos:Concept</code></td>
@@ -1737,7 +1737,7 @@
               <td>1..1</td>
           </tr>
           <tr>
-              <td>+ <a href="#properties-for-contactpoint">ContactPoint</a></td>
+              <td>+ <a href="#properties-for-contact-point">ContactPoint</a></td>
               <td><code>schema:contactPoint</code></td>
               <td class="property recommended"><p>+ <a title="contacttype" href="#contact-point-contacttype"><code>schema:contactType</code></a></p></td>
               <td><code>rdfs:Literal</code></td>
@@ -1745,7 +1745,7 @@
               <td>0..1</td>
           </tr>
           <tr>
-              <td>+ <a href="#properties-for-contactpoint">ContactPoint</a></td>
+              <td>+ <a href="#properties-for-contact-point">ContactPoint</a></td>
               <td><code>schema:contactPoint</code></td>
               <td class="property optional"><p>+ <a title="availablelanguage" href="#contact-point-availablelanguage"><code>schema:availableLanguage</code></a></p></td>
               <td><code>rdfs:Literal</code></td>
@@ -1753,7 +1753,7 @@
               <td>0..n</td>
           </tr>
           <tr>
-              <td>+ <a href="#properties-for-contactpoint">ContactPoint</a></td>
+              <td>+ <a href="#properties-for-contact-point">ContactPoint</a></td>
               <td><code>schema:contactPoint</code></td>
               <td class="property optional"><p>+ <a title="email" href="#contact-point-email"><code>schema:email</code></a></p></td>
               <td><code>rdfs:Literal</code></td>
@@ -1761,7 +1761,7 @@
               <td>0..n</td>
           </tr>
           <tr>
-              <td>+ <a href="#properties-for-contactpoint">ContactPoint</a></td>
+              <td>+ <a href="#properties-for-contact-point">ContactPoint</a></td>
               <td><code>schema:contactPoint</code></td>
               <td class="property optional"><p>+ <a title="telephone" href="#contact-point-telephone"><code>schema:telephone</code></a></p></td>
               <td><code>rdfs:Literal</code></td>
@@ -2560,12 +2560,11 @@
           <td>Optional</td>
           <td>0..n</td>
         </tr>
-<!--
         <tr>
           <td>+ <a href="#properties-for-equipment">Equipment</a></td>
           <td><code>epos:Equipment</code></td>
           <td class="property mandatory"><p>+ <a title="description" href="#equipment-description"><code>dct:description</code></a></p></td>
-          <td><code></code></td>
+          <td><code>rdfs:Literal</code></td>
           <td>Mandatory</td>
           <td>1..1</td>
         </tr>
@@ -2573,7 +2572,7 @@
           <td>+ <a href="#properties-for-equipment">Equipment</a></td>
           <td><code>epos:Equipment</code></td>
           <td class="property mandatory"><p>+ <a title="identifier" href="#equipment-identifier"><code>dct:identifier</code></a></p></td>
-          <td><code></code></td>
+          <td><code>rdfs:Literal</code></td>
           <td>Mandatory</td>
           <td>1..1</td>
         </tr>
@@ -2581,7 +2580,7 @@
           <td>+ <a href="#properties-for-equipment">Equipment</a></td>
           <td><code>epos:Equipment</code></td>
           <td class="property mandatory"><p>+ <a title="title" href="#equipment-title"><code>dct:title</code></a></p></td>
-          <td><code></code></td>
+          <td><code>rdfs:Literal</code></td>
           <td>Mandatory</td>
           <td>1..1</td>
         </tr>
@@ -2590,25 +2589,25 @@
           <td>+ <a href="#properties-for-equipment">Equipment</a></td>
           <td><code>epos:Equipment</code></td>
           <td class="property recommended"><p>+ <a title="creator" href="#equipment-creator"><code>dct:creator</code></a></p></td>
-          <td><code></code></td>
+          <td><code>schema:Organization</code></td>
           <td>Recommended</td>
-          <td>0..n</td>
-      </tr>
-          <tr>
+          <td>0..1</td>
+        </tr>
+        <tr>
             <td>+ <a href="#properties-for-equipment">Equipment</a></td>
             <td><code>epos:Equipment</code></td>
             <td class="property recommended"><p>+ <a title="type" href="#equipment-type"><code>dct:type</code></a></p></td>
-            <td><code></code></td>
+            <td><code>skos:Concept</code> or <code>rdfs:Literal</code> typed with URI</code></td>
             <td>Recommended</td>
-            <td>0..n</td>
+            <td>0..1</td>
         </tr>
 
-          <tr>
+        <tr>
             <td>+ <a href="#properties-for-equipment">Equipment</a></td>
             <td><code>epos:Equipment</code></td>
             <td class="property optional">
             <p>+ <a title="contact-point" href="#equipment-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
-            <td>Optional</td>
+            <td><code></code></td><td>Optional</td>
             <td>0..n</td>
         </tr>
             <p>+ <a title="dynamic-range" href="#equipment-dynamic-range"><code>epos:dynamicRange</code></a></p></td>
