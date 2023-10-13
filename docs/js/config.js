@@ -1,4 +1,7 @@
-    var respecConfig = {
+function quickreference() {
+  $('#table-quickoverview').DataTable();
+};
+var respecConfig = {
     //	preProcess: [dfn_index],
     logos: [
       {    //src: 'https://www.epos-eu.org/themes/epos/logo.svg',
@@ -153,7 +156,7 @@
         "href":"http://www.w3.org/ns/hydra/core#",
         "title":"HYDRA"
       },
-    
+
       "CiteDCAT-AP": {
         "href": "https://ec-jrc.github.io/datacite-to-dcat-ap/",
         "title": "DataCite to DCAT-AP Mapping",
