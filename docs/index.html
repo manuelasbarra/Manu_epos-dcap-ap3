@@ -1394,6 +1394,7 @@
               <th>Class</th>
               <th>Class IRI</th>
               <th>Property</th>
+              <th>Range</th>
               <th>Property Type</th>
               <th>Cardinality</th>
           </tr>
@@ -1403,6 +1404,7 @@
               <td>+ <a href="#address">Address</a></td>
               <td><code>vcard:Address</code></td>
               <td><p>+ <a title="country-name" href="#address-country-name"><code>vcard:country-name</code></a></p></td>
+              <td><code>rdfs:Literal</code></td>
               <td>Mandatory</td>
               <td>1..1</td>
           </tr>
@@ -1410,6 +1412,7 @@
               <td>+ <a href="#address">Address</a></td>
               <td><code>vcard:Address</code></td>
               <td><p>+ <a title="locality" href="#address-locality"><code>vcard:locality</code></a></p></td>
+              <td><code>rdfs:Literal</code></td>
               <td>Mandatory</td>
               <td>1..1</td>
           </tr>
@@ -1424,6 +1427,7 @@
               <td>+ <a href="#address">Address</a></td>
               <td><code>vcard:Address</code></td>
               <td><p>+ <a title="street-address" href="#address-street-address"><code>vcard:street-address</code></a></p></td>
+              <td><code>rdfs:Literal</code></td>
               <td>Mandatory</td>
               <td>1..1</td>
           </tr>
@@ -1431,6 +1435,7 @@
               <td><a href="#agent">Agent</a></td>
               <td><code>foaf:Agent</code></td>
               <td><p><a title="name" href="#agent-name"><code>foaf:name</code></a></p></td>
+              <td><code>rdfs:Literal</code></td>
               <td>Mandatory</td>
               <td>1..1</td>
           </tr>
@@ -1446,19 +1451,23 @@
               <td><code>dcat:Catalog</code></td>
               <td class="property mandatory"><p><a title="description" href="#catalog-description"><code>dct:description</code></a></p></td>
               <td>Mandatory</td>
+              <td><code>rdfs:Literal</code></td>
               <td>1..n</td>
           </tr>
           <tr>
               <td><a href="#catalog">Catalog</a></td>
               <td><code>dcat:Catalog</code></td>
               <td class="property mandatory"><p><a title="publisher" href="#catalog-publisher"><code>dct:publisher</code></a></p></td>
+              <td><code>rdfs:Literal</code></td>
               <td>Mandatory</td>
+
               <td>1..1</td>
           </tr>
           <tr>
               <td><a href="#catalog">Catalog</a></td>
               <td><code>dcat:Catalog</code></td>
               <td class="property mandatory"><p><a title="title" href="#catalog-title"><code>dct:title</code></a></p></td>
+              <td><code>rdfs:Literal</code></td>
               <td>Mandatory</td>
               <td>1..n</td>
           </tr>
@@ -1466,9 +1475,10 @@
           <td><a href="#catalog">Catalog</a></td>
               <td><code>dcat:Catalog</code></td>
               <td class="property recommended"><p><a title="dataset" href="#catalog-dataset"><code>dcat:dataset</code></a></p></td>
+              <td><code>rdfs:Literal</code></td>
               <td>Recommended</td>
               <td>0..n</td>
-          </tr>
+          </tr><!--
           <tr>
               <td><a href="#catalog">Catalog</a></td>
               <td><code>dcat:Catalog</code></td>
