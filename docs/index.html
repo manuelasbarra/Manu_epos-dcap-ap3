@@ -18,7 +18,18 @@
     $('#table-epos-dcat-ap-classes-and-properties').DataTable();
 	};
 
-
+  var editors = [  {
+      name:   "Rossana Paciello",
+      orcid:  "0000-0002-6975-1991",
+      company: "Istituto Nazionale Geofisica e Vulcanologia - INGV",
+      companyURL: "www.ingv.it"
+    },
+    {
+      name: 	"Manuela Sbarra",
+      orcid:  "0000-0001-7746-6309",
+      company:    "Istituto Nazionale Geofisica e Vulcanologia - INGV",
+      companyURL: "www.ingv.it"
+    }];
 
     var respecConfig = {
       postProcess: [quickreference],
@@ -26,7 +37,7 @@
       latestVersion: "https://github.com/SEMICeu/DCAT-AP/tree/master/releases/2.1.1",
       specStatus: "LD",
       publishDate: "2023-07-17",
-      //editors: editors,
+      editors: editors,
       //authors: authors,
       github: "SEMICeu/DCAT-AP",
       shortName: "DCAT-AP 3.0",
