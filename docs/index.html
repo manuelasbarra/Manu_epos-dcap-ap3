@@ -3226,41 +3226,61 @@
           <td>Mandatory</td>
           <td>1..1</td>
         </tr>
-        <!--
+        <tr>
+          <td>+ <a href="#project">Project</a></td>
+          <td><code>schema:Project</code></td>
+          <td class="property mandatory"><p>+ <a title="identifier" href="#project-identifier"><code>dct:identifier</code></a></p></td>
+          <td><code>rdfs:Literal</code></td>
+          <td>Mandatory</td>
+          <td>1..1</td>
         </tr>
         <tr>
           <td>+ <a href="#project">Project</a></td>
           <td><code>schema:Project</code></td>
-          <td class="property mandatory">
-              <p>+ <a title="identifier" href="#project-identifier"><code>dct:identifier</code></a></p>
-              <p>+ <a title="title" href="#project-title"><code>dct:title</code></a></p>
-          </td>
-          <td class="property recommended">
-            <p>+ <a title="contact-point" href="#project-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
-            <td>Recommended</td>
-            <td>0..n</td>
+          <td class="property mandatory"><p>+ <a title="title" href="#project-title"><code>dct:title</code></a></p></td>
+          <td><code>rdfs:Literal</code></td>
+          <td>Mandatory</td>
+          <td>1..1</td>
         </tr>
-            <p>+ <a title="description" href="#project-description"><code>dct:description</code></a></p></td>
-            <td>Recommended</td>
-            <td>0..n</td>
+        <tr>
+          <td>+ <a href="#project">Project</a></td>
+          <td><code>schema:Project</code></td>
+          <td class="property recommended"><p>+ <a title="contact-point" href="#project-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+          <td><code>schema:ContactPoint</code></td>
+          <td>Recommended</td>
+          <td>0..n</td>
         </tr>
-          </td>
-          <td class="property optional">
-            <p>+ <a title="homepage" href="#project-homepage"><code>foaf:homepage</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+          <td>+ <a href="#project">Project</a></td>
+          <td><code>schema:Project</code></td>
+          <td class="property recommended"><p>+ <a title="description" href="#project-description"><code>dct:description</code></a></p></td>
+          <td><code>rdfs:Literal</code></td>
+          <td>Recommended</td>
+          <td>0..1</td>
         </tr>
-          </td>
+        <tr>
+          <td>+ <a href="#project">Project</a></td>
+          <td><code>schema:Project</code></td>
+          <td class="property optional"><p>+ <a title="homepage" href="#project-homepage"><code>foaf:homepage</code></a></p></td>
+          <td><code>foaf:Document</code></td>
+          <td>Optional</td>
+          <td>0..1</td>
         </tr>
         <tr>
           <td>+ <a href="#propertyvalue">PropertyValue</a></td>
           <td><code>schema:PropertyValue</code></td>
-          <td class="property mandatory">
-              <p>+ <a title="identifier" href="#propertyvalue-propertyID"><code>schema:propertyID</code></a></p>
-              <p>+ <a title="title" href="#propertyvalue-value"><code>schema:value</code></a></p>
-          </td>
-
+          <td class="property mandatory"><p>+ <a title="identifier" href="#propertyvalue-propertyID"><code>schema:propertyID</code></a></p></td>
+          <td><code>rdfs:Literal</code></td>
+          <td>Mandatory</td>
+          <td>1..1</td>
         </tr>
+        <tr>
+          <td>+ <a href="#propertyvalue">PropertyValue</a></td>
+          <td><code>schema:PropertyValue</code></td>
+          <td class="property mandatory">  <p>+ <a title="title" href="#propertyvalue-value"><code>schema:value</code></a></p></td>
+          <td><code>rdfs:Literal</code></td>
+          <td>Mandatory</td>
+          <td>1..1</td>
+        </tr>  <!--
         <tr>
           <td>+ <a href="#publication">Publication</a></td>
           <td><code>epos:Publication</code></td>
