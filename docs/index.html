@@ -3187,7 +3187,7 @@
           <td>0..n</td>
         </tr>
         <tr>
-          <td>+ <a href="#properties-for-person">Person</a></td>
+          <td>+ <a href="properties-for-person">Person</a></td>
           <td><code>schema:Person</code></td>
           <td class="property optional"><p>+ <a title="url" href="#person-url"><code>schema:url</code></a></p></td>
           <td><code>rdfs:Literal</code> typed with URI</td>
@@ -3195,7 +3195,7 @@
           <td>0..1</td>
         </tr>
         <tr>
-          <td>+ <a href="#postaladdress">PostalAddress</a></td>
+          <td>+ <a href="#properties-for-postaladdress">PostalAddress</a></td>
           <td><code>schema:PostalAddress</code></td>
           <td class="property mandatory"><p>+ <a title="addresscountry" href="#postaladdress-addresscountry"><code>schema:addressCountry</code></a></p></td>
           <td><code>rdfs:Literal</code></td>
@@ -3203,7 +3203,7 @@
           <td>1..1</td>
         </tr>
         <tr>
-          <td>+ <a href="#postaladdress">PostalAddress</a></td>
+          <td>+ <a href="#properties-for-postaladdress">PostalAddress</a></td>
           <td><code>schema:PostalAddress</code></td>
           <td class="property mandatory"><p>+ <a title="addresslocality" href="#postaladdress-addresslocality"><code>schema:addressLocality</code></a></p></td>
           <td><code>rdfs:Literal</code></td>
@@ -3211,7 +3211,7 @@
           <td>1..1</td>
         </tr>
         <tr>
-          <td>+ <a href="#postaladdress">PostalAddress</a></td>
+          <td>+ <a href="#properties-for-postaladdress">PostalAddress</a></td>
           <td><code>schema:PostalAddress</code></td>
           <td class="property mandatory"><p>+ <a title="postalcode" href="#postaladdress-postalcode"><code>schema:postalCode</code></a></p></td>
           <td><code>rdfs:Literal</code></td>
@@ -3219,7 +3219,7 @@
           <td>1..1</td>
         </tr>
         <tr>
-          <td>+ <a href="#postaladdress">PostalAddress</a></td>
+          <td>+ <a href="#properties-for-postaladdress">PostalAddress</a></td>
           <td><code>schema:PostalAddress</code></td>
           <td class="property mandatory"><p>+ <a title="streetaddress" href="#postaladdress-streetaddress"><code>schema:streetAddress</code></a></p></td>
           <td><code>rdfs:Literal</code></td>
@@ -3227,7 +3227,7 @@
           <td>1..1</td>
         </tr>
         <tr>
-          <td>+ <a href="#project">Project</a></td>
+          <td>+ <a href="#properties-for-project">Project</a></td>
           <td><code>schema:Project</code></td>
           <td class="property mandatory"><p>+ <a title="identifier" href="#project-identifier"><code>dct:identifier</code></a></p></td>
           <td><code>rdfs:Literal</code></td>
@@ -3235,7 +3235,7 @@
           <td>1..1</td>
         </tr>
         <tr>
-          <td>+ <a href="#project">Project</a></td>
+          <td>+ <a href="#properties-for-project">Project</a></td>
           <td><code>schema:Project</code></td>
           <td class="property mandatory"><p>+ <a title="title" href="#project-title"><code>dct:title</code></a></p></td>
           <td><code>rdfs:Literal</code></td>
@@ -3243,14 +3243,14 @@
           <td>1..1</td>
         </tr>
         <tr>
-          <td>+ <a href="#project">Project</a></td>
+          <td>+ <a href="#properties-for-project">Project</a></td>
           <td><code>schema:Project</code></td>
           <td class="property recommended"><p>+ <a title="contact-point" href="#project-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
           <td><code>schema:ContactPoint</code></td>
           <td>Recommended</td>
           <td>0..n</td>
         </tr>
-          <td>+ <a href="#project">Project</a></td>
+          <td>+ <a href="#properties-for-project">Project</a></td>
           <td><code>schema:Project</code></td>
           <td class="property recommended"><p>+ <a title="description" href="#project-description"><code>dct:description</code></a></p></td>
           <td><code>rdfs:Literal</code></td>
@@ -3258,7 +3258,7 @@
           <td>0..1</td>
         </tr>
         <tr>
-          <td>+ <a href="#project">Project</a></td>
+          <td>+ <a href="#properties-for-project">Project</a></td>
           <td><code>schema:Project</code></td>
           <td class="property optional"><p>+ <a title="homepage" href="#project-homepage"><code>foaf:homepage</code></a></p></td>
           <td><code>foaf:Document</code></td>
@@ -3266,7 +3266,7 @@
           <td>0..1</td>
         </tr>
         <tr>
-          <td>+ <a href="#propertyvalue">PropertyValue</a></td>
+          <td>+ <a href="#properties-for-propertyvalue">PropertyValue</a></td>
           <td><code>schema:PropertyValue</code></td>
           <td class="property mandatory"><p>+ <a title="identifier" href="#propertyvalue-propertyID"><code>schema:propertyID</code></a></p></td>
           <td><code>rdfs:Literal</code></td>
@@ -3274,239 +3274,349 @@
           <td>1..1</td>
         </tr>
         <tr>
-          <td>+ <a href="#propertyvalue">PropertyValue</a></td>
+          <td>+ <a href="#properties-for-propertyvalue">PropertyValue</a></td>
           <td><code>schema:PropertyValue</code></td>
           <td class="property mandatory">  <p>+ <a title="title" href="#propertyvalue-value"><code>schema:value</code></a></p></td>
           <td><code>rdfs:Literal</code></td>
           <td>Mandatory</td>
           <td>1..1</td>
-        </tr>  <!--
+        </tr>
         <tr>
-          <td>+ <a href="#publication">Publication</a></td>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
           <td><code>epos:Publication</code></td>
-          <td class="property mandatory">
-              <p>+ <a title="identifier" href="#publication-identifier"><code>schema:identifier</code></a></p>
-              <p>+ <a title="name" href="#publication-name"><code>schema:name</code></a></p>
-          </td>
-          <td class="property recommended">
-            <p>+ <a title="abstract" href="#publication-abstract"><code>dct:abstract</code></a></p></td>
-            <td>Recommended</td>
-            <td>0..n</td>
-        </tr>
-            <p>+ <a title="author" href="#publication-author"><code>schema:author</code></a></p></td>
-            <td>Recommended</td>
-            <td>0..n</td>
-        </tr>
-            <p>+ <a title="contributor" href="#publication-contributor"><code>schema:contributor</code></a></p></td>
-            <td>Recommended</td>
-            <td>0..n</td>
-        </tr>
-            <p>+ <a title="datepublished" href="#publication-datepublished"><code>schema:datePublished</code></a></p></td>
-            <td>Recommended</td>
-            <td>0..n</td>
-        </tr>
-            <p>+ <a title="publisher" href="#publication-publisher"><code>schema:publisher</code></a></p></td>
-            <td>Recommended</td>
-            <td>0..n</td>
-        </tr>
-          </td>
-          <td class="property optional">
-            <p>+ <a title="issn" href="#publication-issn"><code>schema:issn</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
-        </tr>
-            <p>+ <a title="keywords" href="#publication-keywords"><code>schema:keywords</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
-        </tr>
-            <p>+ <a title="license" href="#publication-license"><code>schema:license</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
-        </tr>
-            <p>+ <a title="number-of-pages" href="#publication-number-of-pages"><code>schema:numberOfPages</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
-        </tr>
-            <p>+ <a title="theme" href="#publication-theme"><code>dcat:theme</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
-        </tr>
-            <p>+ <a title="volumeNumber" href="#publication-volumeNumber"><code>schema:volumeNumber</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
-        </tr>
-          </td>
+          <td class="property mandatory"><p>+ <a title="identifier" href="#publication-identifier"><code>schema:identifier</code></a></p></td>
+          <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
+          <td>Mandatory</td>
+          <td>1..n</td>
         </tr>
         <tr>
-          <td><a href="#relationship">Relationship</a></td>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td>
+          <td class="property mandatory">    <p>+ <a title="name" href="#publication-name"><code>schema:name</code></a></p></td>
+          <td><code>rdfs:Literal</code></td>
+          <td>Mandatory</td>
+          <td>1..1</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td>
+          <td class="property recommended"><p>+ <a title="abstract" href="#publication-abstract"><code>dct:abstract</code></a></p></td>
+          <td><code>rdfs:Literal</code></td>
+          <td>Recommended</td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td>
+          <td class="property recommended"><p>+ <a title="author" href="#publication-author"><code>schema:author</code></a></p></td>
+          <td><code>schema:Person</code></td>
+          <td>Recommended</td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td>
+          <td class="property recommended"><p>+ <a title="contributor" href="#publication-contributor"><code>schema:contributor</code></a></p></td>
+          <td><code>schema:Person</code></td>
+          <td>Recommended</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td>
+          <td class="property recommended"><p>+ <a title="datepublished" href="#publication-datepublished"><code>schema:datePublished</code></a></p></td>
+          <td><code>rdfs:Literal</code>typed as<code>xsd:date</code> or <code>xsd:dateTime</code></td>
+          <td>Recommended</td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td>
+          <td class="property recommended"><p>+ <a title="publisher" href="#publication-publisher"><code>schema:publisher</code></a></p></td>
+          <td><code>schema:Person</code></td>
+          <td>Recommended</td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td>
+          <td class="property optional"> <p>+ <a title="issn" href="#publication-issn"><code>schema:issn</code></a></p></td>
+          <td><code>rdfs:Literal</code></td>
+          <td>Optional</td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td><p>+ <a title="keywords" href="#publication-keywords"><code>schema:keywords</code></a></p></td>
+          <td><code>rdfs:Literal</code></td>
+          <td>Optional</td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td>
+          <td class="property optional"><p>+ <a title="license" href="#publication-license"><code>schema:license</code></a></p></td>
+          <td><code>rdfs:Literal</code> typed with URI</td>
+          <td>Optional</td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td>
+          <td class="property optional"><p>+ <a title="number-of-pages" href="#publication-number-of-pages"><code>schema:numberOfPages</code></a></p></td>
+          <td><code>rdfs:Literal</code> typed as <code>xsd:integer</code></td>
+          <td>Optional</td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td>
+          <td class="property optional"><p>+ <a title="theme" href="#publication-theme"><code>dcat:theme</code></a></p></td>
+          <td><code>skos:Concept</code></td>
+          <td>Optional</td>
+          <td>0..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-publication">Publication</a></td>
+          <td><code>epos:Publication</code></td>
+          <td class="property optional"><p>+ <a title="volumeNumber" href="#publication-volumeNumber"><code>schema:volumeNumber</code></a></p></td>
+          <td><code>rdfs:Literal</code> </td>
+          <td>Optional</td>
+          <td>0..1</td>
+        </tr>
+        <tr>
+          <td><a href="#properties-for-relationship">Relationship</a></td>
           <td><code>dcat:Relationship</code></td>
-          <td class="property mandatory">
-              <p><a title="had-role" href="#relationship-had-role"><code>dcat:hadRole</code></a></p>
-              <p><a title="relation" href="#relationship-relation"><code>dct:relation</code></a></p>
-          </td>
-
+          <td class="property mandatory"><p><a title="had-role" href="#relationship-had-role"><code>dcat:hadRole</code></a></p></td>
+          <td><code>dcat:Role</code> </td>
+          <td>Mandatory</td>
+          <td>1..n</td>
         </tr>
         <tr>
-          <td>+ <a href="#service">Service</a></td>
+          <td><a href="#properties-for-relationship">Relationship</a></td>
+          <td><code>dcat:Relationship</code></td>
+          <td class="property mandatory"><p><a title="relation" href="#relationship-relation"><code>dct:relation</code></a></p></td>
+          <td><code>rdfs:Resource</code> </td>
+          <td>Mandatory</td>
+          <td>1..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-service">Service</a></td>
           <td><code>schema:Service</code></td>
-          <td class="property mandatory">
-              <p>+ <a title="identifier" href="#service-identifier"><code>schema:identifier</code></a></p>
-          </td>
-          <td class="property recommended">
-              <p>+ <a title="contact-point" href="#service-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
-              <td>Recommended</td>
-              <td>0..n</td>
+          <td class="property mandatory"><p>+ <a title="identifier" href="#service-identifier"><code>schema:identifier</code></a></p>
+          <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code> </td>
+          <td>Mandatory</td>
+          <td>1..n</td>
+        </tr>
+        <tr>
+          <td>+ <a href="#properties-for-service">Service</a></td>
+          <td><code>schema:Service</code></td>
+          <td class="property recommended"><p>+ <a title="contact-point" href="#service-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+          <td><code>schema:ContactPoint</code> </td>
+          <td>Recommended</td>
+          <td>0..n</td>
           </tr>
-              <p>+ <a title="description" href="#service-description"><code>schema:description</code></a></p></td>
-              <td>Recommended</td>
-              <td>0..n</td>
+          <tr>
+            <td>+ <a href="#properties-for-service">Service</a></td>
+            <td><code>schema:Service</code></td>
+            <td class="property recommended"><p>+ <a title="description" href="#service-description"><code>schema:description</code></a></p></td>
+            <td><code>rdfs:Literal</code></td>
+            <td>Recommended</td>
+            <td>0..1</td>
           </tr>
-              <p>+ <a title="name" href="#service-name"><code>schema:name</code></a></p></td>
-              <td>Recommended</td>
-              <td>0..n</td>
+          <tr>
+            <td>+ <a href="#properties-for-service">Service</a></td>
+            <td><code>schema:Service</code></td>
+            <td class="property recommended"><p>+ <a title="name" href="#service-name"><code>schema:name</code></a></p></td>
+            <td><code>rdfs:Literal</code></td>
+            <td>Recommended</td>
+            <td>0..1</td>
           </tr>
-              <p>+ <a title="provider" href="#service-provider"><code>schema:provider</code></a></p></td>
-              <td>Recommended</td>
-              <td>0..n</td>
+          <tr>
+            <td>+ <a href="#properties-for-service">Service</a></td>
+            <td><code>schema:Service</code></td>
+            <td class="property recommended"><p>+ <a title="provider" href="#service-provider"><code>schema:provider</code></a></p></td>
+            <td><code>schema:Organization</code> or <code>schema:Person</code></td>
+            <td>Recommended</td>
+            <td>0..1</td>
           </tr>
-          </td>
-          <td class="property optional">
-            <p>+ <a title="keywords" href="#service-keywords"><code>schema:keywords</code></a></p></td>
+          <tr>
+            <td>+ <a href="#properties-for-service">Service</a></td>
+            <td><code>schema:Service</code></td>
+            <td class="property optional"><p>+ <a title="keywords" href="#service-keywords"><code>schema:keywords</code></a></p></td>
+            <td><code>rdfs:Literal</code></td>
+            <td>Recommended</td>
+            <td>0..1</td>
+          </tr>
+          <tr>
+            <td>+ <a href="#properties-for-service">Service</a></td>
+            <td><code>schema:Service</code></td>
+            <td class="property optional"><p>+ <a title="servicetype" href="#service-servicetype"><code>schema:serviceType</code></a></p></td>
+            <td><code>rdfs:Literal</code></td>
+            <td>Optional</td>
+            <td>0..1</td>
+          </tr>
+          <tr>
+            <td>+ <a href="#properties-for-service">Service</a></td>
+            <td><code>schema:Service</code></td>
+            <td class="property optional"><p>+ <a title="spatial" href="#service-spatial"><code>dct:spatial</code></a></p></td>
+            <td><code>dct:Location</code></td>
             <td>Optional</td>
             <td>0..n</td>
         </tr>
-            <p>+ <a title="servicetype" href="#service-servicetype"><code>schema:serviceType</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+        <tr>
+          <td>+ <a href="#properties-for-service">Service</a></td>
+          <td><code>schema:Service</code></td>
+          <td class="property optional"><p>+ <a title="temporal" href="#service-temporal"><code>dct:temporal</code></a></p></td>
+          <td><code>dct:PeriodOfTime</code></td>
+          <td>Optional</td>
+          <td>0..n</td>
         </tr>
-            <p>+ <a title="spatial" href="#service-spatial"><code>dct:spatial</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+        <tr>
+          <td>+ <a href="#properties-for-service">Service</a></td>
+          <td><code>schema:Service</code></td>
+          <td class="property optional"><p>+ <a title="theme" href="#service-theme"><code>dcat:theme</code></a></p></td>
+          <td><code>skos:Concept</code></td>
+          <td>Optional</td>
+          <td>0..n</td>
         </tr>
-            <p>+ <a title="temporal" href="#service-temporal"><code>dct:temporal</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+        <tr>
+          <td>+ <a href="#properties-for-service">Service</a></td>
+          <td><code>schema:Service</code></td>
+          <td class="property optional"><p>+ <a title="url" href="#service-url"><code>schema:url</code></a></p></td>
+          <td><code>rdfs:Literal</code> typed with URI</td>
+          <td>Optional</td>
+          <td>0..1</td>
         </tr>
-            <p>+ <a title="theme" href="#service-theme"><code>dcat:theme</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
-        </tr>
-            <p>+ <a title="url" href="#service-url"><code>schema:url</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
-        </tr>
-          </td>
-        </tr>
+
+        <tr>
+          <td>+ <a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
+          <td><code>schema:SoftwareApplication</code></td>
+          <td class="property mandatory"><p>+ <a title="identifier" href="#softwareapplication-identifier"><code>schema:identifier</code></a></p></td>
+          <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code> </td>
+          <td>Mandatory</td>
+          <td>1..n</td>
+        </tr></tr>
         <tr>
           <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
           <td><code>schema:SoftwareApplication</code></td>
-          <td class="property mandatory">
-              <p>+ <a title="identifier" href="#softwareapplication-identifier"><code>schema:identifier</code></a></p>
-          </td>
+          <td class="property recommended"><p>+ <a title="contact-point" href="#softwareapplication-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+          <td><code>schema:ContactPoint</code> </td>
+          <td>Recommended</td>
+          <td>0..n</td>
         </tr>
         <tr>
             <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
             <td><code>schema:SoftwareApplication</code></td>
-            <td class="property recommended"><p>+ <a title="contact-point" href="#softwareapplication-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
-            <td>Recommended</td>
-            <td>0..n</td>
-          </tr>
-          <tr>
-            <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
-            <td><code>schema:SoftwareApplication</code></td>
             <td class="property recommended"><p>+ <a title="name" href="#softwareapplication-name"><code>schema:name</code></a></p></td>
-              <td>Recommended</td>
-              <td>0..n</td>
+            <td><code>rdfs:Literal</code></td>
+            <td>Recommended</td>
+            <td>0..1</td>
           </tr>
           <tr>
             <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
             <td><code>schema:SoftwareApplication</code></td>
             <td class="property optional"><p>+ <a title="description" href="#softwareapplication-description"><code>schema:description</code></a></p></td>
+            <td><code>rdfs:Literal</code></td>
             <td>Optional</td>
             <td>0..n</td>
         </tr>
         <tr>
           <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
-          <td><code>schema:SoftwareApplication</code></td>  <p>+ <a title="downloadurl" href="#softwareapplication-downloadurl"><code>schema:downloadUrl</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+          <td><code>schema:SoftwareApplication</code></td>
+          <td class="property optional"><p>+ <a title="downloadurl" href="#softwareapplication-downloadurl"><code>schema:downloadUrl</code></a></p></td>
+          <td><code>rdfs:Literal</code> typed with URI</td>
+          <td>Optional</td>
+            <td>0..1</td>
         </tr>
         <tr>
           <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
           <td><code>schema:SoftwareApplication</code></td>
           <td class="property optional"><p>+ <a title="installurl" href="#softwareapplication-installurl"><code>schema:installurl</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+          <td><code>rdfs:Literal</code> typed with URI</td>
+          <td>Optional</td>
+            <td>0..1</td>
         </tr>
         <tr>
           <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
           <td><code>schema:SoftwareApplication</code></td>
           <td class="property optional"><p>+ <a title="keywords" href="#softwareapplication-keywords"><code>schema:keywords</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+          <td><code>rdfs:Literal</code></td>
+          <td>Optional</td>
+          <td>0..1</td><!--da vedere -->
         </tr>
         <tr>
           <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
           <td><code>schema:SoftwareApplication</code></td>
           <td class="property optional"><p>+ <a title="main-entity-of-page" href="#softwareapplication-main-entity-of-page"><code>schema:mainEntityOfPage</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+          <td><code>rdfs:Literal</code> typed with URI</td>
+          <td>Optional</td>
+          <td>0..n</td>
         </tr>
         <tr>
           <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
           <td><code>schema:SoftwareApplication</code></td>
           <td class="property optional"><p>+ <a title="potentialaction" href="#softwareapplication-potentialaction"><code>schema:potentialAction</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+          <td><code>schema:ControlAction</code></td>
+          <td>Optional</td>
+          <td>0..1</td>
         </tr>
         <tr>
           <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
           <td><code>schema:SoftwareApplication</code></td>
           <td class="property optional"><p>+ <a title="relation" href="#softwareapplication-relation"><code>dct:relation</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+          <td><code>hydra:Operation</code></td>
+          <td>Optional</td>
+          <td>0..n</td>
         </tr>
         <tr>
           <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
           <td><code>schema:SoftwareApplication</code></td>
           <td class="property optional"><p>+ <a title="software-requirements" href="#softwareapplication-software-requirements"><code>schema:softwareRequirements</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+          <td><code>rdfs:Literal</code> typed with URI</td>
+          <td>Optional</td>
+          <td>0..1</td>
         </tr>
         <tr>
           <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
           <td><code>schema:SoftwareApplication</code></td>
           <td class="property optional"><p>+ <a title="software-version" href="#softwareapplication-software-version"><code>schema:softwareVersion</code></a></p></td>
+            <td><code>rdfs:Literal</code></td>
             <td>Optional</td>
-            <td>0..n</td>
+            <td>0..1</td>
         </tr>
         <tr>
           <td>+ <a href="#softwareapplication">SoftwareApplication</a></td>
           <td><code>schema:SoftwareApplication</code></td>
           <td class="property optional"><p>+ <a title="theme" href="#softwareapplication-theme"><code>dcat:theme</code></a></p></td>
-            <td>Optional</td>
-            <td>0..n</td>
+          <td><code>skos:Concept</code></td>
+          <td>Optional</td>
+          <td>0..n</td>
         </tr>
 
       <tr>
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property mandatory"><p>+ <a title="identifier" href="#softwaresourcecode-identifier"><code>schema:identifier</code></a></p></td>
-        <td>Mandatory</td>
         <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
-        <
-      </tr>
-      <tr>
-        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
-        <td><code>schema:SoftwareSourceCode</code></td>
-        <td class="property recommended"><p>+ <a title="contact-point" href="#softwaresourcecode-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
-        <td>Recommended</td>
+        <td>Mandatory</td>
         <td>0..n</td>
       </tr>
       <tr>
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
+        <td class="property recommended"><p>+ <a title="contact-point" href="#softwaresourcecode-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+        <td><code>schema:ContactPoint</code> </td>
+        <td>Recommended</td>
+        <td>0..n</td>
+        </tr>
+
+      </tr>
+      <tr>
+        <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
+        <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property recommended"><p>+ <a title="name" href="#softwaresourcecode-name"><code>schema:name</code></a></p></td>
+        <td><code>rdfs:Literal</code></td>
         <td>Recommended</td>
         <td>0..1</td>
       </tr>
@@ -3514,6 +3624,7 @@
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="code-repository" href="#softwaresourcecode-code-repository"><code>schema:codeRepository</code></a></p></td>
+        <td><code>rdfs:Literal</code> typed with URI</td>
         <td>Optional</td>
         <td>0..1</td>
       </tr>
@@ -3521,6 +3632,7 @@
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="description" href="#softwaresourcecode-description"><code>schema:description</code></a></p></td>
+        <td><code>rdfs:Literal</code></td>
         <td>Optional</td>
         <td>0..1</td>
       </tr>
@@ -3528,6 +3640,7 @@
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="keywords" href="#softwaresourcecode-keywords"><code>schema:keywords</code></a></p></td>
+        <td><code>rdfs:Literal</code></td>
         <td>Optional</td>
         <td>0..n</td>
       </tr>
@@ -3535,6 +3648,7 @@
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="software-license" href="#softwaresourcecode-license"><code>schema:license</code></a></p></td>
+        <td><code>rdfs:Literal</code> typed with URI</td>
         <td>Optional</td>
         <td>0..1</td>
       </tr>
@@ -3542,6 +3656,7 @@
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="main-entity-of-page" href="#softwaresourcecode-main-entity-of-page"><code>schema:mainEntityOfPage</code></a></p></td>
+        <td><code>rdfs:Literal</code> typed with URI</td>
         <td>Optional</td>
         <td>0..1</td>
       </tr>
@@ -3549,6 +3664,7 @@
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="programmingLanguage" href="#softwaresourcecode-programmingLanguage"><code>schema:programmingLanguage</code></a></p></td>
+        <td><code>rdfs:Literal</code></td>
         <td>Optional</td>
         <td>0..n</td>
       </tr>
@@ -3556,6 +3672,7 @@
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="runtime-platform" href="#softwaresourcecode-runtime-platform"><code>schema:runtimePlatform</code></a></p></td>
+        <td><code>rdfs:Literal</code></td>
         <td>Optional</td>
         <td>0..1</td>
       </tr>
@@ -3563,6 +3680,7 @@
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="software-version" href="#softwaresourcecode-software-version"><code>schema:softwareVersion</code></a></p></td>
+        <td><code>rdfs:Literal</code></td>
         <td>Optional</td>
         <td>0..1</td>
       </tr>
@@ -3570,6 +3688,7 @@
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="target-product" href="#softwaresourcecode-target-product"><code>schema:targetProduct</code></a></p></td>
+        <td><code>schema:SoftwareApplication</code></td>
         <td>Optional</td>
         <td>0..n</td>
       </tr>
@@ -3577,12 +3696,11 @@
         <td>+ <a href="#softwaresourcecode">SoftwareSourceCode</a></td>
         <td><code>schema:SoftwareSourceCode</code></td>
         <td class="property optional"><p>+ <a title="theme" href="#softwaresourcecode-theme"><code>dcat:theme</code></a></p></td>
+        <td><code>skos:Concept</code></td>
         <td>Optional</td>
         <td>0..n</td>
       </tr>
 
-
--->
     </tbody>
  </table>
 
