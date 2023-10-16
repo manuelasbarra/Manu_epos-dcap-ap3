@@ -122,6 +122,6 @@ li.ui-tabs-tab > a:hover {
 td.plus:before{
 content: '\002B\0020';
 }
-p.plus:after{
+p.plus:before{
 content: '\002B\0020';
 }
