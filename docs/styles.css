@@ -119,3 +119,6 @@ li.ui-tabs-tab > a:hover {
   background-color:dodgerblue;
   color:white;
 }
+td.plus:before{
+content: ' \002B';
+}
