@@ -48,7 +48,7 @@
         <td><p><a title="name" href="#agent-name"><code>foaf:name</code></a></p></td>
         <td><code>rdfs:Literal</code></td>
         <td>Mandatory</td>
-        <td>1..1</td>
+        <td>1..n</td>
     </tr>
     <tr>
         <td><a href="#properties-for-agent">Agent</a></td>
@@ -56,7 +56,7 @@
         <td><p><a title="type" href="#agent-type"><code>dct:type</code></a></p></td>
         <td><code>skos:Concept</code></td>
         <td>Recommended</td>
-        <td>1..1</td>
+        <td>0..1</td>
     </tr>
     <tr>
         <td><a href="#properties-for-catalog">Catalog</a></td>
@@ -94,7 +94,7 @@
         <td><a href="#properties-for-catalog">Catalog</a></td>
         <td><code>dcat:Catalog</code></td>
         <td class="property recommended"><p><a title="issued" href="#catalog-issued"><code>dct:issued</code></a></p></td>
-        <td><code>rdfs:Literal</code>typed as<code>xsd:date</code> or <code>xsd:dateTime</code></td>
+        <td><code>rdfs:Literal</code><br>typed as<code>xsd:date</code><br>or <code>xsd:dateTime</code></td>
         <td>Recommended</td>
         <td>0..1</td>
     </tr>
@@ -126,7 +126,7 @@
         <td><a href="#properties-for-catalog">Catalog</a></td>
         <td><code>dcat:Catalog</code></td>
         <td class="property recommended"><p><a title="modified" href="#catalog-modified"><code>dct:modified</code></a></p></td>
-        <td><code>rdfs:Literal</code>typed as<code>xsd:date</code> or <code>xsd:dateTime</code></td>
+        <td><code>rdfs:Literal</code><br> typed as<code>xsd:date</code><br> or<code>xsd:dateTime</code></td>
         <td>Recommended</td>
         <td>0..1</td>
     </tr>
@@ -214,7 +214,7 @@
         <td><a href="#properties-for-catalog-record">CatalogRecord</a></td>
         <td><code>dcat:CatalogRecord</code></td>
         <td class="property mandatory"><p><a title="modified" href="#catalog-record-modified"><code>dct:modified</code></a></p></td>
-        <td><code>rdfs:Literal</code>typed as<code>xsd:date</code> or <code>xsd:dateTime</code></td>
+        <td><code>rdfs:Literal</code> typed as<code>xsd:date</code> or <code>xsd:dateTime</code></td>
         <td>Mandatory</td>
         <td>1..1</td>
     </tr>
@@ -246,7 +246,7 @@
         <td><a href="#properties-for-catalog-record">CatalogRecord</a></td>
         <td><code>dcat:CatalogRecord</code></td>
         <td class="property recommended"><p><a title="issued" href="#catalog-record-issued"><code>dct:issued</code></a></p></td>
-        <td><code>rdfs:Literal</code>typed as<code>xsd:date</code> or <code>xsd:dateTime</code></td>
+        <td><code>rdfs:Literal</code> typed as<code>xsd:date</code> or <code>xsd:dateTime</code></td>
         <td>Recommended</td>
         <td>0..1</td>
     </tr>
@@ -835,15 +835,15 @@
       <td>0..n</td>
   </tr>
   <tr>
-      <td><a href="#properties-for-dataset-in-series">Dataset Int Series</a></td>
+      <td><a href="#properties-for-dataset-in-series">Dataset In Series</a></td>
       <td><code>dcat:Dataset</code></td>
       <td class="property mandatory"><p><a title="title" href="#dataset-in-series-title"><code>dct:title</code></a></p></td>
-      <td><code><rdfs:Literal</code></td>
+      <td><code>rdfs:Literal</code></td>
       <td>Mandatory</td>
       <td>1..n</td>
   </tr>
   <tr>
-      <td><a href="#properties-for-dataset-in-series">Dataset Int Series</a></td>
+      <td><a href="#properties-for-dataset-in-series">Dataset In Series</a></td>
       <td><code>dcat:Dataset</code></td>
       <td class="property mandatory"><p><a title="description" href="#dataset-in-series-description"><code>dct:description</code></a></p></td>
       <td><code>rdfs:Literal</code></td>
@@ -851,7 +851,7 @@
       <td>1..n</td>
   </tr>
   <tr>
-      <td><a href="#properties-for-dataset-in-series">Dataset Int Series</a></td>
+      <td><a href="#properties-for-dataset-in-series">Dataset In Series</a></td>
       <td><code>dcat:Dataset</code></td>
       <td class="property recommended"><p><a title="inseries" href="#dataset-in-series-inseries"><code>dcat:inSeries</code></a></p></td>
       <td><code>dcat:DatasetSeries</code></td>
@@ -859,7 +859,7 @@
       <td>0..n</td>
     </tr>
   <tr>
-      <td><a href="#properties-for-dataset-in-series">Dataset Int Series</a></td>
+      <td><a href="#properties-for-dataset-in-series">Dataset In Series</a></td>
       <td><code>dcat:Dataset</code></td>
       <td class="property recommended"><p><a title="previous" href="#dataset-in-series-previous"><code>dcat:previous</code></a></p></td>
       <td><code>dcat:Dataset</code></td>
@@ -867,7 +867,7 @@
       <td>0..n</td>
     </tr>
   <tr>
-      <td><a href="#properties-for-dataset-in-series">Dataset Int Series</a></td>
+      <td><a href="#properties-for-dataset-in-series">Dataset In Series</a></td>
       <td><code>dcat:Dataset</code></td>
       <td class="property optional"><p><a title="accrualPeriodicity" href="#dataset-in-series-frequency"><code>dct:accrualPeriodicity</code></a></p></td>
       <td><code>dct:Frequency</code></td>
@@ -875,7 +875,7 @@
       <td>0..1</td>
   </tr>
   <tr>
-      <td><a href="#properties-for-dataset-in-series">Dataset Int Series</a></td>
+      <td><a href="#properties-for-dataset-in-series">Dataset In Series</a></td>
       <td><code>dcat:Dataset</code></td>
       <td class="property optional"><p><a title="next" href="#dataset-in-series-next"><code>dct:next</code></a></p></td>
       <td><code>dcat:Dataset</code></td>
