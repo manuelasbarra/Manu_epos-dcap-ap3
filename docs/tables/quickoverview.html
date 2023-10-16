@@ -1163,172 +1163,174 @@
       <td>0..n</td>
   </tr>
   <tr>
-    <td><a href="#properties-for-distribution">Distribution</a></td>
-    <td><code>dcat:Distribution</code></td>
-    <td class="property optional"><p><a title="title" href="#distribution-title"><code>dct:title</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td><a href="#properties-for-distribution">Distribution</a></td>
+      <td><code>dcat:Distribution</code></td>
+      <td class="property optional"><p><a title="title" href="#distribution-title"><code>dct:title</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
+  </tr>
+  <!-- Equipment -->
+  <tr>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property mandatory"><p class="plus"><a title="description" href="#equipment-description"><code>dct:description</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property mandatory"><p class="plus"><a title="description" href="#equipment-description"><code>dct:description</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property mandatory"><p class="plus"><a title="identifier" href="#equipment-identifier"><code>dct:identifier</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property mandatory"><p class="plus"><a title="identifier" href="#equipment-identifier"><code>dct:identifier</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property mandatory"><p class="plus"><a title="title" href="#equipment-title"><code>dct:title</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property mandatory"><p class="plus"><a title="title" href="#equipment-title"><code>dct:title</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property recommended"><p class="plus"><a title="creator" href="#equipment-creator"><code>dct:creator</code></a></p></td>
+      <td><code>schema:Organization</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property recommended"><p class="plus"><a title="creator" href="#equipment-creator"><code>dct:creator</code></a></p></td>
-    <td><code>schema:Organization</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property recommended"><p class="plus"><a title="type" href="#equipment-type"><code>dct:type</code></a></p></td>
+      <td><code>skos:Concept</code> or <code>rdfs:Literal</code><br>typed with URI</td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property recommended"><p class="plus"><a title="type" href="#equipment-type"><code>dct:type</code></a></p></td>
-    <td><code>skos:Concept</code> or <code>rdfs:Literal</code><br>typed with URI</td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="contact-point" href="#equipment-contact-point"><code>dcat:contactPoint</code><a><br>or <a title="contact-point" href="#equipment-contact-point"><code>schema:contactPoint</code></a></p></td>
+      <td><code>schema:ContactPoint</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="contact-point" href="#equipment-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
-    <td><code>schema:ContactPoint</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="dynamic-range" href="#equipment-dynamic-range"><code>epos:dynamicRange</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="dynamic-range" href="#equipment-dynamic-range"><code>epos:dynamicRange</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="filter" href="#equipment-filter"><code>epos:filter</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="filter" href="#equipment-filter"><code>epos:filter</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="is-part-of" href="#equipment-is-part-of"><code>dct:isPartOf</code></a></p></td>
+      <td><code>epos:Equipment</code> or <code>epos:Facility</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="is-part-of" href="#equipment-is-part-of"><code>dct:isPartOf</code></a></p></td>
-    <td><code>epos:Equipment</code> or <code>epos:Facility</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="keyword" href="#equipment-keyword"><code>dcat:keyword</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="keyword" href="#equipment-keyword"><code>dcat:keyword</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="landingpage" href="#equipment-landingpage"><code>dcat:landingPage</code></a></p></td>
+      <td><code>foaf:Document</code> or <code>rdfs:Literal</code><br>typed with URI</td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="landingpage" href="#equipment-landingpage"><code>dcat:landingPage</code></a></p></td>
-    <td><code>foaf:Document</code> or <code>rdfs:Literal</code><br>typed with URI</td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="orientation" href="#equipment-orientation"><code>epos:orientation</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="orientation" href="#equipment-orientation"><code>epos:orientation</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="relation" href="#equipment-relation"><code>dct:relation</code></a></p></td>
+      <td><code>rdfs:Resource</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="relation" href="#equipment-relation"><code>dct:relation</code></a></p></td>
-    <td><code>rdfs:Resource</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="resolution" href="#equipment-resolution"><code>epos:resolution</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="resolution" href="#equipment-resolution"><code>epos:resolution</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="sample-period" href="#equipment-sample-period"><code>epos:samplePeriod</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="sample-period" href="#equipment-sample-period"><code>epos:samplePeriod</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="spatial" href="#equipment-spatial"><code>dct:spatial</code></a></p></td>
+      <td><code>dct:Location</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="spatial" href="#equipment-spatial"><code>dct:spatial</code></a></p></td>
-    <td><code>dct:Location</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="temporal" href="#equipment-temporal"><code>dct:temporal</code></a></p></td>
+      <td><code>dct:PeriodOfTime</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="temporal" href="#equipment-temporal"><code>dct:temporal</code></a></p></td>
-    <td><code>dct:PeriodOfTime</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+      <td><code>epos:Equipment</code></td>
+      <td class="property optional"><p class="plus"><a title="theme" href="#equipment-theme"><code>dcat:theme</code></a></p></td>
+      <td><code>skos:Concept</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
+  </tr>
+  <!-- Facility -->
+  <tr>
+      <td class="plus"><a href="#properties-for-facility">Facility</a></td>
+      <td><code>epos:Facility</code></td>
+      <td class="property mandatory"><p class="plus"><a title="description" href="#facility-description"><code>dct:description</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="theme" href="#equipment-theme"><code>dcat:theme</code></a></p></td>
-    <td><code>skos:Concept</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
-  </tr>
-  <tr>
-    <td class="plus"><a href="#properties-for-facility">Facility</a></td>
-    <td><code>epos:Facility</code></td>
-    <td class="property mandatory"><p class="plus"><a title="description" href="#facility-description"><code>dct:description</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
-  </tr>
-  <tr>
-    <td class="plus"><a href="#properties-for-facility">Facility</a></td>
-    <td><code>epos:Facility</code></td>
-    <td class="property mandatory"><p class="plus"><a title="identifier" href="#facility-identifier"><code>dct:identifier</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-facility">Facility</a></td>
+      <td><code>epos:Facility</code></td>
+      <td class="property mandatory"><p class="plus"><a title="identifier" href="#facility-identifier"><code>dct:identifier</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
       <td class="plus"><a href="#properties-for-facility">Facility</a></td>
@@ -1357,7 +1359,7 @@
   <tr>
       <td class="plus"><a href="#properties-for-facility">Facility</a></td>
       <td><code>epos:Facility</code></td>
-      <td class="property optional"><p class="plus"><a title="contact-point" href="#facility-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+      <td class="property optional"><p class="plus"><a title="contact-point" href="#facility-contact-point"><code>dcat:contactPoint</code><a><br>or <a title="contact-point" href="#facility-contact-point"><code>schema:contactPoint</code></a></p></td>
       <td><code>schema:ContactPoint</code></td>
       <td>Optional</td>
       <td>0..n</td>
@@ -1410,13 +1412,14 @@
       <td>Optional</td>
       <td>0..1</td>
   </tr>
+  <!-- Identifier -->
   <tr>
-    <td><a href="#properties-for-identifier">Identifier</a></td>
-    <td><code>adms:Identifier</code></td>
-    <td class="property mandatory"><p><a title="notation" href="#identifier-notation"><code>skos:notation</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed with the URI of one of the members of</td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td><a href="#properties-for-identifier">Identifier</a></td>
+      <td><code>adms:Identifier</code></td>
+      <td class="property mandatory"><p><a title="notation" href="#identifier-notation"><code>skos:notation</code></a></p></td>
+      <td><code>rdfs:Literal</code><br>typed with the URI of one of the members of</td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
       <td><a href="#properties-for-identifier">Identifier</a></td>
@@ -1426,61 +1429,63 @@
       <td>Mandatory</td>
       <td>1..1</td>
   </tr>
+  <!-- IriTemplate -->
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplate">IriTemplate</a></td>
-    <td><code>hydra:IriTemplate</code></td>
-    <td class="property mandatory"><p class="plus"><a title="template" href="#iritemplate-template"><code>hydra:template</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-iritemplate">IriTemplate</a></td>
+      <td><code>hydra:IriTemplate</code></td>
+      <td class="property mandatory"><p class="plus"><a title="template" href="#iritemplate-template"><code>hydra:template</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplate">IriTemplate</a></td>
-    <td><code>hydra:IriTemplate</code></td>
-    <td class="property optional"><p class="plus"><a title="mapping" href="#iritemplate-mapping"><code>hydra:mapping</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-iritemplate">IriTemplate</a></td>
+      <td><code>hydra:IriTemplate</code></td>
+      <td class="property optional"><p class="plus"><a title="mapping" href="#iritemplate-mapping"><code>hydra:mapping</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
+  </tr>
+  <!-- IriTemplateMapping -->
+  <tr>
+      <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
+      <td><code>hydra:IriTemplateMapping</code></td>
+      <td class="property mandatory"><p class="plus"><a title="label" href="#iritemplatemapping-label"><code>rdf:label</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
-    <td><code>hydra:IriTemplateMapping</code></td>
-    <td class="property mandatory"><p class="plus"><a title="label" href="#iritemplatemapping-label"><code>rdf:label</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
+      <td><code>hydra:IriTemplateMapping</code></td>
+      <td class="property mandatory"><p class="plus"><a title="range" href="#iritemplatemapping-range"><code>rdfs:range</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
-    <td><code>hydra:IriTemplateMapping</code></td>
-    <td class="property mandatory"><p class="plus"><a title="range" href="#iritemplatemapping-range"><code>rdfs:range</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
+      <td><code>hydra:IriTemplateMapping</code></td>
+      <td class="property mandatory"><p class="plus"><a title="required" href="#iritemplatemapping-required"><code>hydra:required</code></a></p></td>
+      <td><code>rdfs:Literal</code> typed as <code>xsd:boolean</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
-    <td><code>hydra:IriTemplateMapping</code></td>
-    <td class="property mandatory"><p class="plus"><a title="required" href="#iritemplatemapping-required"><code>hydra:required</code></a></p></td>
-    <td><code>rdfs:Literal</code> typed as <code>xsd:boolean</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
+      <td><code>hydra:IriTemplateMapping</code></td>
+      <td class="property mandatory"><p class="plus"><a title="variable" href="#iritemplatemapping-variable"><code>hydra:variable</code></a></p></td>
+      <td><code>rdfs:Literal</code> typed as <code>xsd:boolean</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
-    <td><code>hydra:IriTemplateMapping</code></td>
-    <td class="property mandatory"><p class="plus"><a title="variable" href="#iritemplatemapping-variable"><code>hydra:variable</code></a></p></td>
-    <td><code>rdfs:Literal</code> typed as <code>xsd:boolean</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
-  </tr>
-  <tr>
-    <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
-    <td><code>hydra:IriTemplateMapping</code></td>
-    <td class="property recommended"><p class="plus"><a title="defaultvalue" href="#iritemplatemapping-defaultValue"><code>schema:defaultValue</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
+      <td><code>hydra:IriTemplateMapping</code></td>
+      <td class="property recommended"><p class="plus"><a title="defaultvalue" href="#iritemplatemapping-defaultValue"><code>schema:defaultValue</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
     <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
@@ -1491,53 +1496,54 @@
     <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
-    <td><code>hydra:IriTemplateMapping</code></td>
-    <td class="property recommended"><p class="plus"><a title="minvalue" href="#iritemplatemapping-minvalue"><code>schema:minValue</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
+      <td><code>hydra:IriTemplateMapping</code></td>
+      <td class="property recommended"><p class="plus"><a title="minvalue" href="#iritemplatemapping-minvalue"><code>schema:minValue</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
-    <td><code>hydra:IriTemplateMapping</code></td>
-    <td class="property recommended"><p class="plus"><a title="paramValue" href="#iritemplatemapping-paramValue"><code>http:paramValue</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
+      <td><code>hydra:IriTemplateMapping</code></td>
+      <td class="property recommended"><p class="plus"><a title="paramValue" href="#iritemplatemapping-paramValue"><code>http:paramValue</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
-    <td><code>hydra:IriTemplateMapping</code></td>
-    <td class="property recommended"><p class="plus"><a title="property" href="#iritemplatemapping-property"><code>hydra:property</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
+      <td><code>hydra:IriTemplateMapping</code></td>
+      <td class="property recommended"><p class="plus"><a title="property" href="#iritemplatemapping-property"><code>hydra:property</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
-    <td><code>hydra:IriTemplateMapping</code></td>
-    <td class="property recommended"><p class="plus"><a title="valuepattern" href="#iritemplatemapping-valuePattern"><code>schema:valuePattern</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
+      <td><code>hydra:IriTemplateMapping</code></td>
+      <td class="property recommended"><p class="plus"><a title="valuepattern" href="#iritemplatemapping-valuePattern"><code>schema:valuePattern</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
-    <td><code>hydra:IriTemplateMapping</code></td>
-    <td class="property optional"><p class="plus"><a title="multiValues" href="#iritemplatemapping-multiValues"><code>schema:multiValues</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
+      <td><code>hydra:IriTemplateMapping</code></td>
+      <td class="property optional"><p class="plus"><a title="multiValues" href="#iritemplatemapping-multiValues"><code>schema:multiValues</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
-    <td><code>hydra:IriTemplateMapping</code></td>
-    <td class="property recommended"><p class="plus"><a title="readonlyvalue" href="#iritemplatemapping-readonlyvalue"><code>schema:readonlyValue</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
+      <td><code>hydra:IriTemplateMapping</code></td>
+      <td class="property recommended"><p class="plus"><a title="readonlyvalue" href="#iritemplatemapping-readonlyvalue"><code>schema:readonlyValue</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
+  <!-- LicenseDocument -->
   <tr>
     <td><a href="#properties-for-license-document">LicenseDocument</a></td>
     <td><code>dct:LicenseDocument</code></td>
@@ -1546,446 +1552,454 @@
     <td>Recommended</td>
     <td>0..n</td>
   </tr>
-
+  <!-- Location -->
   <tr>
-    <td><a href="#properties-for-location">Location</a></td>
-    <td><code>dct:Location</code></td>
-    <td class="property recommended"><p><a title="bbox" href="#location-bbox"><code>dcat:bbox</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed as <code>gsp:wktLiteral</code><br>or <code>gsp:gmlLiteral</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td><a href="#properties-for-location">Location</a></td>
+      <td><code>dct:Location</code></td>
+      <td class="property recommended"><p><a title="bbox" href="#location-bbox"><code>dcat:bbox</code></a></p></td>
+      <td><code>rdfs:Literal</code><br>typed as <code>gsp:wktLiteral</code><br>or <code>gsp:gmlLiteral</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td><a href="#properties-for-location">Location</a></td>
-    <td><code>dct:Location</code></td>
-    <td class="property recommended">
-    <p><a title="centroid" href="#location-centroid"><code>dcat:centroid</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed as <code>gsp:wktLiteral</code> or <code>gsp:gmlLiteral</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td><a href="#properties-for-location">Location</a></td>
+      <td><code>dct:Location</code></td>
+      <td class="property recommended">
+      <p><a title="centroid" href="#location-centroid"><code>dcat:centroid</code></a></p></td>
+      <td><code>rdfs:Literal</code><br>typed as <code>gsp:wktLiteral</code> or <code>gsp:gmlLiteral</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td><a href="#properties-for-location">Location</a></td>
-    <td><code>dct:Location</code></td>
-    <td class="property optional"><p><a title="geometry" href="#location-geometry"><code>locn:geometry</code></a></p></td>
-    <td><code>locn:Geometry</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td><a href="#properties-for-location">Location</a></td>
+      <td><code>dct:Location</code></td>
+      <td class="property optional"><p><a title="geometry" href="#location-geometry"><code>locn:geometry</code></a></p></td>
+      <td><code>locn:Geometry</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
+  </tr>
+  <!-- Operatin -->
+  <tr>
+      <td class="plus"><a href="#properties-for-operation">Operation</a></td>
+      <td><code>hydra:Operation</code></td>
+      <td class="property recommended"><p class="plus"><a title="property" href="#operation-property"><code>hydra:property</code></a></p></td>
+      <td><code>hydra:IriTemplate</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-operation">Operation</a></td>
-    <td><code>hydra:Operation</code></td>
-    <td class="property recommended"><p class="plus"><a title="property" href="#operation-property"><code>hydra:property</code></a></p></td>
-    <td><code>hydra:IriTemplate</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-operation">Operation</a></td>
+      <td><code>hydra:Operation</code></td>
+      <td class="property recommended"><p class="plus"><a title="returns" href="#operation-returns"><code>hydra:returns</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Recommended</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-operation">Operation</a></td>
-    <td><code>hydra:Operation</code></td>
-    <td class="property recommended"><p class="plus"><a title="returns" href="#operation-returns"><code>hydra:returns</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Recommended</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-operation">Operation</a></td>
+      <td><code>hydra:Operation</code></td>
+      <td class="property optional"><p class="plus"><a title="method" href="#operation-method"><code>hydra:method</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
+  </tr>
+  <!-- Organization -->
+  <tr>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property mandatory"><p class="plus"><a title="identifier" href="#organization-identifier"><code>schema:identifier</code></a></p></td>
+      <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
+      <td>Mandatory</td>
+      <td>1..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-operation">Operation</a></td>
-    <td><code>hydra:Operation</code></td>
-    <td class="property optional"><p class="plus"><a title="method" href="#operation-method"><code>hydra:method</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property recommended"><p class="plus"><a title="leicode" href="#organization-leicode"><code>schema:leiCode</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property mandatory"><p class="plus"><a title="identifier" href="#organization-identifier"><code>schema:identifier</code></a></p></td>
-    <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
-    <td>Mandatory</td>
-    <td>1..n</td>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property recommended"><p class="plus"><a title="legalname" href="#organization-legalname"><code>schema:legalname</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property recommended"><p class="plus"><a title="leicode" href="#organization-leicode"><code>schema:leiCode</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property optional"><p class="plus"><a title="address" href="#organization-address"><code>schema:address</code></a></p></td>
+      <td><code>rdfs:Literal</code> or <code>schema:PostalAddress</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property recommended"><p class="plus"><a title="legalname" href="#organization-legalname"><code>schema:legalname</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
-  </tr>
-  <tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property optional"><p class="plus"><a title="address" href="#organization-address"><code>schema:address</code></a></p></td>
-    <td><code>rdfs:Literal</code> or <code>schema:PostalAddress</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
-  </tr>
-  <tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property optional"><p class="plus"><a title="associatedproject" href="#organization-associatedproject"><code>epos:associatedProject</code></a></p></td>
-    <td><code>foaf:Project</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property optional"><p class="plus"><a title="associatedproject" href="#organization-associatedproject"><code>epos:associatedProject</code></a></p></td>
+      <td><code>foaf:Project</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr><tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property optional"><p class="plus"><a title="contact-point" href="#organization-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
-    <td><code>schema:ContactPoint</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property optional"><p class="plus"><a title="contact-point" href="#organization-contact-point"><code>dcat:contactPoint</code></a><br>or <a title="contact-point" href="#organization-contact-point"><code>schema:contactPoint</code></a></p></td>
+      <td><code>schema:ContactPoint</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property optional"><p class="plus"><a title="email" href="#organization-email"><code>schema:email</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property optional"><p class="plus"><a title="email" href="#organization-email"><code>schema:email</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property optional"><p class="plus"><a title="logo" href="#organization-logo"><code>schema:logo</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed with URI</td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property optional"><p class="plus"><a title="logo" href="#organization-logo"><code>schema:logo</code></a></p></td>
+      <td><code>rdfs:Literal</code><br>typed with URI</td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property optional"><p class="plus"><a title="memberof" href="#organization-memberof"><code>schema:memberOf</code></a></p></td>
-    <td><code>schema:Organization</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property optional"><p class="plus"><a title="memberof" href="#organization-memberof"><code>schema:memberOf</code></a></p></td>
+      <td><code>schema:Organization</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property optional"><p class="plus"><a title="owns" href="#organization-owns"><code>schema:owns</code></a></p></td>
-    <td><code>epos:Facility</code> or <code>epos:Equipment</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property optional"><p class="plus"><a title="owns" href="#organization-owns"><code>schema:owns</code></a></p></td>
+      <td><code>epos:Facility</code> or <code>epos:Equipment</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property optional"><p class="plus"><a title="telephone" href="#organization-telephone"><code>schema:telephone</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property optional"><p class="plus"><a title="telephone" href="#organization-telephone"><code>schema:telephone</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-organization">Organization</a></td>
-    <td><code>schema:Organization</code></td>
-    <td class="property optional"><p class="plus"><a title="url" href="#organization-url"><code>schema:url</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed with URI</td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-organization">Organization</a></td>
+      <td><code>schema:Organization</code></td>
+      <td class="property optional"><p class="plus"><a title="url" href="#organization-url"><code>schema:url</code></a></p></td>
+      <td><code>rdfs:Literal</code><br>typed with URI</td>
+      <td>Optional</td>
+      <td>0..1</td>
+  </tr>
+  <!-- PeriodOfTime -->
+  <tr>
+      <td><a href="#period-of-time">PeriodOfTime</a></td>
+      <td><code>dct:PeriodOfTime</code></td>
+      <td class="property recommended"><p><a title="end-date" href="#period-of-time-end-date"><code>dcat:endDate</code></a></p></td>
+      <td><code>rdfs:Literal</code><br>typed as <code>xsd:date</code><br>or <code>xsd:dateTime</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td><a href="#period-of-time">PeriodOfTime</a></td>
-    <td><code>dct:PeriodOfTime</code></td>
-    <td class="property recommended"><p><a title="end-date" href="#period-of-time-end-date"><code>dcat:endDate</code></a></p></td>
-    <td><code>rdfs:Literal</code> typed as <code>xsd:date</code> or <code>xsd:dateTime</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td><a href="#period-of-time">PeriodOfTime</a></td>
+      <td><code>dct:PeriodOfTime</code></td>
+      <td class="property recommended"><p><a title="start-date" href="#period-of-time-start-date"><code>dcat:startDate</code></a></p></td>
+      <td><code>rdfs:Literal</code><br>typed as <code>xsd:date</code><br>or <code>xsd:dateTime</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td><a href="#period-of-time">PeriodOfTime</a></td>
-    <td><code>dct:PeriodOfTime</code></td>
-    <td class="property recommended"><p><a title="start-date" href="#period-of-time-start-date"><code>dcat:startDate</code></a></p></td>
-    <td><code>rdfs:Literal</code> typed as <code>xsd:date</code> or <code>xsd:dateTime</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td><a href="#period-of-time">PeriodOfTime</a></td>
+      <td><code>dct:PeriodOfTime</code></td>
+      <td class="property optional"><p><a title="beginning" href="#period-of-time-beginning"><code>time:hasBeginning</code></a></p></td>
+      <td><code>time:Instant</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td><a href="#period-of-time">PeriodOfTime</a></td>
-    <td><code>dct:PeriodOfTime</code></td>
-    <td class="property optional"><p><a title="beginning" href="#period-of-time-beginning"><code>time:hasBeginning</code></a></p></td>
-    <td><code>time:Instant</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td><a href="#period-of-time">PeriodOfTime</a></td>
+      <td><code>dct:PeriodOfTime</code></td>
+      <td class="property optional"><p><a title="end" href="#period-of-time-end"><code>time:hasEnd</code></a></p></td>
+      <td><code>time:Instant</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
+  </tr>
+  <!-- Person -->
+  <tr>
+      <td class="plus"><a href="#properties-for-person">Person</a></td>
+      <td><code>schema:Person</code></td>
+      <td class="property mandatory"><p class="plus"><a title="identifier" href="#person-identifier"><code>schema:identifier</code></a></p></td>
+      <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
+      <td>Mandatory</td>
+      <td>1..n</td>
   </tr>
   <tr>
-    <td><a href="#period-of-time">PeriodOfTime</a></td>
-    <td><code>dct:PeriodOfTime</code></td>
-    <td class="property optional"><p><a title="end" href="#period-of-time-end"><code>time:hasEnd</code></a></p></td>
-    <td><code>time:Instant</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-person">Person</a></td>
+      <td><code>schema:Person</code></td>
+      <td class="property optional"><p class="plus"><a title="address" href="#person-address"><code>schema:address</code></a></p></td>
+      <td><code>rdfs:Literal</code> or <code>schema:PostalAddress</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-person">Person</a></td>
-    <td><code>schema:Person</code></td>
-    <td class="property mandatory"><p class="plus"><a title="identifier" href="#person-identifier"><code>schema:identifier</code></a></p></td>
-    <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
-    <td>Mandatory</td>
-    <td>1..n</td>
+      <td class="plus"><a href="#properties-for-person">Person</a></td>
+      <td><code>schema:Person</code></td>
+      <td class="property optional"><p class="plus"><a title="affiliation" href="#person-affiliation"><code>schema:affiliation</code></a></p></td>
+      <td><code>schema:Organization</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-person">Person</a></td>
-    <td><code>schema:Person</code></td>
-    <td class="property optional"><p class="plus"><a title="address" href="#person-address"><code>schema:address</code></a></p></td>
-    <td><code>rdfs:Literal</code> or <code>schema:PostalAddress</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-person">Person</a></td>
+      <td><code>schema:Person</code></td>
+      <td class="property optional"><p class="plus"><a title="contact-point" href="#person-contact-point"><code>dcat:contactPoint</code></a><br>or <a title="contact-point" href="#person-contact-point"><code>schema:contactPoint</code></a></p></td></td>
+      <td><code>schema:ContactPoint</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-person">Person</a></td>
-    <td><code>schema:Person</code></td>
-    <td class="property optional"><p class="plus"><a title="affiliation" href="#person-affiliation"><code>schema:affiliation</code></a></p></td>
-    <td><code>schema:Organization</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-person">Person</a></td>
+      <td><code>schema:Person</code></td>
+      <td class="property optional"><p class="plus"><a title="email" href="#person-email"><code>schema:email</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-person">Person</a></td>
-    <td><code>schema:Person</code></td>
-    <td class="property optional"><p class="plus"><a title="contact-point" href="#person-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td></td>
-    <td><code>schema:ContactPoint</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-person">Person</a></td>
+      <td><code>schema:Person</code></td>
+      <td class="property optional"><p class="plus"><a title="familyname" href="#person-familyname"><code>schema:familyName</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-person">Person</a></td>
-    <td><code>schema:Person</code></td>
-    <td class="property optional"><p class="plus"><a title="email" href="#person-email"><code>schema:email</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-person">Person</a></td>
+      <td><code>schema:Person</code></td>
+      <td class="property optional"><p class="plus"><a title="givenname" href="#person-givenname"><code>schema:givenName</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-person">Person</a></td>
-    <td><code>schema:Person</code></td>
-    <td class="property optional"><p class="plus"><a title="familyname" href="#person-familyname"><code>schema:familyName</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-person">Person</a></td>
+      <td><code>schema:Person</code></td>
+      <td class="property optional"><p class="plus"><a title="qualifications" href="#person-qualifications"><code>schema:qualifications</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-person">Person</a></td>
-    <td><code>schema:Person</code></td>
-    <td class="property optional"><p class="plus"><a title="givenname" href="#person-givenname"><code>schema:givenName</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-person">Person</a></td>
+      <td><code>schema:Person</code></td>
+      <td class="property optional"><p class="plus"><a title="telephone" href="#person-telephone"><code>schema:telephone</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-person">Person</a></td>
-    <td><code>schema:Person</code></td>
-    <td class="property optional"><p class="plus"><a title="qualifications" href="#person-qualifications"><code>schema:qualifications</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="properties-for-person">Person</a></td>
+      <td><code>schema:Person</code></td>
+      <td class="property optional"><p class="plus"><a title="url" href="#person-url"><code>schema:url</code></a></p></td>
+      <td><code>rdfs:Literal</code><br>typed with URI</td>
+      <td>Optional</td>
+      <td>0..1</td>
+  </tr>
+  <!--PostalAddress -->
+  <tr>
+      <td class="plus"><a href="#properties-for-postaladdress">PostalAddress</a></td>
+      <td><code>schema:PostalAddress</code></td>
+      <td class="property mandatory"><p class="plus"><a title="addresscountry" href="#postaladdress-addresscountry"><code>schema:addressCountry</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-person">Person</a></td>
-    <td><code>schema:Person</code></td>
-    <td class="property optional"><p class="plus"><a title="telephone" href="#person-telephone"><code>schema:telephone</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-postaladdress">PostalAddress</a></td>
+      <td><code>schema:PostalAddress</code></td>
+      <td class="property mandatory"><p class="plus"><a title="addresslocality" href="#postaladdress-addresslocality"><code>schema:addressLocality</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="properties-for-person">Person</a></td>
-    <td><code>schema:Person</code></td>
-    <td class="property optional"><p class="plus"><a title="url" href="#person-url"><code>schema:url</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed with URI</td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-postaladdress">PostalAddress</a></td>
+      <td><code>schema:PostalAddress</code></td>
+      <td class="property mandatory"><p class="plus"><a title="postalcode" href="#postaladdress-postalcode"><code>schema:postalCode</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-postaladdress">PostalAddress</a></td>
-    <td><code>schema:PostalAddress</code></td>
-    <td class="property mandatory"><p class="plus"><a title="addresscountry" href="#postaladdress-addresscountry"><code>schema:addressCountry</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-postaladdress">PostalAddress</a></td>
+      <td><code>schema:PostalAddress</code></td>
+      <td class="property mandatory"><p class="plus"><a title="streetaddress" href="#postaladdress-streetaddress"><code>schema:streetAddress</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
+  </tr>
+  <!-- Project -->
+  <tr>
+      <td class="plus"><a href="#properties-for-project">Project</a></td>
+      <td><code>schema:Project</code></td>
+      <td class="property mandatory"><p class="plus"><a title="identifier" href="#project-identifier"><code>dct:identifier</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-postaladdress">PostalAddress</a></td>
-    <td><code>schema:PostalAddress</code></td>
-    <td class="property mandatory"><p class="plus"><a title="addresslocality" href="#postaladdress-addresslocality"><code>schema:addressLocality</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-project">Project</a></td>
+      <td><code>schema:Project</code></td>
+      <td class="property mandatory"><p class="plus"><a title="title" href="#project-title"><code>dct:title</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-postaladdress">PostalAddress</a></td>
-    <td><code>schema:PostalAddress</code></td>
-    <td class="property mandatory"><p class="plus"><a title="postalcode" href="#postaladdress-postalcode"><code>schema:postalCode</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-project">Project</a></td>
+      <td><code>schema:Project</code></td>
+      <td class="property recommended"><p class="plus"><a title="contact-point" href="#project-contact-point"><code>dcat:contactPoint</code></a><br>or <a title="contact-point" href="#project-contact-point"><code>schema:contactPoint</code></a></p></td>
+      <td><code>schema:ContactPoint</code></td>
+      <td>Recommended</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-postaladdress">PostalAddress</a></td>
-    <td><code>schema:PostalAddress</code></td>
-    <td class="property mandatory"><p class="plus"><a title="streetaddress" href="#postaladdress-streetaddress"><code>schema:streetAddress</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-project">Project</a></td>
+      <td><code>schema:Project</code></td>
+      <td class="property recommended"><p class="plus"><a title="description" href="#project-description"><code>dct:description</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-project">Project</a></td>
-    <td><code>schema:Project</code></td>
-    <td class="property mandatory"><p class="plus"><a title="identifier" href="#project-identifier"><code>dct:identifier</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-project">Project</a></td>
+      <td><code>schema:Project</code></td>
+      <td class="property optional"><p class="plus"><a title="homepage" href="#project-homepage"><code>foaf:homepage</code></a></p></td>
+      <td><code>foaf:Document</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
+  </tr>
+  <!-- PropertyValue -->
+  <tr>
+      <td class="plus"><a href="#properties-for-propertyvalue">PropertyValue</a></td>
+      <td><code>schema:PropertyValue</code></td>
+      <td class="property mandatory"><p class="plus"><a title="identifier" href="#propertyvalue-propertyID"><code>schema:propertyID</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-project">Project</a></td>
-    <td><code>schema:Project</code></td>
-    <td class="property mandatory"><p class="plus"><a title="title" href="#project-title"><code>dct:title</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-propertyvalue">PropertyValue</a></td>
+      <td><code>schema:PropertyValue</code></td>
+      <td class="property mandatory">  <p class="plus"><a title="title" href="#propertyvalue-value"><code>schema:value</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
+  </tr>
+  <!-- Publication -->
+  <tr>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td class="property mandatory"><p class="plus"><a title="identifier" href="#publication-identifier"><code>schema:identifier</code></a></p></td>
+      <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
+      <td>Mandatory</td>
+      <td>1..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-project">Project</a></td>
-    <td><code>schema:Project</code></td>
-    <td class="property recommended"><p class="plus"><a title="contact-point" href="#project-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
-    <td><code>schema:ContactPoint</code></td>
-    <td>Recommended</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td class="property mandatory"><p class="plus"><a title="name" href="#publication-name"><code>schema:name</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Mandatory</td>
+      <td>1..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-project">Project</a></td>
-    <td><code>schema:Project</code></td>
-    <td class="property recommended"><p class="plus"><a title="description" href="#project-description"><code>dct:description</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td class="property recommended"><p class="plus"><a title="abstract" href="#publication-abstract"><code>dct:abstract</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-project">Project</a></td>
-    <td><code>schema:Project</code></td>
-    <td class="property optional"><p class="plus"><a title="homepage" href="#project-homepage"><code>foaf:homepage</code></a></p></td>
-    <td><code>foaf:Document</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td class="property recommended"><p class="plus"><a title="author" href="#publication-author"><code>schema:author</code></a></p></td>
+      <td><code>schema:Person</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-propertyvalue">PropertyValue</a></td>
-    <td><code>schema:PropertyValue</code></td>
-    <td class="property mandatory"><p class="plus"><a title="identifier" href="#propertyvalue-propertyID"><code>schema:propertyID</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td class="property recommended"><p class="plus"><a title="contributor" href="#publication-contributor"><code>schema:contributor</code></a></p></td>
+      <td><code>schema:Person</code></td>
+      <td>Recommended</td>
+      <td>0..n</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-propertyvalue">PropertyValue</a></td>
-    <td><code>schema:PropertyValue</code></td>
-    <td class="property mandatory">  <p class="plus"><a title="title" href="#propertyvalue-value"><code>schema:value</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td class="property recommended"><p class="plus"><a title="datepublished" href="#publication-datepublished"><code>schema:datePublished</code></a></p></td>
+      <td><code>rdfs:Literal</code><br>typed as<code> xsd:date</code><br>or <code>xsd:dateTime</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td class="property mandatory"><p class="plus"><a title="identifier" href="#publication-identifier"><code>schema:identifier</code></a></p></td>
-    <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
-    <td>Mandatory</td>
-    <td>1..n</td>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td class="property recommended"><p class="plus"><a title="publisher" href="#publication-publisher"><code>schema:publisher</code></a></p></td>
+      <td><code>schema:Person</code></td>
+      <td>Recommended</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td class="property mandatory">    <p class="plus"><a title="name" href="#publication-name"><code>schema:name</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td>1..1</td>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td class="property optional"> <p class="plus"><a title="issn" href="#publication-issn"><code>schema:issn</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td class="property recommended"><p class="plus"><a title="abstract" href="#publication-abstract"><code>dct:abstract</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td><p class="plus"><a title="keywords" href="#publication-keywords"><code>schema:keywords</code></a></p></td>
+      <td><code>rdfs:Literal</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td class="property recommended"><p class="plus"><a title="author" href="#publication-author"><code>schema:author</code></a></p></td>
-    <td><code>schema:Person</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td class="property optional"><p class="plus"><a title="license" href="#publication-license"><code>schema:license</code></a></p></td>
+      <td><code>rdfs:Literal</code><br>typed with URI</td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td class="property recommended"><p class="plus"><a title="contributor" href="#publication-contributor"><code>schema:contributor</code></a></p></td>
-    <td><code>schema:Person</code></td>
-    <td>Recommended</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td class="property optional"><p class="plus"><a title="number-of-pages" href="#publication-number-of-pages"><code>schema:numberOfPages</code></a></p></td>
+      <td><code>rdfs:Literal</code><br>typed as<code> xsd:integer</code></td>
+      <td>Optional</td>
+      <td>0..1</td>
   </tr>
   <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td class="property recommended"><p class="plus"><a title="datepublished" href="#publication-datepublished"><code>schema:datePublished</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed as<code> xsd:date</code><br>or <code>xsd:dateTime</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
-  </tr>
-  <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td class="property recommended"><p class="plus"><a title="publisher" href="#publication-publisher"><code>schema:publisher</code></a></p></td>
-    <td><code>schema:Person</code></td>
-    <td>Recommended</td>
-    <td>0..1</td>
-  </tr>
-  <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td class="property optional"> <p class="plus"><a title="issn" href="#publication-issn"><code>schema:issn</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
-  </tr>
-  <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td><p class="plus"><a title="keywords" href="#publication-keywords"><code>schema:keywords</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
-  </tr>
-  <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td class="property optional"><p class="plus"><a title="license" href="#publication-license"><code>schema:license</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed with URI</td>
-    <td>Optional</td>
-    <td>0..1</td>
-  </tr>
-  <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td class="property optional"><p class="plus"><a title="number-of-pages" href="#publication-number-of-pages"><code>schema:numberOfPages</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed as<code> xsd:integer</code></td>
-    <td>Optional</td>
-    <td>0..1</td>
-  </tr>
-  <tr>
-    <td class="plus"><a href="#properties-for-publication">Publication</a></td>
-    <td><code>epos:Publication</code></td>
-    <td class="property optional"><p class="plus"><a title="theme" href="#publication-theme"><code>dcat:theme</code></a></p></td>
-    <td><code>skos:Concept</code></td>
-    <td>Optional</td>
-    <td>0..n</td>
+      <td class="plus"><a href="#properties-for-publication">Publication</a></td>
+      <td><code>epos:Publication</code></td>
+      <td class="property optional"><p class="plus"><a title="theme" href="#publication-theme"><code>dcat:theme</code></a></p></td>
+      <td><code>skos:Concept</code></td>
+      <td>Optional</td>
+      <td>0..n</td>
   </tr>
   <tr>
       <td class="plus"><a href="#properties-for-publication">Publication</a></td>
@@ -1995,6 +2009,7 @@
       <td>Optional</td>
       <td>0..1</td>
   </tr>
+  <!-- Relationship -->
   <tr>
       <td><a href="#properties-for-relationship">Relationship</a></td>
       <td><code>dcat:Relationship</code></td>
@@ -2023,7 +2038,7 @@
   <tr>
       <td class="plus"><a href="#properties-for-service">Service</a></td>
       <td><code>schema:Service</code></td>
-      <td class="property recommended"><p class="plus"><a title="contact-point" href="#service-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p></td>
+      <td class="property recommended"><p class="plus"><a title="contact-point" href="#service-contact-point"><code>dcat:contactPoint</code></a> or <br><a title="contact-point" href="#service-contact-point"><code>schema:contactPoint</code></a></p></td>
       <td><code>schema:ContactPoint</code> </td>
       <td>Recommended</td>
       <td>0..n</td>
