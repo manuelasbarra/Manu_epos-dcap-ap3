@@ -1,4 +1,4 @@
-function quickreference() { alert('sss');
+function quickreference() { alert('s');
   $('#table-quickoverview').DataTable();
   //$('#table-epos-dcat-ap-classes-and-properties').DataTable();
 };
