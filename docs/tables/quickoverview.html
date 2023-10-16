@@ -1038,7 +1038,7 @@
       <td><a href="#properties-for-distribution">Distribution</a></td>
       <td><code>dcat:Distribution</code></td>
       <td class="property optional"><p><a title="byte-size" href="#distribution-bytesize"><code>dcat:byteSize</code></a></p></td>
-      <td><code></code>xsd:nonNegativeInteger</td>
+      <td><code>xsd:nonNegativeInteger</code></td>
       <td>Optional</td>
       <td>0..1</td>
   </tr>
@@ -1080,7 +1080,7 @@
       <td class="property optional"><p><a title="has-policy" href="#distribution-has-policy"><code>odrl:hasPolicy</code></a></p></td>
       <td><code>odrl:Policy</code></td>
       <td>Optional</td>
-      <td>0..n</td>
+      <td>0..1</td>
   </tr>
   <tr>
       <td><a href="#properties-for-distribution">Distribution</a></td>
@@ -1118,7 +1118,7 @@
       <td><a href="#properties-for-distribution">Distribution</a></td>
       <td><code>dcat:Distribution</code></td>
       <td class="property optional"><p><a title="package-format" href="#distribution-package-format"><code>dcat:packageFormat</code></a></p></td>
-      <td><code></code></td>
+      <td><code>dct:MediaType</code></td>
       <td>Optional</td>
       <td>0..1</td>
   </tr>
@@ -1535,8 +1535,8 @@
     <td><code>hydra:IriTemplateMapping</code></td>
     <td class="property recommended"><p>+ <a title="readonlyvalue" href="#iritemplatemapping-readonlyvalue"><code>schema:readonlyValue</code></a></p></td>
     <td><code>rdfs:Literal</code></td>
-    <td>Recommended</td>
-    <td>0..n</td>
+    <td>Optional</td>
+    <td>0..1</td>
   </tr>
   <tr>
     <td><a href="#properties-for-license-document">LicenseDocument</a></td>
@@ -1578,7 +1578,7 @@
     <td class="property recommended"><p>+ <a title="property" href="#operation-property"><code>hydra:property</code></a></p></td>
     <td><code>hydra:IriTemplate</code></td>
     <td>Recommended</td>
-    <td>0..n</td>
+    <td>0..1</td>
   </tr>
   <tr>
     <td class="plus"><a href="#properties-for-operation">Operation</a></td>
@@ -1602,7 +1602,7 @@
     <td class="property mandatory"><p>+ <a title="identifier" href="#organization-identifier"><code>schema:identifier</code></a></p></td>
     <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
     <td>Mandatory</td>
-    <td>1..1</td>
+    <td>1..n</td>
   </tr>
   <tr>
     <td class="plus"><a href="#properties-for-organization">Organization</a></td>
@@ -1689,7 +1689,7 @@
     <td class="property optional"><p>+ <a title="url" href="#organization-url"><code>schema:url</code></a></p></td>
     <td><code>rdfs:Literal</code> typed with URI</td>
     <td>Optional</td>
-    <td>0..n</td>
+    <td>0..1</td>
   </tr>
   <tr>
     <td><a href="#period-of-time">PeriodOfTime</a></td>
@@ -1729,7 +1729,7 @@
     <td class="property mandatory"><p>+ <a title="identifier" href="#person-identifier"><code>schema:identifier</code></a></p></td>
     <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
     <td>Mandatory</td>
-    <td>1..1</td>
+    <td>1..n</td>
   </tr>
   <tr>
     <td class="plus"><a href="#properties-for-person">Person</a></td>
@@ -2055,7 +2055,7 @@
       <td><code>schema:Service</code></td>
       <td class="property optional"><p>+ <a title="keywords" href="#service-keywords"><code>schema:keywords</code></a></p></td>
       <td><code>rdfs:Literal</code></td>
-      <td>Recommended</td>
+      <td>Optional</td>
       <td>0..1</td>
     </tr>
     <tr>
@@ -2129,7 +2129,7 @@
       <td class="property optional"><p>+ <a title="description" href="#softwareapplication-description"><code>schema:description</code></a></p></td>
       <td><code>rdfs:Literal</code></td>
       <td>Optional</td>
-      <td>0..n</td>
+      <td>0..1</td>
   </tr>
   <tr>
     <td class="plus"><a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
@@ -2153,7 +2153,7 @@
     <td class="property optional"><p>+ <a title="keywords" href="#softwareapplication-keywords"><code>schema:keywords</code></a></p></td>
     <td><code>rdfs:Literal</code></td>
     <td>Optional</td>
-    <td>0..1</td><!--da vedere -->
+    <td>0..1</td>
   </tr>
   <tr>
     <td class="plus"><a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
@@ -2161,7 +2161,7 @@
     <td class="property optional"><p>+ <a title="main-entity-of-page" href="#softwareapplication-main-entity-of-page"><code>schema:mainEntityOfPage</code></a></p></td>
     <td><code>rdfs:Literal</code> typed with URI</td>
     <td>Optional</td>
-    <td>0..n</td>
+    <td>0..1</td>
   </tr>
   <tr>
     <td class="plus"><a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
@@ -2210,7 +2210,7 @@
   <td class="property mandatory"><p>+ <a title="identifier" href="#softwaresourcecode-identifier"><code>schema:identifier</code></a></p></td>
   <td><code>rdfs:Literal</code> or <code>schema:PropertyValue</code></td>
   <td>Mandatory</td>
-  <td>0..n</td>
+  <td>1..n</td>
 </tr>
 <tr>
   <td class="plus"><a href="#properties-for-softwaresourcecode">SoftwareSourceCode</a></td>
@@ -2251,7 +2251,7 @@
   <td class="property optional"><p>+ <a title="keywords" href="#softwaresourcecode-keywords"><code>schema:keywords</code></a></p></td>
   <td><code>rdfs:Literal</code></td>
   <td>Optional</td>
-  <td>0..n</td>
+  <td>0..1</td>
 </tr>
 <tr>
   <td class="plus"><a href="#properties-for-softwaresourcecode">SoftwareSourceCode</a></td>
