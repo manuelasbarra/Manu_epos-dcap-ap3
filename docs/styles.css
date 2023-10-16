@@ -120,5 +120,5 @@ li.ui-tabs-tab > a:hover {
   color:white;
 }
 td.plus:before{
-content: ' \002B';
+content: '\002B';
 }
