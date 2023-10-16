@@ -290,6 +290,7 @@
         <td>Optional</td>
         <td>0..n</td>
     </tr>
+    <!-- Category -->
     <tr>
         <td><a href="#properties-for-category">Category</a></td>
         <td><code>skos:Concept</code></td>
@@ -314,22 +315,24 @@
         <td>Mandatory</td>
         <td>1..1</td>
     </tr>
-    <tr>
-        <td><a href="#properties-for-category-scheme">CategoryScheme</a></td>
-        <td><code>skos:ConceptScheme</code></td>
-        <td class="property mandatory"><p><a title="title" href="#category-scheme-title"><code>dct:title</code></a></p></td>
-        <td><code>rdfs:Literal</code></td>
-        <td>Mandatory</td>
-        <td>1..1</td>
-    </tr>
+    <!-- CategoryScheme -->
     <tr>
         <td><a href="#properties-for-category-scheme">CategoryScheme</a></td>
         <td><code>skos:ConceptScheme</code></td>
         <td class="property recommended"><p class="plus"><a title="description" href="#category-scheme-description"><code>dct:description</code></a></p></td>
         <td><code>rdfs:Literal</code></td>
         <td>Recommended</td>
-        <td>0..1</td>
+        <td>1..n</td>
     </tr>
+    <tr>
+        <td><a href="#properties-for-category-scheme">CategoryScheme</a></td>
+        <td><code>skos:ConceptScheme</code></td>
+        <td class="property recommended"><p><a title="title" href="#category-scheme-title"><code>dct:title</code></a></p></td>
+        <td><code>rdfs:Literal</code></td>
+        <td>Recommended</td>
+        <td>1..n</td>
+    </tr>
+    <!-- Checksum -->
     <tr>
         <td><a href="#properties-for-checksum">Checksum</a></td>
         <td><code>spdx:Checksum</code></td>
@@ -338,6 +341,7 @@
         <td>Mandatory</td>
         <td>1..1</td>
     </tr>
+    <!-- ContactPoint -->
     <tr>
         <td><a href="#properties-for-checksum">Checksum</a></td>
         <td><code>spdx:Checksum</code></td>
@@ -378,6 +382,7 @@
         <td>Optional</td>
         <td>0..n</td>
     </tr>
+    <!-- DataService -->
     <tr>
         <td><a href="#properties-for-data-service">DataService</a></td>
         <td><code>dcat:DataService</code></td>
