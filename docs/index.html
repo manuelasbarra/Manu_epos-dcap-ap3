@@ -3728,48 +3728,7 @@
 
 
 </body>
-<!-- This must be at the end of the template, to ensure that the iterator properly works -->
-<script defer>
 
-
-  var prefixes = [
-{'pref':'adms:', 'ns': 'http://www.w3.org/ns/adms#'},
-{'pref':'dcat:', 'ns': 'http://www.w3.org/ns/dcat#'},
-{'pref':'dcatap:', 'ns': 'http://data.europa.eu/r5r/'},
-{'pref':'dct:', 'ns': 'http://purl.org/dc/terms/'},
-{'pref':'dctype:', 'ns': 'http://purl.org/dc/dcmitype/'},
-{'pref':'foaf:', 'ns': 'http://xmlns.com/foaf/0.1/'},
-{'pref':'locn:', 'ns': 'http://www.w3.org/ns/locn#'},
-{'pref':'odrl:', 'ns': 'http://www.w3.org/ns/odrl/2/'},
-{'pref':'owl:', 'ns': 'http://www.w3.org/2002/07/owl#'},
-{'pref':'prov:', 'ns': 'http://www.w3.org/ns/prov#'},
-{'pref':'rdf:', 'ns': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'},
-{'pref':'rdfs:', 'ns': 'http://www.w3.org/2000/01/rdf-schema#'},
-{'pref':'skos:', 'ns': 'http://www.w3.org/2004/02/skos/core#'},
-{'pref':'spdx:', 'ns': 'http://spdx.org/rdf/terms#'},
-{'pref':'time:', 'ns': 'http://www.w3.org/2006/time#'},
-{'pref':'vcard:', 'ns': 'http://www.w3.org/2006/vcard/ns#'},
-{'pref':'eli:', 'ns' : 'http://data.europa.eu/eli/ontology#'},
-{'pref':'xsd:', 'ns': 'http://www.w3.org/2001/XMLSchema#'}
-    ];
-
-  function shorturl (url) {
-    var short = url;
-    for (e in prefixes) {
-       var elem = prefixes[e];
-       if (short.startsWith(elem.ns)) {
-        short = elem.pref + short.slice(elem.ns.length);
-      }
-    };
-    return short;
-  };
-
-  var shorten = document.getElementsByClassName("shorten");
-  for (k=0;k < shorten.length ; k++){
-  var selem = shorten[k];
-              selem.innerHTML = shorturl(selem.innerHTML.trim());
-  }
-</script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
 <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"> -->
