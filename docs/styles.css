@@ -142,4 +142,5 @@ li.ui-tabs-tab > a:hover {
   border-top: 1px solid #c5c5c5!important;
   border-left: 1px solid #c5c5c5!important;
   border-right: 1px solid #c5c5c5!important;
+  border-bottom-width: 0;
 }
