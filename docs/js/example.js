@@ -149,3 +149,22 @@ $(document).ready(function () {
 		}
 	});
 });
+function elementInView(elem){
+    goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
+    goesOut = ($(window).scrollTop()) > ($(elem).offset().top + $(elem).height());
+    if (goesIn && !goesOut)
+      return 1;
+    else
+      return 0;
+  };
+
+$(window).scroll(function(){
+  $('.CodeMirror').each(function(){
+    if (elementInView($(this))){
+      $(this).each(function(i, el){
+        el.CodeMirror.refresh();
+      });
+    }
+  });
+
+});
