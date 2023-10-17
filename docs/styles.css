@@ -107,6 +107,7 @@ table.definition td {width:80%;}
   float: right
 }
 .buttonsample:hover {color:#2a70d3}
+
 .tabsstyle {
   overflow: hidden;
 }
@@ -138,4 +139,5 @@ li.ui-tabs-tab > a:hover {
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
   background-color:#fff!important;
+  border: 1px solid #c5c5c5!important;
 }
