@@ -87,7 +87,7 @@ $(document).ready(function () {
 		var text = example_structure(exampleid);
 		$(this).after(text);
 
-		var obj = {CM0: createTurtleEditorFrom(document.getElementById(exampleid + "-tab1validationquery")))};
+		var obj = {CM0: createTurtleEditorFrom(document.getElementById(exampleid + "-tab1validationquery"))};
 		editors[index] = obj;
 		$("#" + exampleid + "-tabs").tabs();
 		$("#" + exampleid + "-tabs a").on('click', function(e) {
