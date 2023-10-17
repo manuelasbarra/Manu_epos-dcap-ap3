@@ -137,3 +137,11 @@ p.plus:before{
   content: '\002B\0020';
   font-size: x-small;
 }
+
+li.ui-tabs-tab > a:hover {
+ background-color:dodgerblue;
+color:white;
+}
+li.ui-state-active{
+  background-color:#fff!important;
+}
