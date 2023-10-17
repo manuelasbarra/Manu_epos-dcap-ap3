@@ -137,7 +137,7 @@ li.ui-tabs-tab > a:hover {
  background-color:dodgerblue;
  color:white;
 }
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+.ui-state-active,.ui-state-active:hover, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
   background-color:#fff!important;
   border: 1px solid #c5c5c5!important;
 }
