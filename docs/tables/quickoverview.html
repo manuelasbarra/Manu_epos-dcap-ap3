@@ -1,12 +1,18 @@
 <table class="simple" id="table-quickoverview">
 <thead>
     <tr>
-        <th class="small"><p>Class</p></th>
+      <th><p>Class</p></th>
+      <th ><p>Class IRI</p></th>
+      <th><p>Property IRI</p></th>
+      <th><p>Range</p></th>
+      <th><p>Property Type</p></th>
+      <th class="xxxsmall"><p>Card.</p></th>
+      <!--  <th class="small"><p>Class</p></th>
         <th class="medium"><p>Class IRI</p></th>
         <th class="medium"><p>Property IRI</p></th>
         <th class="xsmedium"><p>Range</p></th>
         <th class="small"><p>Property Type</p></th>
-        <th class="xxxsmall"><p>Card.</p></th>
+        <th class="xxxsmall"><p>Card.</p></th>-->
     </tr>
 </thead>
 <tbody>
@@ -1479,7 +1485,7 @@
       <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
       <td><code>hydra:IriTemplateMapping</code></td>
       <td class="property mandatory"><p class="plus"><a title="required" href="#iritemplatemapping-required"><code>hydra:required</code></a></p></td>
-      <td><code>rdfs:Literal</code> typed as <code>xsd:boolean</code></td>
+      <td><code>rdfs:Literal</code><br>typed as <code>xsd:boolean</code></td>
       <td>Mandatory</td>
       <td>1..1</td>
   </tr>
@@ -1487,7 +1493,7 @@
       <td class="plus"><a href="#properties-for-iritemplatemapping">IriTemplateMapping</a></td>
       <td><code>hydra:IriTemplateMapping</code></td>
       <td class="property mandatory"><p class="plus"><a title="variable" href="#iritemplatemapping-variable"><code>hydra:variable</code></a></p></td>
-      <td><code>rdfs:Literal</code> typed as <code>xsd:boolean</code></td>
+      <td><code>rdfs:Literal</code><br>typed as <code>xsd:boolean</code></td>
       <td>Mandatory</td>
       <td>1..1</td>
   </tr>
@@ -1578,7 +1584,7 @@
       <td><code>dct:Location</code></td>
       <td class="property recommended">
       <p><a title="centroid" href="#location-centroid"><code>dcat:centroid</code></a></p></td>
-      <td><code>rdfs:Literal</code><br>typed as <code>gsp:wktLiteral</code> or <code>gsp:gmlLiteral</code></td>
+      <td><code>rdfs:Literal</code><br>typed as <code>gsp:wktLiteral</code><br>or <code>gsp:gmlLiteral</code></td>
       <td>Recommended</td>
       <td>0..1</td>
   </tr>
@@ -2075,7 +2081,7 @@
       <td class="plus"><a href="#properties-for-service">Service</a></td>
       <td><code>schema:Service</code></td>
       <td class="property recommended"><p class="plus"><a title="provider" href="#service-provider"><code>schema:provider</code></a></p></td>
-      <td><code>schema:Organization</code> or <code>schema:Person</code></td>
+      <td><code>schema:Organization</code><br>or <code>schema:Person</code></td>
       <td>Recommended</td>
       <td>0..1</td>
   </tr>
