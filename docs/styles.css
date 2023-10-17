@@ -35,7 +35,7 @@ table.simple th.xsmall{width:10%!important; text-align: center;}
 table.simple th.xxsmall{width:10%!important;}
 table.simple th.small{width:15%!important;}
 table.simple th.xsmedium{width:20%!important;}
-table.simple th.medium{width:25%;}
+table.simple th.medium{width:25%!important;}
 table.simple th.large{width:45%;}
 table.simple td.center{text-align: center;}
 table.simple td.justify{text-align: justify!important;}
