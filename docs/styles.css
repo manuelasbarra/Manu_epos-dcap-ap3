@@ -106,14 +106,10 @@ table.definition td {width:80%;}
   text-decoration: none;
   float: right
 }
-.buttonsample:hover {color:#41813}
+.buttonsample:hover {color:#41813!important;}
 
 .tabsstyle {
   overflow: hidden;
-}
-li.ui-tabs-tab > a:hover {
-  background-color:dodgerblue;
-  color:white;
 }
 
 #table-quickoverview tbody th, table.dataTable tbody td {
