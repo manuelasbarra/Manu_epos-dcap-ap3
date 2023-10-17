@@ -125,6 +125,11 @@ li.ui-tabs-tab > a:hover {
 #table-quickoverview tbody th, table.dataTable tbody td {
     padding: 4px 2px 4px 6px;
 }
+#table-quickoverview tbody tr:hover {
+       background-color: cadetblue;
+       cursor: pointer;
+   }
+
 td.plus:before{
   content: '\002B\0020';
 }
