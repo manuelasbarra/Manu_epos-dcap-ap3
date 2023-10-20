@@ -75,7 +75,7 @@ function createJSONLDEditorFrom(selector) {
 $(document).ready(function () {
   var examples = [];
   var editors = [];
-  var examples_id = ".esempio";
+  var examples_id = ".ex_turtle";
   var examples_class = ".h3";
   var folder = "./examples/";
   var $examples = $(examples_id);
@@ -149,6 +149,7 @@ $(document).ready(function () {
 		}
 	});
 });
+
 function elementInView(elem){
     goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
     goesOut = ($(window).scrollTop()) > ($(elem).offset().top + $(elem).height());
@@ -166,5 +167,4 @@ $(window).scroll(function(){
       });
     }
   });
-
 });

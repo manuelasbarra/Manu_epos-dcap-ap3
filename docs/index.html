@@ -7,130 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
-<!--  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>-->
-  <script class="remove">
-    // All config options at https://respec.org/docs/
-
-/*
-
-	function quickreference() {alert('aba');
-		$('#table-quickoverview').DataTable();
-    $('#table-epos-dcat-ap-classes-and-properties').DataTable();
-	};
-
-  var editors = [  {
-      name:   "Rossana Paciello",
-      orcid:  "0000-0002-6975-1991",
-      company: "Istituto Nazionale Geofisica e Vulcanologia - INGV",
-      companyURL: "www.ingv.it"
-    },
-    {
-      name: 	"Manuela Sbarra",
-      orcid:  "0000-0001-7746-6309",
-      company:    "Istituto Nazionale Geofisica e Vulcanologia - INGV",
-      companyURL: "www.ingv.it"
-    }];
-
-    var respecConfig = {
-      postProcess: [quickreference],
-      edDraftURI: "https://semiceu.github.io//DCAT-AP/releases/3.0.0",
-      latestVersion: "https://github.com/SEMICeu/DCAT-AP/tree/master/releases/2.1.1",
-      specStatus: "LD",
-      publishDate: "2023-07-17",
-      editors: editors,
-      //authors: authors,
-      github: "SEMICeu/DCAT-AP",
-      shortName: "DCAT-AP 3.0",
-      xref: "web-platform",
-      doJsonLd: true,
-      logos: [{
-        src: "https://semiceu.github.io/CPOV/releases/2.1.0/html/semic-icon.png",
-        url: "https://semic.eu",
-        alt: "SEMIC",
-        width: 154,
-        height: 140,
-        id: "semic-logo",
-      },],
-      generatedSubtitle: "",
-      additionalCopyrightHolders: "",
-      localBiblio: {
-        "DXWG": {
-          "href" : "https://www.w3.org/2017/dxwg/wiki/Main_Page",
-          "title" : "Dataset Exchange Working Group",
-          "publisher" : "W3C"
-          },
-        "ISA":{
-           "href":"https://ec.europa.eu/isa/",
-           "title":"Interoperability Solutions for European Public Administrations (ISA)",
-           "publisher":"European Commission"
-          },
-        "ISA2":{
-          "href":"https://ec.europa.eu/isa2/",
-          "title":"Interoperability solutions for public administrations, businesses and citizens (ISA²)",
-          "publisher":"European Commission"
-        },
-        "SEMIC":{
-          "href":"https://joinup.ec.europa.eu/",
-          "title":"JoinUp welcomes Interoperable Europe",
-          "publisher":"European Commission"
-         },
-        "DEU" : {
-          "href":"https://data.europa.eu",
-          "title":"The official portal for European data",
-          "publisher":"European Commission"
-        },
-		"HVD" : {
-		  "href":"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0138",
-		  "title":"Implementing Regulation for High Value Datasets",
-		  "publisher":"European Union"
-		},
-		"DCAT-AP-HVD" : {
-		  "href":"https://semiceu.github.io/uri.semic.eu-generated/DCAT-AP/releases/2.2.0-hvd/",
-		  "title":"Usage Guidelines of DCAT-AP for High-Value Datasets",
-		  "publisher":"European Commission"
-		},
-                "PSI" : {
-                  "href": "https://eur-lex.europa.eu/eli/dir/2019/1024/oj",
-                  "title" :  "Directive on open data and the re-use of public sector information (recast)",
-                  "publisher" : "European Union"
-                }
-      }
-    };
-
-*/
-
-    </script>
-    <script  src="./js/config.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
   <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 
-
-  <!--
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
-
-
-   <script  src="./js/config.js"></script>  -->
-<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
-  <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-  <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
-  <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>-->
-  <!--    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js" ></script>-->
   <script class="remove" src="./js/respect.js"></script>
-  <script src="./js/example.js" ></script>
-
+  <script class="remove" src="./js/config.js"></script>
+  <script class="remove" src="./js/example.js" ></script>
+  <link rel="stylesheet" href="./styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
 
-  <link rel="stylesheet" href="./styles.css">
+  <!--<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>-->
 </head>
 
 <body>
@@ -180,19 +67,64 @@
       <p>The DCAT-AP Application Profile on which this document is based is the DCAT-AP specification v3 [[DCAT-AP-3]].  </p>
     </section>
 
+    <section id="profile-encoding">
+      <h3>Profile Encoding</h3>
+      <p>The encoding of the EPOS-DCAT-AP [[EPOS-DCAT-AP]] provides the technical aspects
+        used for data representation and exchange, ensuring interoperability. An influential choice for achieving interoperability across diverse systems is the adoption of RDF (Resource Description Framework) and the Turtle format.
+        RDF's structure allows for a flexible and standardized representation of data, promoting a harmonized approach to information exchange.
+        </p>
+      <p>The preference for Turtle [[Turtle]] as a data exchange format  is based on its simplicity and human-readable nature. This choice  is crucial for promoting a consistent and clear representation of data, fitting well with the RDF model.
+      </p>
+      <p>Finally, a Turtle document serves as a textual representation of an RDF graph, offering a compact yet expressive format for articulating the complexities of the graph. An RDF graph, built on triples consisting of a subject, predicate, and object, forms the backbone of this interoperable and standardized representation.
+      </p>
+    </section>
+
+    <section id="profile-validation">
+      <h3>Profile Validation</h3>
+      <p>To verify if the data exchange is (technically) conformant to DCAT-AP, the Shapes Constraint Language (SHACL) [[SHACL]] is defined.
+      </p>
+      <p> SHACL is designed to provide constraints and validation for RDF graphs and offering several advantages:
+        <ul>
+         <li>
+          <b>Extensibility:</b> SHACL allows for the precise definition of constraints on RDF data. It is designed to be extensible, enabling users to define custom constraint components, which can be reused across multiple shapes and datasets.
+         </li>
+         <li>
+          <b>Scalable and efficient:</b> SHACL is structured for efficient validation, making it suitable for use with large datasets and complex data models.
+         </li>
+         <li>
+          <b>Widely adopted:</b> SHACL is a W3C Recommendation for expressing constraints on a RDF knowledge graph, it enjoys broad support among data management tools and libraries, promoting interoperability and reusability. This makes it a more natural fit for data models that need to interoperate with other semantic web resources and standards.
+         </li>
+        </ul>
+      </p>
+      <p>The SHACL constraints for EPOS-DCAT-AP are available at: </p>
+      <p><a href="https://github.com/epos-eu/EPOS-DCAT-AP/blob/EPOS-DCAT-AP-v3.0/docs/epos-dcat-ap_v3.0.0_shacl.ttl">
+        https://github.com/epos-eu/EPOS-DCAT-AP/blob/EPOS-DCAT-AP-v3.0/docs/epos-dcat-ap_v3.0.0_shacl.ttl</a>
+      </p>
+      <p> They represent a set of integrity constraints used to validate instance shapes with respect to:
+        <ul>
+         <li>cardinality constraints, both for properties that have a minimum occurrence greater or equal to than 1 (for example, there needs to be at least one occurrence of the mandatory property title of a Dataset) and properties that have an
+          explicit maximum occurrence (for example, there can be a maximum of one licence for a Distribution)
+         </li>
+         <li> restrictions concerning ranges (expressed as sh:nodeKind) of properties to avoid that properties, irrespective of whether they are mandatory, recommended or optional, are provided that violate range declarations.
+         </li>
+        </ul>
+      </p>
+    </section>
+
     <section id="history">
       <h3>Revision history</h3>
       <p>In 2023, the adoption of W3C DCAT 3  triggered a new alignment for DCAT-AP. W3C DCAT 3 extends the profile with the Dataset Series notion, deprecates the use of some URIs and introducing new URIs in the DCAT namespace for the use case of Dataset versioning. </p>
 
-    <section id="history_alignment"><h4>Alignment EPOS-DCAT-AP v2 with DCAT-AP 3</h4>
-      <div data-include-format="html" data-include-replace="true" data-include="./tables/revision_history.html"></div>
-
+    <section id="history_alignment"><h4>Classes alignment EPOS-DCAT-AP v3.0 with DCAT-AP v3.0</h4>
+      <div data-include-format="html" data-include-replace="true" data-include="./tables/revision_history_copy.html"></div>
+      <!--<section id="history_alignment"><h4>Alignment EPOS-DCAT-AP v2 with DCAT-AP 3</h4> !-->
+      <!--<div data-include-format="html" data-include-replace="true" data-include="./tables/revision_history.html"></div>!-->
     </section>
-      <section id="history_alignment2"><h4>Properties characterizing EPOS-DCAT-AP 3.0 with respect to DCAT-AP
-3.0</h4>
-      <div data-include-format="html" data-include-replace="true" data-include="./tables/revision_history_2.html"></div>
+    <section id="history_alignment2"><h4>Properties alignment EPOS-DCAT-AP v3.0 with DCAT-AP v3.0</h4>
+      <div data-include-format="html" data-include-replace="true" data-include="./tables/revision_history_2_copy.html"></div>
+      <!--<div data-include-format="html" data-include-replace="true" data-include="./tables/revision_history_2.html"></div>!-->
+    </section>
 
-      </section>
     </section>
 
   </section>
@@ -295,6 +227,7 @@
       plus a selection of properties from other vocabularies on which EPOS-DCAT-AP expresses additional constraints or on which EPOS-DCAT-AP wants to emphasise their usage.
     </p>
     <p>Examples on the use of these properties, encoded in [[Turtle]], are included in the relevant sections and available from a <a href="./examples/">separate folder</a>.</p>
+
     <!-- Address -->
     <section id="properties-for-address">
       <h3>Class: Address</h3>
@@ -318,19 +251,15 @@
       </section>
 
       <section id="examples-for-address">
-        <h4 class="h3 examples">Example</h4>
+        <h4>Example</h4>
         <aside class="example" id="ex-address" title="Address">
           <p>The address in this example is the same of <a href="#ex-postal-address"></a>, but represented by using [[VCARD-RDF]].</p>
           <!--<pre data-include-format="text" data-include="./examples/address.ttl"></pre>-->
         </aside>
-        <div class="h3 esempio" id="address" />
+        <div class="h3 ex_turtle" id="address" />
       </section>
 
-
-
-
     </section>
-
 
     <!-- Agent -->
     <section id="properties-for-agent">
@@ -346,6 +275,7 @@
         <h4>Recommended property</h4>
         <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-agent.html"></div>
       </section>
+
     </section>
 
     <!-- Catalog -->
@@ -421,16 +351,15 @@
             <li><a href="#category-preflabel">prefLabel</a></li>
           </ul>
         </aside>
-        <div class="h3 esempio" id="address" />
         <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-category.html"></div>
       </section>
 
       <section id="examples-for-category">
         <h4>Example</h4>
         <aside class="example" id="ex-category" title="Category">
-          <div class="h3 esempio" id="category" />
+          <!--<pre data-include-format="text" data-include="./examples/category.ttl"></pre>-->
         </aside>
-        <div class="h3 esempio" id="category" />
+        <div class="h3 ex_turtle" id="category" />
       </section>
     </section>
 
@@ -438,6 +367,10 @@
     <section id="properties-for-category-scheme">
       <h3>Class: CategoryScheme</h3>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/class-category-scheme.html"></div>
+      <section id="mandatory-properties-for-category-scheme">
+        <h4>Mandatory properties</h4>
+        <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-category-scheme.html"></div>
+      </section>
       <section id="recommended-properties-for-category-scheme">
         <h4>Recommended properties</h4>
         <aside class="note">
@@ -452,8 +385,9 @@
       <section id="examples-for-category-scheme">
         <h4>Example</h4>
         <aside class="example" id="ex-category-scheme" title="Category Scheme">
-          <pre data-include-format="text" data-include="./examples/category-scheme.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/category-scheme.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="category-scheme" />
       </section>
     </section>
 
@@ -487,8 +421,9 @@
       <section id="examples-for-contact-point">
         <h4>Example</h4>
         <aside class="example" id="ex-contact-point" title="contactPoint">
-          <pre data-include-format="text" data-include="./examples/contact-point.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/contact-point.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="contact-point" />
       </section>
 
     </section>
@@ -549,8 +484,9 @@
       <section id="examples-for-data-service">
         <h4>Example</h4>
         <aside class="example" id="ex-data-service" title="Data Service">
-        <pre data-include-format="text" data-include="./examples/data-service.ttl"></pre>
+        <!--<pre data-include-format="text" data-include="./examples/data-service.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="data-service" />
       </section>
     </section>
 
@@ -605,9 +541,9 @@
       <section id="examples-for-dataset">
         <h4>Example</h4>
         <aside class="example" id="ex-dataset" title="Dataset">
-        <pre data-include-format="text" data-include="./examples/dataset.ttl"></pre>
+        <!--<pre data-include-format="text" data-include="./examples/dataset.ttl"></pre>-->
         </aside>
-
+        <div class="h3 ex_turtle" id="dataset" />
       </section>
 
     </section>
@@ -635,14 +571,15 @@
 
       <section id="optional-properties-for-dataset-in-series">
         <h4>Optional properties</h4>
-        <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-dataset-in-series.html"></div>
+    <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-dataset-in-series.html"></div>
+
       </section>
-      <section id="examples-for-dataset-in-series">
+      <!--<section id="examples-for-dataset-in-series">
         <h4>Example</h4>
         <aside class="example" id="ex-dataset-in-series" title="DatasetInSeries">
-        <!--  <pre data-include-format="text" data-include="./examples/dataset-series.ttl"></pre>
-      </aside>-->
-      </section>
+          <pre data-include-format="text" data-include="./examples/dataset-series.ttl"></pre>
+      </aside>
+      </section>-->
 
     </section>
 
@@ -672,11 +609,11 @@
        <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-dataset-series.html"></div>
 
       </section>
-      <section id="examples-for-dataset-series">
+      <!--<section id="examples-for-dataset-series">
         <h4>Example</h4>
         <aside class="example" id="ex-dataset-series" title="DatasetSeries">
 
-      </section>
+      </section>-->
 
     </section>
     <!-- Distribution -->
@@ -710,8 +647,9 @@
       <section id="examples-for-distribution">
         <h4>Example</h4>
         <aside class="example" id="ex-distribution" title="Distribution">
-          <pre data-include-format="text" data-include="./examples/distribution.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/distribution.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="distribution" />
       </section>
 
     </section>
@@ -757,8 +695,9 @@
       <section id="examples-for-equipment">
         <h4>Example</h4>
         <aside class="example" id="ex-equipment" title="Equipment">
-          <pre data-include-format="text" data-include="./examples/equipment.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/equipment.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="equipment" />
       </section>
     </section>
 
@@ -785,8 +724,9 @@
       <section id="examples-for-facility">
         <h4>Example</h4>
         <aside class="example" id="ex-facility" title="Facility">
-          <pre data-include-format="text" data-include="./examples/facility.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/facility.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="facility" />
       </section>
     </section>
 
@@ -808,8 +748,9 @@
       <section id="examples-for-identifier">
         <h4>Example</h4>
         <aside class="example" id="ex-identifier" title="Identifier">
-          <pre data-include-format="text" data-include="./examples/identifier.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/identifier.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="identifier" />
       </section>
     </section>
 
@@ -831,8 +772,9 @@
       <section id="examples-for-iritemplate">
         <h4>Example</h4>
         <aside class="example" id="ex-iritemplate" title="IriTemplate">
-          <pre data-include-format="text" data-include="./examples/iritemplate.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/iritemplate.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="iritemplate" />
       </section>
     </section>
 
@@ -851,11 +793,16 @@
         <h4>Recommended properties</h4>
         <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-iritemplatemapping.html"></div>
       </section>
+      <section id="optional-properties-for-iritemplatemapping">
+        <h4>Optional properties</h4>
+        <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-iritemplatemapping.html"></div>
+      </section>
       <section id="examples-for-iritemplatemapping">
         <h4>Example</h4>
         <aside class="example" id="ex-iritemplatemapping" title="IriTemplateMapping">
-          <pre data-include-format="text" data-include="./examples/iritemplatemapping.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/iritemplatemapping.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="iritemplatemapping" />
       </section>
     </section>
 
@@ -899,19 +846,21 @@
       <section id="examples-for-location">
         <h4>Examples</h4>
         <aside class="example" id="ex-location-gn" title="Location as centroid">
-          <pre data-include-format="text" data-include="./examples/location-centroid.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/location-centroid.ttl"></pre>-->
           <figure id="fig-spatial-coverage-centroid">
             <img src="./images/ex-spatial-coverage-centroid.png" />
             <figcaption>Map preview of a spatial coverage specified with a centroid (source: <a href="https://w3c.github.io/dxwg/dcat/#ex-spatial-coverage-centroid">https://w3c.github.io/dxwg/dcat/#ex-spatial-coverage-centroid</a>)</figcaption>
           </figure>
         </aside>
+        <div class="h3 ex_turtle" id="location-centroid" />
         <aside class="example" id="ex-location-geom" title="Location as geometry">
-          <pre data-include-format="text" data-include="./examples/location-geometry.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/location-geometry.ttl"></pre>-->
           <figure id="fig-spatial-coverage-geometry">
             <img src="./images/ex-spatial-coverage-bbox.png" />
             <figcaption>Map preview of a spatial coverage specified with a geometry (source: <a href="https://w3c.github.io/dxwg/dcat/#ex-spatial-coverage-bbox">https://w3c.github.io/dxwg/dcat/#ex-spatial-coverage-bbox</a>)</figcaption>
           </figure>
         </aside>
+        <div class="h3 ex_turtle" id="location-geometry" />
       </section>
 
     </section>
@@ -943,8 +892,9 @@
       <section id="examples-for-operation">
         <h4>Example</h4>
         <aside class="example" id="ex-operation" title="Operation">
-          <pre data-include-format="text" data-include="./examples/operation.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/operation.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="operation" />
       </section>
     </section>
 
@@ -973,8 +923,9 @@
       <section id="examples-for-organization">
         <h4>Example</h4>
         <aside class="example" id="ex-organization" title="Organization">
-          <pre data-include-format="text" data-include="./examples/organization.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/organization.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="organization" />
       </section>
 
     </section>
@@ -994,9 +945,9 @@
       <section id="examples-for-period-of-time">
         <h4>Example</h4>
         <aside class="example" id="ex-period-of-time" title="Period of Time">
-          <pre data-include-format="text" data-include="./examples/period-of-time.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/period-of-time.ttl"></pre>-->
         </aside>
-
+        <div class="h3 ex_turtle" id="period-of-time" />
       </section>
 
     </section>
@@ -1021,8 +972,9 @@
       <section id="examples-for-person">
         <h4>Example</h4>
         <aside class="example" id="ex-person" title="Person">
-          <pre data-include-format="text" data-include="./examples/person.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/person.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="person" />
       </section>
     </section>
 
@@ -1050,8 +1002,9 @@
         <h4>Example</h4>
         <aside class="example" id="ex-postal-address" title="PostalAddress">
           <p>The address in this example is the same of <a href="#ex-address"></a>, but represented by using [[LOCN]].</p>
-          <pre data-include-format="text" data-include="./examples/postal-address.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/postal-address.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="postal-address" />
       </section>
     </section>
 
@@ -1091,8 +1044,9 @@
       <section id="examples-for-property-value.html">
         <h4>Example</h4>
         <aside class="example" id="ex-property-value" title="Property Value">
-          <pre data-include-format="text" data-include="./examples/property-value.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/property-value.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="property-value" />
       </section>
     </section>
 
@@ -1184,8 +1138,9 @@
       <section id="examples-for-service">
         <h4>Example</h4>
         <aside class="example" id="ex-service" title="Service">
-          <pre data-include-format="text" data-include="./examples/service.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/service.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="service" />
       </section>
     </section>
 
@@ -1214,8 +1169,9 @@
       <section id="examples-for-softwareapplication">
         <h4>Example</h4>
         <aside class="example" id="ex-softwareapplication" title="SoftwareApplication">
-          <pre data-include-format="text" data-include="./examples/softwareapplication.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/softwareapplication.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="softwareapplication" />
       </section>
     </section>
 
@@ -1245,29 +1201,22 @@
       <section id="examples-for-softwaresourcecode">
         <h4>Example</h4>
         <aside class="example" id="ex-softwaresourcecode" title="SoftwareSourceCode">
-          <pre data-include-format="text" data-include="./examples/softwaresourcecode.ttl"></pre>
+          <!--<pre data-include-format="text" data-include="./examples/softwaresourcecode.ttl"></pre>-->
         </aside>
+        <div class="h3 ex_turtle" id="softwaresourcecode" />
       </section>
     </section>
-
+</section>
     <!-- Annexes-->
     <section id="quick-reference-of-classes-and-properties" class="appendix">
       <!-- Quick Reference of Classes and Properties  -->
       <h2>Quick Reference of Classes and Properties</h2>
       <p>This version of EPOS-DCAT-AP extends [[DCAT-AP]] with additional classes and properties (some of which re-used across classes). They are listed in the following table marked with a prepended “plus” sign (+).</p>
-      <!--<div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>-->
+      <br>
+      <div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>
+    </section>
 
-    <!--  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-      	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
--->
-
- <br>
-  <div data-include-format="html" data-include-replace="true" data-include="./tables/quickoverview.html"></div>
-  <!--  <div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>
-  -->  </section>
-  </section>
-
-  <!--SHACL-->
+  <!--SHACL
   <section id="shacl">
     <h2>SHACL Contraints</h2>
     <p>The SHACL constraints for EPOS-DCAT-AP are available at: </p>
@@ -1282,11 +1231,11 @@
         <li> restrictions concerning ranges (expressed as sh:nodeKind) of properties to avoid that properties, irrespective of whether they are mandatory, recommended or optional, are provided that violate range declarations.
         </li>
       </ul>
-  </section>
+  </section>-->
 
 
 </body>
-  <!-- This must be at the end of the template, to ensure that the iterator properly works -->
+<!-- This must be at the end of the template, to ensure that the iterator properly works -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
@@ -1295,5 +1244,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
   <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
-
 </html>
