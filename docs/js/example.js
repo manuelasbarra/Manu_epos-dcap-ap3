@@ -148,7 +148,7 @@ $(document).ready(function () {
 	});
 });
 
-/*function elementInView(elem){
+function elementInView(elem){
     goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
     goesOut = ($(window).scrollTop()) > ($(elem).offset().top + $(elem).height());
     if (goesIn && !goesOut)
@@ -165,4 +165,4 @@ $(window).scroll(function(){
       });
     }
   });
-});*/
+});
