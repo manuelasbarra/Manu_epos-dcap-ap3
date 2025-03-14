@@ -19,42 +19,7 @@
     </tr>
     </thead>
   <tbody>
-    <tr class="property optional" id="catalog-catalog">
-      <td>
-          <p>catalog</p>
-      </td>
-      <td>
-          <p><code>dcat:catalog</code></p>
-      </td>
-      <td>
-          <p><code>dcat:Catalog</code></p>
-      </td>
-      <td class="justify">
-          <p>This property refers to a Catalog whose contents are of interest in the context of this catalog.</p>
-      </td>
-      <td class="center">
-          <p>0..n</p>
-      </td>
-    </tr>
-    <tr class="property optional" id="catalog-creator">
-      <td>
-          <p>creator</p>
-      </td>
-      <td>
-          <p><code>dct:creator</code></p>
-      </td>
-      <td>
-          <p><code>foaf:Agent</code></p>
-      </td>
-      <td class="justify">
-          <p>This property refers to the Agent primarily responsible for producing the catalog.</p>
-      </td>
-      <td class="center">
-          <p>0..1</p>
-      </td>
-    </tr>
-
-    <tr class="property optional" id="catalog-has-part">
+    <tr class="property optional" id="catalog.haspart">
       <td>
           <p>hasPart</p>
       </td>
@@ -71,7 +36,7 @@
           <p>0..n</p>
       </td>
     </tr>
-    <tr class="property optional" id="catalog-is-part-of">
+    <tr class="property optional" id="catalog.ispartof">
       <td>
           <p>isPartOf</p>
       </td>
@@ -88,8 +53,7 @@
           <p>0..1</p>
       </td>
     </tr>
-
-    <tr class="property optional" id="catalog-record">
+    <tr class="property optional" id="catalog.record">
       <td>
           <p>record</p>
       </td>
@@ -106,7 +70,7 @@
           <p>0..n</p>
       </td>
     </tr>
-    <tr class="property optional" id="catalog-rights">
+    <tr class="property optional" id="catalog.rights">
       <td>
           <p>rights</p>
       </td>
@@ -123,18 +87,18 @@
           <p>0..1</p>
       </td>
     </tr>
-    <tr class="property optional" id="catalog-temporal">
+    <tr class="property optional" id="catalog.spatial">
       <td>
-          <p>temporal</p>
+          <p>spatial</p>
       </td>
       <td>
-          <p><code>dct:temporal</code></p>
+          <p><code>dct:spatial</code></p>
       </td>
       <td>
-          <p><code>dct:PeriodOfTime</code></p>
+          <p><code>dct:Location</code></p>
       </td>
       <td class="justify">
-          <p>This property refers to a temporal period that the Catalogue covers.</p>
+          <p>This property refers to a geographical area covered by the Catalog.</p>
       </td>
       <td class="center">
           <p>0..n</p>
