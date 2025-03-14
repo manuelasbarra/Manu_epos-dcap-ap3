@@ -19,12 +19,12 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="property recommended ap-ext" id="equipment-creator">
+    <tr class="property recommended ap-ext" id="equipment.manufacturer">
       <td>
-        <p>creator</p>
+        <p>manufacturer</p>
       </td>
       <td>
-        <p><code>dct:creator</code></p>
+        <p><code>schema:manufacturer</code></p>
       </td>
       <td>
         <p><code>schema:Organization</code></p>
@@ -36,7 +36,24 @@
         <p>0..1</p>
       </td>
     </tr>
-    <tr class="property recommended ap-ext" id="equipment-type">
+    <tr class="property recommended ap-ext" id="equipment.serialnumber">
+      <td>
+        <p>serialNumber</p>
+      </td>
+      <td>
+        <p><code>schema:serialNumber</code></p>
+      </td>
+      <td>
+        <p><code>rdfs:Literal</code></p>
+      </td>
+      <td class="justify">
+        <p>This property contains the serial number for the Equipment.</p>
+      </td>
+      <td class="center">
+        <p>0..1</p>
+      </td>
+    </tr>
+    <tr class="property recommended ap-ext" id="equipment.type">
       <td>
           <p>type</p>
       </td>
