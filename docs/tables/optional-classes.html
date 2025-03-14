@@ -22,13 +22,13 @@
       <a href="#properties-for-catalog-record">Catalog Record</a>
   </td>
   <td class="justify">
-      <p>A description of a Catalog's, Data Service's, or Dataset's entry in the Catalog.</p>
+      <p>A description of a Catalog's or Dataset's entry in the Catalog.</p>
   </td>
   <td>
       <p><code>dcat:CatalogRecord</code></p>
   </td>
   <td>
-      <p><a data-cite="DCAT-AP-3#CatalogueRecord">§&nbsp;7.3 Catalog Record</a><br>[[VOCAB-DCAT-3]]</p>
+      <p><a data-cite="DCAT-AP#CatalogueRecord">§&nbsp;7.3 Catalog Record</a><br>[[VOCAB-DCAT]]</p>
   </td>
 </tr>
 
@@ -44,51 +44,6 @@
   </td>
   <td>
       <p><a class="sec-ref" data-cite="SPDX#d4e1930">§&nbsp;Checksum</a><br>[[SPDX]]</p>
-  </td>
-</tr>
-
-<tr class="class optional" id="data-service">
-  <td>
-      <a href="#properties-for-data-service">Data Service</a>
-  </td>
-  <td class="justify">
-      <p>A collection of operations that provides access to one or more datasets or data processing functions.</p>
-  </td>
-  <td>
-      <p><code>dcat:DataService</code></p>
-  </td>
-  <td>
-      <p><a data-cite="DCAT-AP-3#DataService">§&nbsp;7.6 Data Service</a><br>[[VOCAB-DCAT-3]]</p>
-  </td>
-</tr>
-<tr class="class optional" id="dataset-in-series">
-  <td>
-      <a href="#properties-for-dataset-in-series">Dataset In Series</a>
-  </td>
-  <td class="justify">
-      <p>This class is introduced to capture the case when a Dataset is a member of a Dataset Series. Therefore this Dataset must be a member of a Dataset Series.
-</p>
-  </td>
-  <td>
-      <p><code>dcat:Dataset</code></p>
-  </td>
-  <td>
-      <p><a data-cite="DCAT-AP-3#DatasetmemberofaDatasetSeries">§&nbsp;7.8 Dataset member of a Dataset Series</a><br>[[VOCAB-DCAT-3]]</p>
-  </td>
-</tr>
-
-<tr class="class optional" id="dataset-series">
-  <td>
-      <a href="#properties-for-dataset-series">Dataset Series</a>
-  </td>
-  <td class="justify">
-      <p>A collection of datasets that are published separately, but share some characteristics that group them.</p>
-  </td>
-  <td>
-      <p><code>dcat:DatasetSeries</code></p>
-  </td>
-  <td>
-      <p><a data-cite="DCAT-AP-3#DatasetSeries">§&nbsp;7.9 Dataset Series</a><br>[[VOCAB-DCAT-3]]</p>
   </td>
 </tr>
 
@@ -142,7 +97,7 @@
       <a href="#properties-for-kind">Kind</a>
   </td>
   <td class="justify">
-      <p>A description following the [[VCARD-RDF]] specification, e.g. to provide telephone number and e-mail address for a contact point. Note that the class <code>vcard:Kind</code> is the parent class for the four explicit types of vCards (<code>vcard:Individual</code>, <code>vcard:Organization</code>, <code>vcard:Location</code>, <code>vcard:Group</code>).</p>
+      <p>A description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point. Note that the class Kind is the parent class for the four explicit types of vCards (Individual, Organization, Location, Group).</p>
   </td>
   <td>
       <p><code>vcard:Kind</code></p>
@@ -188,13 +143,13 @@
 
 <tr class="class optional" id="media-type">
   <td>
-      <p><a href="#properties-for-media-type">Media type</a></p>
+      <p><a href="#properties-for-media-type">Media type or extent</a></p>
   </td>
   <td class="justify">
       <p>A media type, e.g. the format of a computer file.</p>
   </td>
   <td>
-      <p><code>dct:MediaType</code></p>
+      <p><code>dct:MediaTypeOrExtent</code></p>
   </td>
   <td>
       <p><a data-cite="DCTERMS#MediaType">§&nbsp;Term name: MediaType</a><br>[[DCTERMS]]</p>
@@ -246,21 +201,6 @@
   </td>
 </tr>
 
-<tr class="class optional" id="relationship">
-  <td>
-      <a href="#properties-for-relationship">Relationship</a>
-  </td>
-  <td class="justify">
-      <p>An association class for attaching additional information to a relationship between DCAT Resources.</p>
-  </td>
-  <td>
-      <p><code>dcat:Relationship</code></p>
-  </td>
-  <td>
-      <p><a data-cite="DCAT-AP-3#Relationship">§&nbsp;7.14 Relationship</a><br>[[VOCAB-DCAT-3]]</p>
-  </td>
-</tr>
-
 <tr class="class optional" id="rights-statement">
   <td>
     <a href="#properties-for-rights-statement">Rights statement</a>
@@ -277,28 +217,14 @@
   </td>
 </tr>
 
-<tr class="class optional" id="role">
-  <td>
-      <p>Role</p>
-  </td>
-  <td class="justify">
-      <p>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</p>
-      <p>Note it is a subclass of <code>skos:Concept</code>.</p>
-  </td>
-  <td>
-      <p><code>dcat:Role</code></p>
-  </td>
-  <td>
-      <p><a class="src-ref" data-cite="DCAT-AP-3#Role">§&nbsp;8.18 Role</a><br>[[VOCAB-DCAT-3]]</p>
-  </td>
-</tr>
+
 
 <tr class="class optional" id="standard">
   <td>
       <a href="#properties-for-standard">Standard</a>
   </td>
   <td class="justify">
-      <p>A standard or other specification to which a Catalog, Catalog Record, Data Service, Dataset, or Distribution conforms.</p>
+      <p>A standard or other specification to which a Catalog, Catalog Record, Dataset, or Distribution conforms.</p>
   </td>
   <td>
       <p><code>dct:Standard</code></p>
