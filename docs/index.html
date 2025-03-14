@@ -63,7 +63,7 @@ EPOS-DCAT-AP has been conceived to represent shared Core Concepts agreed within 
     <section id="specification">
       <h3>A DCAT-AP extension</h3>
       <p>The EPOS-DCAT-AP specification is designed as an extension of DCAT-AP in conformance with the guidelines for the creation of DCAT-AP extensions [[DCAT-AP-EG]].</p>
-      <p>The DCAT-AP Application Profile on which this document is based is the DCAT-AP specification v1 [[DCAT-AP-1]].  </p>
+      <p>The DCAT-AP Application Profile on which this document is based is the DCAT-AP specification v1 [[DCAT-AP]].  </p>
     </section>
 
     <section id="profile-encoding">
@@ -259,7 +259,36 @@ EPOS-DCAT-AP has been conceived to represent shared Core Concepts agreed within 
       </section>
 
     </section>
+    <!-- Address -->
+    <section id="properties-for-apidocumentation">
+      <h3>Class: ApiDocumentation</h3>
+      <aside class="note">
+        <p>This class is included in [[EPOS-DCAT-AP]].</p>
+      </aside>
+      <div data-include-format="html" data-include-replace="true" data-include="./tables/class-apidocumentation.html"></div>
 
+      <section id="mandatory-properties-for-apidocumentation">
+        <h4>Mandatory properties</h4>
+        <aside class="note">
+          <p>The following properties are included in [[EPOS-DCAT-AP]]:</p>
+          <ul>
+            <li><a href="#apidocumentation.description">description</a></li>
+            <li><a href="#apidocumentation.entrypoint">entrypoint</a></li>
+            <li><a href="#apidocumentation.title">title</a></li>
+          </ul>
+        </aside>
+        <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-apidocumentation.html"></div>
+      </section>
+
+    <!--  <section id="examples-for-apidocumentation">
+        <h4>Example</h4>
+        <aside class="example" id="ex-apidocumentation" title="Apidocumentation">
+          <p>The address in this example is the same of <a href="#ex-apidocumentation"></a>, but represented by using [[VCARD-RDF]].</p>
+        </aside>
+        <div class="h3 ex_turtle" id="address" />
+      </section>-->
+
+    </section>
     <!-- Catalog -->
     <section id="properties-for-catalog">
       <h3>Class: Catalog</h3>

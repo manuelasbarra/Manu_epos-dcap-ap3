@@ -120,18 +120,12 @@ function quickreference() {
       },
       "DCAT-AP": {
         "href":"https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe",
-        "title":"DCAT Application Profile for data portals in Europe. Version 2.1.0",
+        "title":"DCAT Application Profile for Data Portals in Europe - Final 1.0",
         //"publisher":"TBD"
         "publisher":"European Commission",
-        "date":"2021"
+        "date":"2013"
       },
-      "DCAT-AP-3": {
-        //"href":"https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe",
-        "title":"DCAT Application Profile for data portals in Europe. Verson 3.0",
-        "href":"https://semiceu.github.io/DCAT-AP/releases/3.0.0/#",
-        "publisher":"European Commission",
-        "date":"2023"
-      },
+
       "EPOS": {
         "href":"https://www.epos-eu.org/",
         "title":"European Plate Observing System - EPOS"
@@ -734,115 +728,7 @@ function quickreference() {
       "title":"Joinup. Asset Description Metadata Schema (ADMS)",
       "publisher":"European Commission"
     },
-    /*"CERIF-VOCS": {
-      "href":"http://www.eurocris.org/Uploads/Web%20pages/CERIF-1.5/CERIF1.5_Semantics.xhtml",
-      "title":"CERIF standard vocabularies"
-    },
-    "DDC": {
-      "href":"http://www.oclc.org/dewey/webservices.en.html",
-      "title":"Dewey Summaries as Linked Data",
-      "publisher":"OCLC"
-    },
-    "CC": {
-      "href":"http://creativecommons.org/licenses/",
-      "title":"About The Licenses",
-      "publisher":"Creative Commons"
-    },
-    "CC0": {
-      "href":"http://creativecommons.org/publicdomain/zero/1.0/",
-      "title":"CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
-      "publisher":"Creative Commons"
-    },
-    "CC-BY": {
-      "href":"https://creativecommons.org/licenses/by/4.0/",
-      "title":"CC-BY 4.0 Attribution 4.0 International",
-      "publisher":"Creative Commons"
-    },
-    "PDDL": {
-      "href":"http://opendatacommons.org/licenses/pddl/",
-      "title":"Public Domain Dedication and License (PDDL)",
-      "publisher":"Open Data Commons"
-    },
-    "EUPL": {
-      "href":"https://joinup.ec.europa.eu/collection/eupl",
-      "title":"Joinup. Open Source Software. European Union Public Licence (EUPL)",
-      "publisher":"European Commission"
-    },
-    "UKOGL": {
-      "href":"http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/",
-      "title":"Open Government Licence for public sector information",
-      "publisher":"The National Archives"
-    },
-    "ODI": {
-      "href":"http://www.theodi.org/",
-      "title":"ODI"
-    },
-    "GETTY": {
-      "href":"https://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/",
-      "authors":["Patricia Harpring"],
-      "title":"Introduction to Controlled Vocabularies: Terminology for Art, Architecture, and Other Cultural Works",
-      "publisher": "The Getty Research Institute",
-      "date":"2010"
-    },
-    "OPENDATA-DIR": {
-      "href":"http://data.europa.eu/eli/dir/2019/1024/oj",
-      "title":"Directive (EU) 2019/1024 of the European Parliament and of the Council of 20 June 2019 on open data and the re-use of public sector information",
-      "publisher":"OJ L 172",
-      "date":"20 June 2019"
-    },
-    "DataStrategy": {
-      "href":"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0066",
-      "title":"COMMUNICATION FROM THE COMMISSION TO THE EUROPEAN PARLIAMENT, THE COUNCIL, THE EUROPEAN ECONOMIC AND SOCIAL COMMITTEE AND THE COMMITTEE OF THE REGIONS A European strategy for data",
-      "publisher":"COM/2020/66 final",
-      "date":"19 February 2020"
-    },
-    // To be pushed to SpecRef
-    "SPS": {
-      "href":"http://www.ogc.org/standards/sps",
-      "title":"OGC® Sensor Planning Service Implementation Standard ",
-      "publisher":"OGC",
-      "date":"28 March 2011",
-      "authors":["Ingo Simonis","Johannes Echterhoff"]
-    },
-    "WCS": {
-      "href":"http://www.ogc.org/standards/wcs",
-      "title":"OGC Web Coverage Service (WCS) 2.1 Interface Standard - Core",
-      "publisher":"OGC",
-      "date":"16 August 2018"
-    },
-    "QUDT-UNITS": {
-      "href":"http://www.qudt.org/vocab/unit",
-      "title":"QUDT Units Vocabulary",
-      "publisher":"QUDT.org",
-    },
-    "QUDT-UNITS-21": {
-      "href":"http://www.qudt.org/2.1/vocab/unit",
-      "title":"QUDT Units Vocabulary. Version 2.1",
-      "publisher":"QUDT.org",
-      "date":"28 January 2021",
-      "authors":["Ralph Hodgson"]
-    },
-    "OM": {
-      "href":"http://www.wurvoc.org/vocabularies/om-1.8/",
-      "title":"Ontology of units of Measure (OM)",
-      "publisher":"Wageningen UR",
-      "date":"4 June 2018",
-      "authors":["Hajo Rijgersberg", "Mark van Assem", "Don Willems", "Xin-Ying Ren", "Mari Wigham", "Jeen Broekstra", "Jan Top"]
-    },
-    "OM-2": {
-      "href":"http://www.ontology-of-units-of-measure.org/resource/om-2/",
-      "title":"Ontology of units of Measure (OM). Version 2",
-      "publisher":"Wageningen UR",
-      "date":"28 December 2017",
-      "authors":["Hajo Rijgersberg", "Don Willems", "Xin-Ying Ren", "Mari Wigham", "Jan Top"]
-    },
-    "OM-18": {
-      "href":"http://www.wurvoc.org/vocabularies/om-1.8/",
-      "title":"Ontology of units of Measure (OM). Version 1.8",
-      "publisher":"Wageningen UR",
-      "date":"4 June 2018",
-      "authors":["Hajo Rijgersberg", "Mark van Assem", "Don Willems", "Xin-Ying Ren", "Mari Wigham", "Jeen Broekstra", "Jan Top"]
-    },*/
+  
     "GeoSPARQL11": {
       //"href": "https://github.com/opengeospatial/ogc-geosparql/1.1",
       "href": "https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html",
