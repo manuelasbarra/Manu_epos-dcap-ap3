@@ -19,7 +19,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="property optional" id="distribution-access-service">
+  <!--  <tr class="property optional" id="distribution.accessservice">
       <td>
           <p>accessService</p>
       </td>
@@ -35,8 +35,8 @@
       <td class="center">
           <p>0..n</p>
       </td>
-    </tr>
-    <tr class="property optional" id="distribution-bytesize">
+    </tr>-->
+    <tr class="property optional" id="distribution.bytesize">
       <td>
           <p>byteSize</p>
           </td>
@@ -53,7 +53,7 @@
           <p>0..1</p>
       </td>
     </tr>
-    <tr class="property optional" id="distribution-checksum">
+    <tr class="property optional" id="distribution.checksum">
       <td>
           <p>checksum</p>
       </td>
@@ -70,41 +70,7 @@
           <p>0..1</p>
       </td>
     </tr>
-    <tr class="property optional" id="distribution-compression-format">
-      <td>
-          <p>compressionFormat</p>
-      </td>
-      <td>
-          <p><code>dcat:compressFormat</code></p>
-      </td>
-      <td>
-          <p><code>dct:MediaType</code></p>
-      </td>
-      <td class="justify">
-          <p>This property refers to the format of the file in which the data is contained in a compressed form, e.g., to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA [[IANA-MEDIA-TYPES]].</p>
-      </td>
-      <td class="center">
-          <p>0..1</p>
-      </td>
-    </tr>
-    <tr class="property optional" id="distribution-conforms-to">
-      <td>
-          <p>conformsTo</p>
-      </td>
-      <td>
-          <p><code>dct:conformsTo</code></p>
-      </td>
-      <td>
-          <p><code>dct:Standard</code></p>
-      </td>
-      <td class="justify">
-          <p>This property refers to an established schema to which the described Distribution conforms.</p>
-      </td>
-      <td class="center">
-          <p>0..n</p>
-      </td>
-    </tr>
-    <tr class="property optional" id="distribution-download-url">
+    <tr class="property optional" id="distribution.downloadurl">
       <td>
           <p>downloadURL</p>
       </td>
@@ -121,7 +87,7 @@
           <p>0..n</p>
       </td>
     </tr>
-    <tr class="property optional" id="distribution-has-policy">
+    <!--<tr class="property optional" id="distribution.haspolicy">
       <td>
           <p>hasPolicy</p>
       </td>
@@ -137,8 +103,8 @@
       <td class="center">
           <p>0..1</p>
       </td>
-    </tr>
-    <tr class="property optional" id="distribution-issued">
+    </tr>-->
+    <tr class="property optional" id="distribution.issued">
       <td>
           <p>issued</p>
       </td>
@@ -155,7 +121,7 @@
           <p>0..1</p>
       </td>
     </tr>
-    <tr class="property optional" id="distribution-language">
+    <tr class="property optional" id="distribution.language">
       <td>
           <p>language</p>
       </td>
@@ -166,13 +132,30 @@
           <p><code>dct:LinguisticSystem</code></p>
       </td>
       <td class="justify">
-          <p>This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages <!-- - see <a class="no-secRef" href="#accessibility-and-multilingual-aspects"></a>-->.</p>
+          <p>This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.</p>
       </td>
       <td class="center">
           <p>0..n</p>
       </td>
     </tr>
-    <tr class="property optional" id="distribution-media-type">
+    <tr class="property optional" id="distribution.license">
+      <td>
+          <p>license</p>
+      </td>
+      <td>
+          <p><code>dct:license</code></p>
+      </td>
+      <td>
+          <p><code>dct:LicenseDocument</code></p>
+      </td>
+      <td class="justify">
+          <p>This property refers to the license under which the Distribution is made available.</p>
+      </td>
+      <td class="center">
+          <p>0..1</p>
+      </td>
+    </tr>
+    <tr class="property optional" id="distribution.mediatype">
       <td>
           <p>mediaType</p>
       </td>
@@ -180,7 +163,7 @@
           <p><code>dcat:mediaType</code></p>
       </td>
       <td>
-          <p><code>dct:MediaType</code></p>
+          <p><code>dct:MediaTypeOrExtent</code></p>
       </td>
       <td class="justify">
           <p>This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA [[IANA-MEDIA-TYPES]].</p>
@@ -189,7 +172,7 @@
           <p>0..1</p>
       </td>
     </tr>
-    <tr class="property optional" id="distribution-modified">
+    <tr class="property optional" id="distribution.modified">
       <td>
           <p>modified</p>
       </td>
@@ -206,24 +189,7 @@
           <p>0..1</p>
       </td>
     </tr>
-    <tr class="property optional" id="distribution-package-format">
-      <td>
-          <p>packageFormat</p>
-      </td>
-      <td>
-          <p><code>dcat:packageFormat</code></p>
-      </td>
-      <td>
-          <p><code>dct:MediaType</code></p>
-      </td>
-      <td class="justify">
-          <p>This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA [[IANA-MEDIA-TYPES]].</p>
-      </td>
-      <td class="center">
-          <p>0..1</p>
-      </td>
-    </tr>
-    <tr class="property optional" id="distribution-page">
+    <tr class="property optional" id="distribution.page">
       <td>
           <p>page</p>
       </td>
@@ -240,7 +206,7 @@
           <p>0..n</p>
       </td>
     </tr>
-    <tr class="property optional" id="distribution-rights">
+    <tr class="property optional" id="distribution.rights">
       <td>
           <p>rights</p>
       </td>
@@ -257,24 +223,7 @@
           <p>0..1</p>
       </td>
     </tr>
-    <tr class="property optional" id="distribution-spatial-resolution-in-meters">
-      <td>
-          <p>spatialResolutionInMeters</p>
-      </td>
-      <td>
-          <p><code>dcat:spatialResolutionInMeters</code></p>
-      </td>
-      <td>
-          <p><code>xsd:decimal</code></p>
-      </td>
-      <td class="justify">
-          <p>This property refers to the minimum spatial separation resolvable in a Distribution, measured in metres.</p>
-      </td>
-      <td class="center">
-          <p>0..n</p>
-      </td>
-    </tr>
-    <tr class="property optional" id="distribution-status">
+    <tr class="property optional" id="distribution.status">
       <td>
           <p>status</p>
       </td>
@@ -285,30 +234,13 @@
           <p><code>skos:Concept</code></p>
       </td>
       <td class="justify">
-          <p>This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn from the ADMS status [[ADMS-SKOS]] vocabulary.</p>
+          <p>This property refers to the status of the distribution in the context of maturity lifecycle. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn.</p>
       </td>
       <td class="center">
           <p>0..1</p>
       </td>
     </tr>
-    <tr class="property optional" id="distribution-temporal-resolution">
-      <td>
-          <p>temporalResolution</p>
-      </td>
-      <td>
-          <p><code>dcat:temporalResolution</code></p>
-      </td>
-      <td>
-          <p><code>rdfs:Literal</code><br>typed as <code>xsd:duration</code></p>
-      </td>
-      <td class="justify">
-          <p>This property refers to the minimum time period resolvable in the Distribution.</p>
-      </td>
-      <td class="center">
-          <p>0..n</p>
-      </td>
-    </tr>
-    <tr class="property optional" id="distribution-title">
+    <tr class="property optional" id="distribution.title">
       <td>
           <p>title</p>
       </td>
@@ -319,7 +251,7 @@
           <p><code>rdfs:Literal</code></p>
       </td>
       <td class="justify">
-          <p>This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description <!-- - see <a class="no-secRef" href="#accessibility-and-multilingual-aspects"></a>-->.</p>
+          <p>This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.</p>
       </td>
       <td class="center">
           <p>0..n</p>

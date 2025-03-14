@@ -19,24 +19,24 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="property recommended" id="distribution-availability">
+    <tr class="property recommended" id="distribution.conformsto">
       <td>
-          <p>availability</p>
+          <p>conformsTo</p>
       </td>
       <td>
-          <p><code>dcatap:availability</code></p>
+          <p><code>dct:conformsTo</code></p>
       </td>
       <td>
-          <p><code>skos:Concept</code></p>
+          <p><code>dct:Standard</code></p>
       </td>
       <td class="justify">
-          <p>This property indicates how long it is planned to keep the Distribution of the Dataset available.</p>
+          <p>TThis property refers to an established schema to which the described Distribution conforms.</p>
       </td>
       <td class="center">
-          <p>0..1</p>
+          <p>0..n</p>
       </td>
     </tr>
-    <tr class="property recommended" id="distribution-description">
+    <tr class="property recommended" id="distribution.description">
       <td>
           <p>description</p>
       </td>
@@ -53,7 +53,7 @@
           <p>0..n</p>
       </td>
     </tr>
-    <tr class="property recommended" id="distribution-format">
+    <tr class="property recommended" id="distribution.format">
       <td>
           <p>format</p>
       </td>
@@ -70,18 +70,18 @@
           <p>0..1</p>
       </td>
     </tr>
-    <tr class="property recommended" id="distribution-license">
+    <tr class="property recommended" id="distribution.type">
       <td>
-          <p>license</p>
+          <p>type</p>
       </td>
       <td>
-          <p><code>dct:license</code></p>
+          <p><code>dct:type</code></p>
       </td>
       <td>
-          <p><code>dct:LicenseDocument</code></p>
+          <p><code>skos:Concept</code></p>
       </td>
       <td class="justify">
-          <p>This property refers to the license under which the Distribution is made available.</p>
+          <p>This property refers to the type of the Distribution.</p>
       </td>
       <td class="center">
           <p>0..1</p>
