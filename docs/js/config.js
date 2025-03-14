@@ -33,7 +33,7 @@ function quickreference() {
     //specStatus: "REC",
     //crEnd:"2020-10-12",
     //prEnd:"2020-12-23",
-    shortName: "epos-dcat-ap3",
+    shortName: "epos-dcat-ap",
     canonicalURI: "TBD",
     thisVersionURI:       "TBD",
     editors: [
@@ -728,7 +728,7 @@ function quickreference() {
       "title":"Joinup. Asset Description Metadata Schema (ADMS)",
       "publisher":"European Commission"
     },
-  
+
     "GeoSPARQL11": {
       //"href": "https://github.com/opengeospatial/ogc-geosparql/1.1",
       "href": "https://opengeospatial.github.io/ogc-geosparql/geosparql11/spec.html",
