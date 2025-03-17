@@ -119,7 +119,7 @@ function quickreference() {
         //        "date":"2016"
       },
       "DCAT-AP": {
-        "href":"https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe",
+        "href":"https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/10",
         "title":"DCAT Application Profile for Data Portals in Europe - Final 1.0",
         //"publisher":"TBD"
         "publisher":"European Commission",
