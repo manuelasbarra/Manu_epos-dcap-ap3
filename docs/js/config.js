@@ -119,11 +119,11 @@ function quickreference() {
         //        "date":"2016"
       },
       "DCAT-AP": {
-        "href":"https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/10",
-        "title":"DCAT Application Profile for Data Portals in Europe - Final 1.0",
+        "href":"https://interoperable-europe.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-v11-pdf",
+        "title":"DCAT-AP v1.1 PDF",
         //"publisher":"TBD"
         "publisher":"European Commission",
-        "date":"2013"
+        "date":"2015"
       },
       "DCAT-AP-3": {
         //"href":"https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe",
@@ -152,12 +152,12 @@ function quickreference() {
         "href":"http://www.w3.org/2006/http#",
         "title":"HTTP"
       },
-      "HYDRA":{
+      "HYDRA1":{
         "href":"http://www.w3.org/ns/hydra/core#",
         "title":"HYDRA"
       },
-      "HYDRA1":{
-        "href":"http://api.verint.com/w3c/hydra#",
+      "HYDRA":{
+        "href":"https://www.markus-lanthaler.com/hydra/spec/latest/core/#",
         "title":"HYDRA"
       },
       "SHACL":{
