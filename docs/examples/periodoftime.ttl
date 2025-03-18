@@ -8,7 +8,7 @@
 []
 
 dct:temporal [ a dct:PeriodOfTime ;
-                  dcat:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
-                  dcat:endDate "2022-01-01T00:00:00Z"^^xsd:dateTime ;
+                  schema:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
+                  schema:endDate "2022-01-01T00:00:00Z"^^xsd:dateTime ;
             	] ;
 .
