@@ -444,22 +444,7 @@
     <td>Recommended</td>
     <td class="center">0..n</td>
 </tr>
-<tr>
-    <td><a href="#properties-for-dataset">Dataset</a></td>
-    <td><code>dcat:Dataset</code></td>
-    <td class="property recommended"><p><a title="spatial" href="#dataset.spatial"><code>dct:spatial</code></a></p></td>
-    <td><code>dct:Location</code></td>
-    <td>Recommended</td>
-    <td class="center">0..n</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-dataset">Dataset</a></td>
-    <td><code>dcat:Dataset</code></td>
-    <td class="property recommended"><p><a title="temporal" href="#dataset.temporal"><code>dct:temporal</code></a></p></td>
-    <td><code>dct:PeriodOfTime</code></td>
-    <td>Recommended</td>
-    <td class="center">0..n</td>
-</tr>
+
 <tr>
     <td><a href="#properties-for-dataset">Dataset</a></td>
     <td><code>dcat:Dataset</code></td>
@@ -497,14 +482,6 @@
     <td><code>dcat:Dataset</code></td>
     <td class="property optional"><p class="plus"><a title="created" href="#dataset.created"><code>dct:created</code></a></p></td>
     <td><code>rdfs:Literal</code><br>typed as<code> xsd:date</code><br>or <code>xsd:dateTime</code></td>
-    <td>Optional</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-dataset">Dataset</a></td>
-    <td><code>dcat:Dataset</code></td>
-    <td class="property optional"><p><a title="creator" href="#dataset.creator"><code>dct:creator</code></a></p></td>
-    <td><code>foaf:Agent</code> or <code>schema:Organization</code></td>
     <td>Optional</td>
     <td class="center">0..1</td>
 </tr>
@@ -644,6 +621,7 @@
     <td>Optional</td>
     <td class="center">0..n</td>
 </tr>
+
 <tr>
     <td><a href="#properties-for-dataset">Dataset</a></td>
     <td><code>dcat:Dataset</code></td>
@@ -655,9 +633,26 @@
 <tr>
     <td><a href="#properties-for-dataset">Dataset</a></td>
     <td><code>dcat:Dataset</code></td>
+    <td class="property recommended"><p><a title="spatial" href="#dataset.spatial"><code>dct:spatial</code></a></p></td>
+    <td><code>dct:Location</code></td>
+    <td>Recommended</td>
+    <td class="center">0..n</td>
+</tr>
+
+<tr>
+    <td><a href="#properties-for-dataset">Dataset</a></td>
+    <td><code>dcat:Dataset</code></td>
     <td class="property optional"><p><a title="spatialresolutioninmeters" href="#dataset.spatialresolutioninmeters"><code>dcat:spatialResolutionInMeters</code></a></p></td>
     <td><code>xsd:decimal</code></td>
     <td>Optional</td>
+    <td class="center">0..n</td>
+</tr>
+<tr>
+    <td><a href="#properties-for-dataset">Dataset</a></td>
+    <td><code>dcat:Dataset</code></td>
+    <td class="property recommended"><p><a title="temporal" href="#dataset.temporal"><code>dct:temporal</code></a></p></td>
+    <td><code>dct:PeriodOfTime</code></td>
+    <td>Recommended</td>
     <td class="center">0..n</td>
 </tr>
 <tr>
