@@ -635,7 +635,7 @@
 <tr>
     <td><a href="#properties-for-distribution">Distribution</a></td>
     <td><code>dcat:Distribution</code></td>
-    <td class="property mandatory"><p><a title="access-url" href="#distribution.accessurl"><code>dcat:accessURL</code></a></p></td>
+    <td class="property mandatory"><p><a title="accessurl" href="#distribution.accessurl"><code>dcat:accessURL</code></a></p></td>
     <td><code>rdfs:Resource</code></td>
     <td>Mandatory</td>
     <td class="center">1..n</td>
@@ -651,10 +651,10 @@
 <tr>
     <td><a href="#properties-for-distribution">Distribution</a></td>
     <td><code>dcat:Distribution</code></td>
-    <td class="property recommended"><p><a title="availability" href="#distribution.availability"><code>dcatap:availability</code></a></p></td>
-    <td><code>skos:Concept</code></td>
+    <td class="property recommended"><p><a title="conformsto" href="#distribution.conformsTo"><code>dct:conformsTo</code></a></p></td>
+    <td><code>dct:Standard</code></td>
     <td>Recommended</td>
-    <td class="center">0..1</td>
+    <td class="center">0..n</td>
 </tr>
 <tr>
     <td><a href="#properties-for-distribution">Distribution</a></td>
@@ -675,23 +675,15 @@
 <tr>
     <td><a href="#properties-for-distribution">Distribution</a></td>
     <td><code>dcat:Distribution</code></td>
-    <td class="property recommended"><p><a title="license" href="#distribution.license"><code>dct:license</code></a></p></td>
-    <td><code>dct:LicenseDocument</code></td>
+    <td class="property recommended"><p><a title="type" href="#distribution.type"><code>dct:type</code></a></p></td>
+    <td><code>skos:Concept</code></td>
     <td>Recommended</td>
     <td class="center">0..1</td>
 </tr>
 <tr>
     <td><a href="#properties-for-distribution">Distribution</a></td>
     <td><code>dcat:Distribution</code></td>
-    <td class="property optional"><p><a title="access-service" href="#distribution.accessservice"><code>dcat:accessService</code></a></p></td>
-    <td><code>dcat:DataService</code></td>
-    <td>Optional</td>
-    <td class="center">0..n</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-distribution">Distribution</a></td>
-    <td><code>dcat:Distribution</code></td>
-    <td class="property optional"><p><a title="byte-size" href="#distribution.bytesize"><code>dcat:byteSize</code></a></p></td>
+    <td class="property optional"><p><a title="bytesize" href="#distribution.bytesize"><code>dcat:byteSize</code></a></p></td>
     <td><code>xsd:nonNegativeInteger</code></td>
     <td>Optional</td>
     <td class="center">0..1</td>
@@ -707,34 +699,10 @@
 <tr>
     <td><a href="#properties-for-distribution">Distribution</a></td>
     <td><code>dcat:Distribution</code></td>
-    <td class="property optional"><p><a title="compressionformat" href="#distribution.compressionformat"><code>dcat:compressFormat</code></a></p></td>
-    <td><code>dct:MediaType</code></td>
-    <td>Optional</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-distribution">Distribution</a></td>
-    <td><code>dcat:Distribution</code></td>
-    <td class="property optional"><p><a title="conformsto" href="#distribution.conformsto"><code>dct:conformsTo</code></a></p></td>
-    <td><code>dct:Standard</code></td>
-    <td>Optional</td>
-    <td class="center">0..n</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-distribution">Distribution</a></td>
-    <td><code>dcat:Distribution</code></td>
     <td class="property optional"><p><a title="downloadurl" href="#distribution.downloadurl"><code>dcat:downloadURL</code></a></p></td>
     <td><code>rdfs:Resource</code></td>
     <td>Optional</td>
     <td class="center">0..n</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-distribution">Distribution</a></td>
-    <td><code>dcat:Distribution</code></td>
-    <td class="property optional"><p><a title="haspolicy" href="#distribution.haspolicy"><code>odrl:hasPolicy</code></a></p></td>
-    <td><code>odrl:Policy</code></td>
-    <td>Optional</td>
-    <td class="center">0..1</td>
 </tr>
 <tr>
     <td><a href="#properties-for-distribution">Distribution</a></td>
@@ -756,7 +724,7 @@
     <td><a href="#properties-for-distribution">Distribution</a></td>
     <td><code>dcat:Distribution</code></td>
     <td class="property optional"><p><a title="mediatype" href="#distribution.mediatype"><code>dcat:mediaType</code></a></p></td>
-    <td><code>dct:MediaType</code></td>
+    <td><code>dct:MediaTypeOrExtent</code></td>
     <td>Optional</td>
     <td class="center">0..1</td>
 </tr>
@@ -765,14 +733,6 @@
     <td><code>dcat:Distribution</code></td>
     <td class="property optional"><p><a title="modified" href="#distribution.modified"><code>dct:modified</code></a></p></td>
     <td><code>rdfs:Literal</code><br>typed as<code> xsd:date</code><br>or <code>xsd:dateTime</code></td>
-    <td>Optional</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-distribution">Distribution</a></td>
-    <td><code>dcat:Distribution</code></td>
-    <td class="property optional"><p><a title="packageformat" href="#distribution.packageformat"><code>dcat:packageFormat</code></a></p></td>
-    <td><code>dct:MediaType</code></td>
     <td>Optional</td>
     <td class="center">0..1</td>
 </tr>
@@ -795,26 +755,10 @@
 <tr>
     <td><a href="#properties-for-distribution">Distribution</a></td>
     <td><code>dcat:Distribution</code></td>
-    <td class="property optional"><p><a title="spatialresolutioninmeters" href="#distribution.spatialresolutioninmeters"><code>dcat:spatialResolutionInMeters</code></a></p></td>
-    <td><code>xsd:decimal</code></td>
-    <td>Optional</td>
-    <td class="center">0..n</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-distribution">Distribution</a></td>
-    <td><code>dcat:Distribution</code></td>
     <td class="property optional"><p><a title="status" href="#distribution.status"><code>adms:status</code></a></p></td>
     <td><code>skos:Concept</code></td>
     <td>Optional</td>
     <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-distribution">Distribution</a></td>
-    <td><code>dcat:Distribution</code></td>
-    <td class="property optional"><p><a title="temporalresolution" href="#distribution.temporalresolution"><code>dcat:temporalResolution</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed as <code>xsd:duration</code></td>
-    <td>Optional</td>
-    <td class="center">0..n</td>
 </tr>
 <tr>
     <td><a href="#properties-for-distribution">Distribution</a></td>
