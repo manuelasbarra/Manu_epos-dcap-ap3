@@ -1,0 +1,125 @@
+<table class="simple" id="table-optional-properties-for-webservice">
+  <thead>
+    <tr>
+      <th class="small">
+          <p>Property</p>
+      </th>
+      <th class="small">
+          <p>URI</p>
+      </th>
+      <th class="small">
+          <p>Range</p>
+      </th>
+      <th class="large">
+          <p>Usage note</p>
+      </th>
+      <th class="xsmall">
+          <p>Card.</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="property optional" id="webservice.conformsto">
+      <td>
+          <p>conformsTo</p>
+      </td>
+      <td>
+          <p><code>dct:conformsTo</code></p>
+      </td>
+      <td>
+          <p><code>hydra:ApiDocumentation</code></p>
+      </td>
+      <td class="justify">
+          <p>This property refers to the API documentation URL.  E.g., https://www.orfeus-eu.org/data/eida/webservices/station/</p>
+      </td>
+      <td class="center">
+          <p>0..n</p>
+      </td>
+    </tr>
+    <tr class="property optional" id="webservice.keywords">
+      <td>
+          <p>keywords</p>
+      </td>
+      <td>
+          <p><code>schema:keywords</code></p>
+      </td>
+      <td>
+          <p><code>rdfs:Literal</code></p>
+      </td>
+      <td class="justify">
+          <p>This property contains the keywords used to describe the Web Service. Multiple entries in a keywords list are typically delimited by commas.</p>
+      </td>
+      <td class="center">
+          <p>0..n</p>
+      </td>
+    </tr>
+    <tr class="property optional" id="webservice.license">
+      <td>
+          <p>license</p>
+      </td>
+      <td>
+          <p><code>dct:license</code></p>
+      </td>
+      <td>
+          <p><code>dct:LicenseDocument</code></p>
+      </td>
+      <td class="justify">
+          <p>This property refers to the licence under which the Web Service can be used or reused.</p>
+      </td>
+      <td class="center">
+          <p>0..1</p>
+      </td>
+    </tr>
+    <tr class="property optional" id="webservice.spatial">
+      <td>
+          <p>spatial</p>
+      </td>
+      <td>
+          <p><code>dct:spatial</code></p>
+      </td>
+      <td>
+          <p><code>dct:Location</code></p>
+      </td>
+      <td class="justify">
+          <p>This property refers to a geographic region that is covered by the Web Service.</p>
+      </td>
+      <td class="center">
+          <p>0..n</p>
+      </td>
+    </tr>
+    <tr class="property optional" id="webservice.supportedoperation">
+      <td>
+          <p>supportedOperation</p>
+      </td>
+      <td>
+          <p><code>hydra:supportedOperation</code></p>
+      </td>
+      <td>
+          <p><code>hydra:Operation</code></p>
+      </td>
+      <td class="justify">
+          <p>This property refers to a web service operation supported by the Web Service.</p>
+      </td>
+      <td class="center">
+          <p>0..n</p>
+      </td>
+    </tr>
+    <tr class="property optional ap-ext" id="webservice.temporal">
+      <td>
+          <p>temporal</p>
+      </td>
+      <td>
+          <p><code>dct:temporal</code></p>
+      </td>
+      <td>
+          <p><code>dct:PeriodOfTime</code></p>
+      </td>
+      <td class="justify">
+          <p>This property refers to a temporal period that the Web Service covers.</p>
+      </td>
+      <td class="center">
+          <p>0..n</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
