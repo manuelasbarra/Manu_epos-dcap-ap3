@@ -772,7 +772,7 @@
 <tr>
     <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
     <td><code>epos:Equipment</code></td>
-    <td class="property mandatory"><p class="plus"><a title="description" href="#equipment.description"><code>dct:description</code></a></p></td>
+    <td class="property mandatory"><p class="plus"><a title="description" href="#equipment.description"><code>schema:description</code></a></p></td>
     <td><code>rdfs:Literal</code></td>
     <td>Mandatory</td>
     <td class="center">1..1</td>
@@ -780,7 +780,7 @@
 <tr>
     <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
     <td><code>epos:Equipment</code></td>
-    <td class="property mandatory"><p class="plus"><a title="identifier" href="#equipment.identifier"><code>dct:identifier</code></a></p></td>
+    <td class="property mandatory"><p class="plus"><a title="identifier" href="#equipment.identifier"><code>schema:identifier</code></a></p></td>
     <td><code>rdfs:Literal</code></td>
     <td>Mandatory</td>
     <td class="center">1..1</td>
@@ -788,7 +788,7 @@
 <tr>
     <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
     <td><code>epos:Equipment</code></td>
-    <td class="property mandatory"><p class="plus"><a title="title" href="#equipment.title"><code>dct:title</code></a></p></td>
+    <td class="property mandatory"><p class="plus"><a title="title" href="#equipment.name"><code>schema:name</code></a></p></td>
     <td><code>rdfs:Literal</code></td>
     <td>Mandatory</td>
     <td class="center">1..1</td>
@@ -796,8 +796,16 @@
 <tr>
     <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
     <td><code>epos:Equipment</code></td>
-    <td class="property recommended"><p class="plus"><a title="creator" href="#equipment.creator"><code>dct:creator</code></a></p></td>
+    <td class="property recommended"><p class="plus"><a title="manufacturer" href="#equipment.manufacturer"><code>schema:manufacturer</code></a></p></td>
     <td><code>schema:Organization</code></td>
+    <td>Recommended</td>
+    <td class="center">0..1</td>
+</tr>
+<tr>
+    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+    <td><code>epos:Equipment</code></td>
+    <td class="property recommended"><p class="plus"><a title="serialnumber" href="#equipment.serialnumber"><code>schema:serialNumber</code></a></p></td>
+    <td><code>skos:Concept</code> or <code>rdfs:Literal</code><br>typed with URI</td>
     <td>Recommended</td>
     <td class="center">0..1</td>
 </tr>
@@ -841,7 +849,7 @@
     <td>Optional</td>
     <td class="center">0..n</td>
 </tr>
-<tr>
+<!--<tr>
     <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
     <td><code>epos:Equipment</code></td>
     <td class="property optional"><p class="plus"><a title="keyword" href="#equipment.keyword"><code>dcat:keyword</code></a></p></td>
@@ -849,14 +857,7 @@
     <td>Optional</td>
     <td class="center">0..n</td>
 </tr>
-<tr>
-    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
-    <td><code>epos:Equipment</code></td>
-    <td class="property optional"><p class="plus"><a title="landingpage" href="#equipment.landingpage"><code>dcat:landingPage</code></a></p></td>
-    <td><code>foaf:Document</code> or <code>rdfs:Literal</code><br>typed with URI</td>
-    <td>Optional</td>
-    <td class="center">0..n</td>
-</tr>
+-->
 <tr>
     <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
     <td><code>epos:Equipment</code></td>
@@ -864,6 +865,14 @@
     <td><code>rdfs:Literal</code></td>
     <td>Optional</td>
     <td class="center">0..1</td>
+</tr>
+<tr>
+    <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
+    <td><code>epos:Equipment</code></td>
+    <td class="property optional"><p class="plus"><a title="page" href="#equipment.page"><code>foaf:page</code></a></p></td>
+    <td><code>rdfs:Literal</code> typed with URI<br>typed with URI</td>
+    <td>Optional</td>
+    <td class="center">0..n</td>
 </tr>
 <tr>
     <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
@@ -879,7 +888,7 @@
     <td class="property optional"><p class="plus"><a title="resolution" href="#equipment.resolution"><code>epos:resolution</code></a></p></td>
     <td><code>rdfs:Literal</code></td>
     <td>Optional</td>
-    <td class="center">0..n</td>
+    <td class="center">0..1</td>
 </tr>
 <tr>
     <td class="plus"><a href="#properties-for-equipment">Equipment</a></td>
