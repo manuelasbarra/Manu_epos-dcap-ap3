@@ -1155,23 +1155,6 @@
 <tr>
     <td><a href="#properties-for-location">Location</a></td>
     <td><code>dct:Location</code></td>
-    <td class="property recommended"><p><a title="bbox" href="#location.bbox"><code>dcat:bbox</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed as <code>gsp:wktLiteral</code><br>or <code>gsp:gmlLiteral</code></td>
-    <td>Recommended</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-location">Location</a></td>
-    <td><code>dct:Location</code></td>
-    <td class="property recommended">
-    <p><a title="centroid" href="#location.centroid"><code>dcat:centroid</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed as <code>gsp:wktLiteral</code><br>or <code>gsp:gmlLiteral</code></td>
-    <td>Recommended</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-location">Location</a></td>
-    <td><code>dct:Location</code></td>
     <td class="property optional"><p><a title="geometry" href="#location.geometry"><code>locn:geometry</code></a></p></td>
     <td><code>locn:Geometry</code></td>
     <td>Optional</td>
@@ -1302,7 +1285,7 @@
 <tr>
     <td><a href="#periodoftime">PeriodOfTime</a></td>
     <td><code>dct:PeriodOfTime</code></td>
-    <td class="property recommended"><p><a title="enddate" href="#periodoftime.enddate"><code>dcat:endDate</code></a></p></td>
+    <td class="property recommended"><p><a title="enddate" href="#periodoftime.enddate"><code>schema:endDate</code></a></p></td>
     <td><code>rdfs:Literal</code><br>typed as <code>xsd:date</code><br>or <code>xsd:dateTime</code></td>
     <td>Recommended</td>
     <td class="center">0..1</td>
@@ -1310,25 +1293,9 @@
 <tr>
     <td><a href="#periodoftime">PeriodOfTime</a></td>
     <td><code>dct:PeriodOfTime</code></td>
-    <td class="property recommended"><p><a title="startdate" href="#periodoftime.startdate"><code>dcat:startDate</code></a></p></td>
+    <td class="property recommended"><p><a title="startdate" href="#periodoftime.startdate"><code>schema:startDate</code></a></p></td>
     <td><code>rdfs:Literal</code><br>typed as <code>xsd:date</code><br>or <code>xsd:dateTime</code></td>
     <td>Recommended</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#periodoftime">PeriodOfTime</a></td>
-    <td><code>dct:PeriodOfTime</code></td>
-    <td class="property optional"><p><a title="beginning" href="#periodoftime.beginning"><code>time:hasBeginning</code></a></p></td>
-    <td><code>time:Instant</code></td>
-    <td>Optional</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#periodoftime">PeriodOfTime</a></td>
-    <td><code>dct:PeriodOfTime</code></td>
-    <td class="property optional"><p><a title="end" href="#periodoftime.end"><code>time:hasEnd</code></a></p></td>
-    <td><code>time:Instant</code></td>
-    <td>Optional</td>
     <td class="center">0..1</td>
 </tr>
     <!-- Person -->
@@ -1359,7 +1326,7 @@
 <tr>
     <td class="plus"><a href="#properties-for-person">Person</a></td>
     <td><code>schema:Person</code></td>
-    <td class="property optional"><p class="plus"><a title="contact-point" href="#person.contactpoint"><code>dcat:contactPoint</code></a> or<br> <a title="contactpoint" href="#person.contactpoint"><code>schema:contactPoint</code></a></p></td>
+    <td class="property optional"><p class="plus"><a title="contactpoint" href="#person.contactpoint"><code>dcat:contactPoint</code></a> or<br> <a title="contactpoint" href="#person.contactpoint"><code>schema:contactPoint</code></a></p></td>
     <td><code>schema:ContactPoint</code></td>
     <td>Optional</td>
     <td class="center">0..n</td>
@@ -1608,7 +1575,7 @@
     <td>Optional</td>
     <td class="center">0..1</td>
 </tr>
-    <!-- Relationship -->
+    <!-- Relationship
 <tr>
     <td><a href="#properties-for-relationship">Relationship</a></td>
     <td><code>dcat:Relationship</code></td>
@@ -1624,7 +1591,7 @@
     <td><code>rdfs:Resource</code> </td>
     <td>Mandatory</td>
     <td class="center">1..n</td>
-</tr>
+</tr>-->
     <!-- Service -->
 <tr>
     <td class="plus"><a href="#properties-for-service">Service</a></td>
