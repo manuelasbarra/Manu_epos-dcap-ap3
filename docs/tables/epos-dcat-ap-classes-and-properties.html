@@ -1740,6 +1740,14 @@
 </tr>
 <tr>
     <td class="plus"><a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
+    <td><code>schema:SoftwareSourceCode</code></td>
+    <td class="property optional"><p class="plus"><a title="license" href="#softwareapplication.license"><code>schema:license</code></a></p></td>
+    <td><code>rdfs:Literal</code><br>typed with URI</td>
+    <td>Optional</td>
+    <td class="center">0..1</td>
+</tr>
+<tr>
+    <td class="plus"><a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
     <td><code>schema:SoftwareApplication</code></td>
     <td class="property optional"><p class="plus"><a title="mainentityofpage" href="#softwareapplication.mainentityofpage"><code>schema:mainEntityOfPage</code></a></p></td>
     <td><code>rdfs:Literal</code><br>typed with URI</td>
@@ -1803,14 +1811,7 @@
     <td>Optional</td>
     <td class="center">0..n</td>
 </tr>
-<!--<tr>
-    <td class="plus"><a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
-    <td><code>schema:SoftwareApplication</code></td>
-    <td class="property optional"><p class="plus"><a title="creator" href="#softwareapplication.creator"><code>schema:creator</code></a></p></td>
-    <td><code>schema:Organization</code> or <code>schema:Person</code> or <code>foaf:Agent</code></td>
-    <td>Optional</td>
-    <td class="center">0..n</td>
-</tr>-->
+
 <tr>
     <td class="plus"><a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
     <td><code>schema:SoftwareApplication</code></td>
@@ -1819,14 +1820,7 @@
     <td>Optional</td>
     <td class="center">0..n</td>
 </tr>
-<tr>
-    <td class="plus"><a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
-    <td><code>schema:SoftwareSourceCode</code></td>
-    <td class="property optional"><p class="plus"><a title="license" href="#softwareapplication.license"><code>schema:license</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed with URI</td>
-    <td>Optional</td>
-    <td class="center">0..1</td>
-</tr>
+
 <tr>
     <td class="plus"><a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
     <td><code>schema:SoftwareApplication</code></td>
@@ -1859,14 +1853,6 @@
     <td>Optional</td>
     <td class="center">0..1</td>
 </tr>
-<!--<tr>
-    <td class="plus"><a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
-    <td><code>schema:SoftwareApplication</code></td>
-    <td class="property optional"><p class="plus"><a title="producer" href="#softwareapplication.producer"><code>schema:producer</code></a></p></td>
-    <td><code>schema:Organization</code> or <code>schema:Person</code> or <code>foaf:Agent</code></td>
-    <td>Optional</td>
-    <td class="center">0..n</td>
-</tr>-->
 <tr>
     <td class="plus"><a href="#properties-for-softwareapplication">SoftwareApplication</a></td>
     <td><code>schema:SoftwareApplication</code></td>
@@ -2047,6 +2033,7 @@
     <td>Optional</td>
     <td class="center">0..n</td>
 </tr>
+<!--
 <tr>
     <td class="plus"><a href="#properties-for-softwaresourcecode">SoftwareSourceCode</a></td>
     <td><code>schema:SoftwareSourceCode</code></td>
@@ -2063,14 +2050,7 @@
     <td>Optional</td>
     <td class="center">0..n</td>
 </tr>
-<!--<tr>
-    <td class="plus"><a href="#properties-for-softwaresourcecode">SoftwareSourceCode</a></td>
-    <td><code>schema:SoftwareSourceCode</code></td>
-    <td class="property optional"><p class="plus"><a title="creator" href="#softwaresourcecode.creator"><code>schema:creator</code></a></p></td>
-    <td><code>schema:Organization</code> or <code>schema:Person</code> or <code>foaf:Agent</code></td>
-    <td>Optional</td>
-    <td class="center">0..n</td>
-</tr>-->
+
 <tr>
     <td class="plus"><a href="#properties-for-softwaresourcecode">SoftwareSourceCode</a></td>
     <td><code>schema:SoftwareSourceCode</code></td>
@@ -2087,14 +2067,7 @@
     <td>Optional</td>
     <td class="center">0..n</td>
 </tr>
-<!--<tr>
-    <td class="plus"><a href="#properties-for-softwaresourcecode">SoftwareSourceCode</a></td>
-    <td><code>schema:SoftwareSourceCode</code></td>
-    <td class="property optional"><p class="plus"><a title="producer" href="#softwaresourcecode.producer"><code>schema:producer</code></a></p></td>
-    <td><code>schema:Organization</code> or <code>schema:Person</code> or <code>foaf:Agent</code></td>
-    <td>Optional</td>
-    <td class="center">0..n</td>
-</tr>-->
+
 <tr>
     <td class="plus"><a href="#properties-for-softwaresourcecode">SoftwareSourceCode</a></td>
     <td><code>schema:SoftwareSourceCode</code></td>
@@ -2158,159 +2131,129 @@
     <td><code>rdfs:Literal</code></td>
     <td>Optional</td>
     <td class="center">0..1</td>
-</tr>
+</tr>-->
 <!-- DataService -->
+
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property mandatory"><p><a title="endpointurl" href="#dataservice.endpointurl"><code>dcat:endpointURL</code></a></p></td>
-<td><code>rdfs:Resource</code></td>
-<td>Mandatory</td>
-<td class="center">1..n</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property mandatory"><p class="plus"><a title="identifier" href="#webservice.identifier"><code>dct:identifier</code></a></p></td>
+  <td><code>rdfs:Literal</code></td>
+  <td>Mandatory</td>
+  <td class="center">1..1</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property mandatory"><p class="plus"><a title="identifier" href="#dataservice.identifier"><code>dct:identifier</code></a></p></td>
-<td><code>rdfs:Literal</code></td>
-<td>Mandatory</td>
-<td class="center">1..1</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property recommended"><p class="plus"><a title="contactpoint" href="#dataservice.contactpoint"><code>dcat:contactPoint</code></a></p></td>
+  <td><code>vcard:Kind</code> or <code>schema:ContactPoint</code></td>
+  <td>Recommended</td>
+  <td class="center">0..n</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property mandatory"><p><a title="title" href="#dataservice.title"><code>dct:title</code></a></p></td>
-<td><code>rdfs:Literal</code></td>
-<td>Mandatory</td>
-<td class="center">1..n</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property recommended"><p class="plus"><a title="datamodified" href="#dataservice.datamodified"><code>schema:dateModified</code></a></p></td>
+  <td><code>rdfs:Literal</code><br>typed as<code> xsd:date</code><br>or <code>xsd:dateTime</code></td>
+  <td>Recommended</td>
+  <td class="center">0..1</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property recommended"><p class="plus"><a title="conformsto" href="#dataservice.conformsto"><code>dct:conformsTo</code></a></p></td>
-<td><code>dct:Standard</code></td>
-<td>Recommended</td>
-<td class="center">0..n</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property recommended"><p class="plus"><a title="datapublished" href="#dataservice.datapublished"><code>schema:datePublished</code></a></p></td>
+  <td><code>rdfs:Literal</code><br>typed as<code> xsd:date</code><br>or <code>xsd:dateTime</code></td>
+  <td>Recommended</td>
+  <td class="center">0..1</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property recommended"><p class="plus"><a title="contactpoint" href="#dataservice.contactpoint"><code>dcat:contactPoint</code></a></p></td>
-<td><code>vcard:Kind</code> or <code>schema:ContactPoint</code></td>
-<td>Recommended</td>
-<td class="center">0..n</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property recommended"><p><a title="description" href="#webservice.description"><code>schema:description</code></a></p></td>
+  <td><code>rdfs:Literal</code></td>
+  <td>Recommended</td>
+  <td class="center">0..n</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property recommended"><p><a title="description" href="#dataservice.description"><code>dct:description</code></a></p></td>
-<td><code>rdfs:Literal</code></td>
-<td>Recommended</td>
-<td class="center">0..n</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property recommended"><p><a title="entrypoint" href="#webservice.entrypoint"><code>dcat:endpointURL</code></a></p></td>
+  <td><code>rdfs:Resource</code></td>
+  <td>Recommended</td>
+  <td class="center">0..1</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property recommended"><p><a title="endpointdescription" href="#dataservice.endpointdescription"><code>dcat:endpointDescription</code></a></p></td>
-<td><code>hydra:Operation</code></td>
-<td>Recommended</td>
-<td class="center">0..n</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property recommended"><p><a title="name" href="#webservice.name"><code>schema:name</code></a></p></td>
+  <td><code>rdfs:Literal</code></td>
+  <td>Recommended</td>
+  <td class="center">0..1</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property recommended"><p class="plus"><a title="issued" href="#dataservice.issued"><code>dct:issued</code></a></p></td>
-<td><code>rdfs:Literal</code><br>typed as<code> xsd:date</code><br>or <code>xsd:dateTime</code></td>
-<td>Recommended</td>
-<td class="center">0..1</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property recommended"><p class="plus"><a title="provider" href="#webservice.provider"><code>schema:provider</code></a></p></td>
+  <td><code>schema:Organization</code></td>
+  <td>Recommended</td>
+  <td class="center">0..1</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property recommended"><p class="plus"><a title="keyword" href="#dataservice.keyword"><code>dcat:keyword</code></a></p></td>
-<td><code>rdfs:Literal</code></td>
-<td>Recommended</td>
-<td class="center">0..n</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property recommended"><p class="plus"><a title="theme" href="#webservice.theme"><code>dcat:theme</code></a></p></td>
+  <td><code>skos:Concept</code></td>
+  <td>Recommended</td>
+  <td class="center">0..n</td>
+</tr>
+
+<tr>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property optional"><p class="plus"><a title="conformsto" href="#webservice.conformsto"><code>dct:conformsTo</code></a></p></td>
+  <td><code>hydra:ApiDocumentation</code></td>
+  <td>Optional</td>
+  <td class="center">0..n</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property recommended"><p class="plus"><a title="modified" href="#dataservice.modified"><code>dct:modified</code></a></p></td>
-<td><code>rdfs:Literal</code><br>typed as<code> xsd:date</code><br>or <code>xsd:dateTime</code></td>
-<td>Recommended</td>
-<td class="center">0..1</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property optional"><p class="plus"><a title="keywords" href="#webservice.keywords"><code>schema:keywords</code></a></p></td>
+  <td><code>rdfs:Literal</code></td>
+  <td>Optional</td>
+  <td class="center">0..n</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property recommended"><p class="plus"><a title="publisher" href="#dataservice.publisher"><code>dct:publisher</code></a></p></td>
-<td><code>foaf:Agent</code> or <code>schema:Organization</code></td>
-<td>Recommended</td>
-<td class="center">0..1</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property optional"><p><a title="license" href="#webservice.license"><code>dct:license</code></a></p></td>
+  <td><code>dct:LicenseDocument</code></td>
+  <td>Optional</td>
+  <td class="center">0..1</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property recommended"><p><a title="servesdataset" href="#dataservice.servesdataset"><code>dcat:servesDataset</code></a></p></td>
-<td><code>dcat:Dataset</code></td>
-<td>Recommended</td>
-<td class="center">0..n</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property optional"><p class="plus"><a title="spatial" href="#webservice.spatial"><code>dct:spatial</code></a></p></td>
+  <td><code>dct:Location</code></td>
+  <td>Optional</td>
+  <td class="center">0..n</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property recommended"><p class="plus"><a title="theme" href="#dataservice.theme"><code>dcat:theme</code></a></p></td>
-<td><code>skos:Concept</code></td>
-<td>Recommended</td>
-<td class="center">0..n</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property optional"><p class="plus"><a title="supportedoperation" href="#webservice.supportedoperation"><code>hydra:supportedOperation</code></a></p></td>
+  <td><code>hydra:Operation</code></td>
+  <td>Optional</td>
+  <td class="center">0..n</td>
 </tr>
 <tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property optional"><p> <a title="access-rights" href="#dataservice.accessrights"><code>dct:accessRights</code></a></p></td>
-<td><code>dct:RightsStatement</code></td>
-<td>Optional</td>
-<td class="center">0..1</td>
-</tr>
-<tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property optional"><p class="plus"><a title="format" href="#dataservice.format"><code>dct:format</code></a></p></td>
-<td><code>dct:MediaTypeOrExtent</code></td>
-<td>Optional</td>
-<td class="center">0..n</td>
-</tr>
-<tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property optional"><p><a title="landingpage" href="#dataservice.landingpage"><code>dcat:landingPage</code></a></p></td>
-<td><code>foaf:Document</code></td>
-<td>Optional</td>
-<td class="center">0..1</td>
-</tr>
-<tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property optional"><p><a title="license" href="#dataservice.license"><code>dct:license</code></a></p></td>
-<td><code>dct:LicenseDocument</code></td>
-<td>Optional</td>
-<td class="center">0..1</td>
-</tr>
-<tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property optional"><p class="plus"><a title="spatial" href="#dataservice.spatial"><code>dct:spatial</code></a></p></td>
-<td><code>dct:Location</code></td>
-<td>Optional</td>
-<td class="center">0..n</td>
-</tr>
-<tr>
-<td><a href="#properties-for-dataservice">DataService</a></td>
-<td><code>dcat:DataService</code></td>
-<td class="property optional"><p class="plus"><a title="temporal" href="#dataservice.temporal"><code>dct:temporal</code></a></p></td>
-<td><code>dct:PeriodOfTime</code></td>
-<td>Optional</td>
-<td class="center">0..n</td>
+  <td><a href="#properties-for-webservice">WebService</a></td>
+  <td><code>epos:WebService</code></td>
+  <td class="property optional"><p class="plus"><a title="temporal" href="#webservice.temporal"><code>dct:temporal</code></a></p></td>
+  <td><code>dct:PeriodOfTime</code></td>
+  <td>Optional</td>
+  <td class="center">0..n</td>
 </tr>
 </tbody>
 </table>
