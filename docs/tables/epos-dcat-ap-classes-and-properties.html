@@ -160,15 +160,6 @@
 <tr>
     <td><a href="#properties-for-catalog">Catalog</a></td>
     <td><code>dcat:Catalog</code></td>
-    <td class="property optional"><p><a title="catalog" href="#catalog.catalog"><code>dcat:catalog</code></a></p></td>
-    <td><code>dcat:Catalog</code></td>
-    <td>Optional</td>
-    <td class="center">0..n</td>
-</tr>
-
-<tr>
-    <td><a href="#properties-for-catalog">Catalog</a></td>
-    <td><code>dcat:Catalog</code></td>
     <td class="property optional"><p><a title="has-part" href="#catalog.haspart"><code>dct:hasPart</code></a></p></td>
     <td><code>dcat:Catalog</code></td>
     <td>Optional</td>
@@ -219,7 +210,7 @@
     <td><a href="#properties-for-catalogrecord">CatalogRecord</a></td>
     <td><code>dcat:CatalogRecord</code></td>
     <td class="property mandatory"><p><a title="primarytopic" href="#catalogrecord.primarytopic"><code>foaf:primaryTopic</code></a></p></td>
-    <td><code>dcat:Dataset</code> or <code>dcat:Dataservice</code> or <code>dcat:Catalog</code></td>
+    <td><code>dcat:Dataset</code> or <code>dcat:Catalog</code></td>
     <td>Mandatory</td>
     <td class="center">1..1</td>
 </tr>
@@ -637,104 +628,6 @@
     <td><code>dcat:Dataset</code></td>
     <td class="property optional"><p><a title="versionnotes" href="#dataset.versionnotes"><code>adms:versionNotes</code></a></p></td>
     <td><code>rdfs:Literal</code></td>
-    <td>Optional</td>
-    <td class="center">0..n</td>
-</tr>
-
-    <!-- Dataset Series -->
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property mandatory"><p><a title="description" href="#datasetseries.description"><code>dct:description</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td class="center">1..n</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property mandatory"><p><a title="title" href="#datasetseries.title"><code>dct:title</code></a></p></td>
-    <td><code>rdfs:Literal</code></td>
-    <td>Mandatory</td>
-    <td class="center">1..n</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property recommended"><p><a title="contactpoint" href="#datasetseries.contactpoint"><code>dcat:contactPoint</code></a></p>
-    <td><code>vcard:Kind</code> or <code>schema:ContactPoint</code></td>
-    <td>Recommended</td>
-    <td class="center">0..n</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property recommended"><p><a title="publisher" href="#datasetseries.publisher"><code>dct:publisher</code></a></p>
-    <td><code>foaf:Agent</code> or <code>schema:Organization</code></td>
-    <td>Recommended</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property recommended"><p><a title="spatial" href="#datasetseries.spatial"><code>dct:spatial</code></a></p>
-    <td><code>dct:Location</code></td>
-    <td>Recommended</td>
-    <td class="center">0..n</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property recommended"><p><a title="temporal" href="#datasetseries.temporal"><code>dct:temporal</code></a></p></td>
-    <td><code>dct:PeriodOfTime</code></td>
-    <td>Recommended</td>
-    <td class="center">0..n</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property optional"><p><a title="frequency" href="#datasetseries.frequency"><code>dct:accrualPeriodicity</code></a></p></td>
-    <td><code>dct:Frequency</code></td>
-    <td>Optional</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property optional"><p><a title="first" href="#datasetseries.first"><code>dct:first</code></a></p></td>
-    <td><code>dcat:Dataset</code></td>
-    <td>Optional</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property optional"><p><a title="issued" href="#datasetseries.issued"><code>dct:issued</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed as<code> xsd:date</code><br>or <code>xsd:dateTime</code></td>
-    <td>Optional</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property optional"><p><a title="last" href="#datasetseries.last"><code>dct:last</code></a></p></td>
-    <td><code>dcat:Dataset</code></td>
-    <td>Optional</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property optional"><p><a title="modified" href="#datasetseries.modified"><code>dct:modified</code></a></p></td>
-    <td><code>rdfs:Literal</code><br>typed as<code> xsd:date</code><br>or <code>xsd:dateTime</code></td>
-    <td>Optional</td>
-    <td class="center">0..1</td>
-</tr>
-<tr>
-    <td><a href="#properties-for-datasetseries">Dataset Series</a></td>
-    <td><code>dcat:DatasetSeries</code></td>
-    <td class="property optional"><p><a title="seriesmember" href="#datasetseries.seriesmember"><code>dct:seriesMember</code></a></p></td>
-    <td><code>dcat:Dataset</code></td>
     <td>Optional</td>
     <td class="center">0..n</td>
 </tr>
