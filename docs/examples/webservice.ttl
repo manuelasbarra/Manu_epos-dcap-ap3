@@ -9,34 +9,32 @@
 
 []
 
-<https://www.epos-eu.org/epos-dcat-ap/Seismology/DataService/001> a dcat:DataService ;
+<https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001> a epos:WebService ;
+  # Mandatory properties
+  schema:identifier "https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001" ;
 
-# Mandatory properties
-  dcat:endpointURL "http://www.orfeus-eu.org/fdsnws/dataselect/1/query"^^xsd:anyURI ;
-  dct:identifier "https://www.epos-eu.org/epos-dcat-ap/Seismology/DataService/001" ;
-  dct:title "Title of Seismic Waveform Data Service" ;
-
- # Recommended properties
+  # Recommended properties
   dcat:contactPoint <http://orcid.org/0000-0002-6250-0000/contactPoint> ;
-  dcat:endpointDescription <https://www.epos-eu.org/epos-dcat-ap/Seismology/DataService/001/Operation/001> ;
-  dcat:servesDataset <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001> ;
+  schema:dateModified "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+  schema:datePublished "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+  schema:description "FDSN Standard webservice at ODC to download waveform data" ;
+  # This property refers to the API definitions (e.g., WSDL, WADL)
+	hydra:entrypoint "http://www.orfeus-eu.org/fdsnws/dataselect/1/application.wadl"^^xsd:anyURI ;
+	schema:name "FDSN Standard webservice to download waveform data" ;
+  schema:provider <PIC:000518944> ;
   dcat:theme  <epos:SeismicWaveform> ;
-  dct:description "FDSN Standard webservice to download waveform data" ;
-  dct:issued "2016-01-01T00:00:00Z"^^xsd:dateTime ;
-  dct:modified "2016-01-01T00:00:00Z"^^xsd:dateTime ;
-  dct:publisher <PIC:000518944> ;
 
-# Optional properties
-  dcat:keyword "seismology", "seismicity", "earthquakes", "waveform", "seismic hazard", "earth structure", "earthquake intensity";
-  dct:accessRight "";
-  dct:conformsTo "https://www.orfeus-eu.org/data/eida/webservices/dataselect/"^^xsd:anyURI ;
+  # Optional properties
+  dct:conformsTo <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/APIDocumentation> ;
+  schema:keywords "seismology", "seismicity", "earthquakes", "waveform", "seismic hazard", "earth structure", "earthquake intensity", "macroseismic", "macroseismic information", "waveform modeling", "ODC", "Dataselect", "FDSN-WS", "Seismic Waveform", "EIDA" ;
   dct:license "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
-  #dct:format "http://publications.europa.eu/resource/authority/file-type/BIN"^^xsd:anyURI ;
   dct:spatial [ a dct:Location ;
-  		dcat:bbox "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
-  	];
+      dcat:bbox "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
+    ];
+  # This property refers to a web service operation supported by the Web Service.
+  hydra:supportedOperation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/Operation/001> ;
   dct:temporal [ a dct:PeriodOfTime ;
-  		dcat:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
-  		dcat:endDate "2022-01-01T00:00:00Z"^^xsd:dateTime ;
-  	] ;
+          schema:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
+          #schema:endDate "YYYY-MM-DDThh:mm:ssZ"^^xsd:dateTime ;
+  ] ;
 .
