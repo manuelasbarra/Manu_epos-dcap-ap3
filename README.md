@@ -1,2 +1,2 @@
-# EPOS-DCAT-AP-v3.0
+# EPOS-DCAT-AP-v1.0
  
